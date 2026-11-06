@@ -1,0 +1,36 @@
+{
+  "version": "1.0-autonome",
+  "sourcePDFHashes": {
+    "1-course": "3f539829e949bbed214c72abd5777c5572a2a800471b22268ee05536c474680f",
+    "1-bac": "13ce571d62edc9f885df34ae3823d87c3c84e8efe227585db416e3be44e1ac77",
+    "2-course": "53df87b12710bcba19f66ba596639e998071cbdb2139dc146ab4a16388b8af4f",
+    "2-bac": "fec4945f2fd216a9db1739b7c2403da06a413681325f53ff5d276d65668c7f74",
+    "3-course": "bda47fa43606938e403b61a1f60b644bf4c7c782fc8b328711c8726785bf789a",
+    "3-bac": "4e23bcfb698269e5857d08545e37cd608b431f74afb951c29060cb5871ed2bdc",
+    "4-course": "a61b223d0a2886ca849f65a902bdff97c0455c6e170aac8db1c453cddfbeac1c",
+    "4-bac": "cda65b81b436ccd5f60b10f7ba0e892649bdb980c229aff0acb1ff37d200ac3f",
+    "5-course": "d6fb9059f6cd62c03a21d771ac96ce527d7fb5d09d9343e6f42cd56bb0a08156",
+    "5-bac": "db852a6d755dea0726ba75fea6093535d252f3533013886f2931b9be3190a053"
+  },
+  "chapitres": 5,
+  "notions": 26,
+  "methodes": 26,
+  "formules": 39,
+  "entrainements": 104,
+  "qcm": 52,
+  "dsBlancs": 4,
+  "questionsTypes": 156,
+  "exercicesProfesseur": 30,
+  "correctionsProfesseur": 193,
+  "pdf": 10,
+  "pages": 73,
+  "empreintesContenus": {
+    "cours": "83dc5f5c1c69dc3f01086f55fea9bf47d6d81fb937dcda1b531c4564e1dacf5e",
+    "formules": "182d38e86dccce54f3f733dedd276cb21446dcd26ae3a925824eb84cf557689f",
+    "entrainements": "0139880495125e8b91cc3e2a5b1d9e7fbedd987e9af1e028b5c65f1860f8b54e",
+    "qcm": "bb6ec200e45b51aa1801fbff6b81b2e855db8e25d1acb76ab0779ec4517a3d18",
+    "ds": "8e424f54a49f6abf293bb9f571e1e4c2d3e203021149c800e82a8423612ddf3b",
+    "questions": "f3c91bc5b433fecd494793a75297f56f6cbdb4d278451c3a1c5383b40e76f339",
+    "typeBac": "f759faadaef2607c2ab621601aba472b4ffeb882a0a1e654af50ab76d47271dd"
+  }
+}

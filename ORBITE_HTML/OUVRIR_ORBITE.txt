@@ -1,0 +1,17 @@
+ORBITE — VERSION SANS INSTALLATION
+
+1. Extraire complètement le ZIP téléchargé depuis GitHub.
+2. Ouvrir le dossier ORBITE_HTML.
+3. Double-cliquer sur index.html.
+   Si nécessaire : clic droit > Ouvrir avec > Google Chrome.
+4. Réviser. Internet, Python, Node.js et terminal ne sont pas nécessaires.
+
+Conserver tous les fichiers et sous-dossiers ensemble.
+Pour plus d'aide, ouvrir LISEZ-MOI.html.
+
+PROGRESSION : exporter régulièrement une sauvegarde depuis les paramètres.
+Avant de déplacer le dossier ou de changer de navigateur, exporter puis importer
+la progression dans le nouvel emplacement. L'ancien format de sauvegarde Orbite
+reste compatible. Ne pas utiliser la navigation privée pour conserver les résultats.
+
+La version de développement d'origine est conservée à la racine du dépôt.

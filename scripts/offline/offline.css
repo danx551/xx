@@ -1,0 +1,41 @@
+.offline-pages {
+  margin-top: 24px;
+  padding: 16px;
+  background: var(--panel-soft);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.offline-pages figure {
+  margin: 20px auto;
+  max-width: 1000px;
+}
+.offline-pages img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: white;
+  border-radius: 3px;
+}
+.offline-pages figcaption {
+  color: var(--muted);
+  font-size: 11px;
+  text-align: center;
+  padding: 10px;
+}
+.offline-version {
+  padding: 8px 12px;
+  margin: 0 0 20px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.offline-version a {
+  color: var(--accent);
+  margin-left: 8px;
+}
+@media print {
+  .offline-version {
+    display: none;
+  }
+}

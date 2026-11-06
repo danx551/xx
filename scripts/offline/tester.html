@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Vérifier Orbite depuis le disque</title>
+    <link rel="stylesheet" href="./ressources/orbite.css" />
+    <style>
+      #verification {
+        position: relative;
+        z-index: 100;
+        background: #211c30;
+        color: #f0e9ff;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #baa4fa;
+        border-radius: 8px;
+        font: 14px/1.7 system-ui;
+      }
+      #verification button {
+        background: #c4aff5;
+        color: #211a30;
+        padding: 10px 16px;
+        border-radius: 5px;
+      }
+      #verification a {
+        color: #d2bdff;
+      }
+      #test-results {
+        max-height: 350px;
+        overflow: auto;
+      }
+    </style>
+    <script defer src="./ressources/orbite.js"></script>
+    <script defer src="./ressources/verifier.js"></script>
+  </head>
+  <body>
+    <section id="verification">
+      <h1>Vérifier ma copie d’Orbite</h1>
+      <p id="test-protocol"></p>
+      <p>
+        Ce contrôle facultatif teste les contenus, les QCM, un exercice, les
+        formules, les figures, la recherche et les favoris. Il restaure la
+        sauvegarde présente avant le test. Utilise ensuite
+        <a href="./index.html">index.html</a> pour réviser.
+      </p>
+      <button id="run-tests">Lancer les vérifications locales</button>
+      <ol id="test-results" aria-live="polite"></ol>
+    </section>
+    <div id="root"></div>
+  </body>
+</html>
