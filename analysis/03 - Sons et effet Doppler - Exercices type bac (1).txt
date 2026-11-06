@@ -1,0 +1,336 @@
+M. Mallet                                   Ch.3 — Sons et effet Doppler
+
+CHAPITRE 3 — RÉVISION
+
+Six exercices type bac
+Sons et effet Doppler — sujets du baccalauréat, sélectionnés et élagués pour ne garder que ce qui relève du chapitre 3.
+
+Comment utiliser ce livret
+Ces six exercices sont construits à partir de sujets du baccalauréat récents. Ensemble, ils balaient la totalité des
+capacités exigibles du chapitre : le tableau ci-dessous indique où chacune est travaillée. Les trois premiers portent
+sur le son et son atténuation, les trois derniers sur l'effet Doppler — acoustique au laboratoire, puis appliqué au radar
+et à l'astrophysique. Les questions relevant d'un chapitre non encore traité (mécanique, effet photoélectrique,
+thermodynamique) ont été retirées, et la mention correspondante figure à la fin de chaque exercice. Deux réflexes à
+garder tout au long du chapitre : vérifier que les distances sont en mètres et les durées en secondes avant d'appliquer
+une formule, et toujours dire dans quel sens varie la fréquence avant de poser un calcul d'effet Doppler.
+
+
+
+Ce que couvre chaque exercice
+                                   Capacité exigible du programme                                           Exercices
+         Relier période, fréquence, longueur d'onde et célérité d'une onde périodique                        2·3·5
+                    Définir et exploiter le niveau d'intensité sonore L = 10·log(I/I 0)                       1·2
+    Définir l'intensité sonore I = P/S et la relier à la puissance de la source et à la distance              1·2
+                  Illustrer l'atténuation géométrique et l'atténuation par absorption                         1·2
+    Décrire l'effet Doppler et relier le décalage de fréquence (ou de longueur d'onde) à une                 4·5·6
+                                              vitesse relative
+    Capacités expérimentales : mesurer un niveau d'intensité sonore, étudier l'effet Doppler                  3·4·5
+                                                 acoustique
+        Un son est une onde mécanique progressive : milieu de propagation, célérité                              3
+   Capacité transversale — incertitude-type, écart-type, exploitation d'un programme Python                      3
+
+
+
+Les six sujets d'origine
+▪ Exercice 1 — Sécurité acoustique, Centres étrangers, 2024, sujet 1, exercice 2 (5 points).
+▪ Exercice 2 — Fête de la musique, Nouvelle-Calédonie, 2023, sujet 2, exercice 2 (5 points).
+▪ Exercice 3 — Télémètre à ultrason, Asie, 2022, sujet 2, exercice 1 (10 points).
+▪ Exercice 4 — Étude de l'effet Doppler à l'aide de deux téléphones, Centres étrangers, 2026, épreuve de la spécialité
+  sciences de l'ingénieur, exercice A (10 points).
+▪ Exercice 5 — Radar pédagogique équipé d'un panneau solaire, Centres étrangers, 2025, sujet 1, exercice 2 (6 points).
+▪ Exercice 6 — Galaxie d'Andromède, Métropole, 2024, épreuve de la spécialité sciences de l'ingénieur, exercice A (10
+  points).
+
+Les énoncés ont été reformulés à partir de ces sujets — contexte, données et travail demandé sont conservés — et les figures ont été
+redessinées. Les corrigés détaillés font l'objet d'un document séparé.
+
+
+
+
+                                       Terminale spécialité — Physique-Chimie         page 1
+M. Mallet                                    Ch.3 — Sons et effet Doppler
+
+
+EXERCICE 1 · Le canon anti-grêle                                                                                   5 points · ≈ 50 min
+
+D'après Centres étrangers, 2024, sujet 1, exercice 2 « Sécurité acoustique ».
+
+Pour protéger leurs parcelles, certains viticulteurs installent des canons anti-grêle : toutes les quelques
+secondes, une détonation envoie une onde de choc en direction du nuage. L'appareil est extrêmement
+bruyant. On évalue d'abord le risque pour l'opérateur qui se tient à côté, puis la gêne causée à l'habitation
+voisine H.
+
+Données
+▪ Puissance acoustique rayonnée par le canon : P = 503 W, supposée rayonnée de la même façon dans toutes les
+  directions.
+▪ Intensité sonore à la distance d d'une source ponctuelle : I = P / (4πd2) ; intensité de référence I0 = 1,00×10-12 W·m-
+  2
+    .
+▪ Niveau d'intensité sonore : L = 10·log(I/I0), en décibels.
+▪ Atténuation géométrique entre deux distances : L2 = L1 − 20·log(d2/d1).
+▪ Émergence sonore : ε = L2 − LH, où LH est le niveau de bruit de fond mesuré à l'habitation en l'absence du canon.
+  Le code de la santé publique la limite à +5 dB le jour et +3 dB la nuit.
+▪ Bruit de fond à l'habitation H : LH = 65 dB.
+▪ Sur le plan cadastral, 1 cm représente 100 m ; la distance entre le canon et l'habitation H y mesure 11,5 cm.
+
+
+
+     Exposition sur 8        Niveau de crête (bruit                             Obligations de l'employeur
+         heures                     court)
+          80 dB                     135 dB                   évaluer les risques, informer et former les travailleurs, mettre des
+                                                                            protections individuelles à disposition
+            85 dB                     137 dB               port des protections obligatoire, contrôle audiométrique, signalisation
+                                                                                    des zones concernées
+            87 dB                     140 dB                valeur limite à ne jamais dépasser, protections auditives comprises
+
+
+                          Document 1 — Prévention du risque auditif au travail (extrait de la réglementation).
+
+             Matériau absorbant (épaisseur 30 mm)                                 Coefficient d'absorption à 1000 Hz
+                        mousse alvéolée                                                           0,30
+                     mousse à faces lisses                                                        0,40
+                       mousse mélamine                                                            0,75
+
+
+         Document 2 — Coefficient d'absorption acoustique de trois matériaux (0 = aucune absorption, 1 = absorption totale).
+
+Q1. Montrer que l'intensité sonore à la distance d1 = 1,00 m du canon vaut I1 = 40,0 W·m-2.
+Q2. En déduire le niveau d'intensité sonore L1 à cette distance.
+Q3. À l'aide du document 1, indiquer les mesures que l'employeur doit prendre pour un opérateur se tenant à
+     1,00 m du canon au moment des tirs.
+Q4. Déterminer la distance d2 séparant le canon de l'habitation H, puis le niveau d'intensité sonore L2 perçu
+     en H.
+Q5. Calculer l'émergence sonore ε en H et conclure quant au respect de la réglementation.
+Q6. Le constructeur propose d'équiper le canon d'un silencieux garni d'un matériau absorbant. À l'aide du
+     document 2, choisir le matériau le plus efficace pour un bruit dont la fréquence dominante est voisine
+     de 1000 Hz. De quel type d'atténuation s'agit-il ?
+Q7. Ce silencieux fait perdre 14 dB au niveau sonore émis. Le canon devient-il conforme à la réglementation
+     ?
+Élagage Aucune question du sujet d'origine n'a été retirée : l'ensemble relève du chapitre 3. Les questions Q6 et Q7 du sujet
+d'origine ont simplement été regroupées.
+
+
+
+
+                                        Terminale spécialité — Physique-Chimie          page 2
+M. Mallet                                    Ch.3 — Sons et effet Doppler
+
+
+EXERCICE 2 · La fête de la musique                                                                                5 points · ≈ 50 min
+
+D'après Nouvelle-Calédonie, 2023, sujet 2, exercice 2 « Fête de la musique ».
+
+Pour la fête de la musique, un char musical tracté par un tracteur défile dans les rues de la ville. Un arrêté
+municipal fixe à 102 dB le niveau d'intensité sonore maximal admis à 2 m du char. Le DJ doit vérifier que
+l'ensemble — sa sonorisation et le tracteur qui la transporte — respecte cette limite.
+
+Données
+▪ Niveau d'intensité sonore de la sonorisation seule, mesuré à 2 m : L 1 = 100 dB.
+▪ Intensité sonore du tracteur seul, mesurée à 2 m : I2 = 1,00×10-3 W·m-2.
+▪ Intensité de référence : I0 = 1,00×10-12 W·m-2.
+▪ Les intensités sonores de deux sources indépendantes s'ajoutent.
+▪ Célérité du son dans l'air : v = 340 m·s-1.
+
+
+
+Q1. Exprimer l'intensité sonore I en fonction du niveau d'intensité sonore L et de I0. Montrer que l'intensité de
+     la sonorisation seule vaut I1 = 1,00×10-2 W·m-2.
+Q2. Déterminer l'intensité sonore totale à 2 m du char lorsque la sonorisation et le tracteur fonctionnent
+     ensemble, puis le niveau d'intensité sonore correspondant.
+Q3. L'arrêté municipal est-il respecté ? Commenter l'influence du tracteur sur le niveau total.
+Q4. Sans calcul détaillé, indiquer comment évolue le niveau d'intensité sonore pour un spectateur qui
+     s'éloigne de 2 m à 10 m du char, et nommer le phénomène responsable.
+Q5. Un riverain situé à 2 m du char ferme sa fenêtre : le niveau sonore perçu chez lui diminue nettement.
+     Nommer le phénomène en jeu et expliquer en quoi il diffère du précédent.
+Le tracteur s'arrête et un trompettiste joue une note, enregistrée à l'aide d'un microphone (figure 1).
+
+
+
+
+                                   Figure 1 — Enregistrement de la note jouée par le trompettiste.
+
+Q6. Déterminer la période puis la fréquence de cette note. En déduire la longueur d'onde du son
+     correspondant dans l'air.
+Élagage Question retirée du sujet d'origine : la dernière question, qui demandait d'exploiter un diagramme de Fletcher et Munson
+(courbes isosoniques), notion hors programme. La longueur d'onde demandée en Q6 a été ajoutée pour compléter la relation λ =
+v/f.
+
+
+
+
+                                       Terminale spécialité — Physique-Chimie          page 3
+M. Mallet                                     Ch.3 — Sons et effet Doppler
+
+
+EXERCICE 3 · Un télémètre à ultrasons                                                                     10 points à l'origine · ≈ 45 min
+
+D'après Asie, 2022, sujet 2, exercice 1 « Télémètre à ultrason ».
+
+Un télémètre à ultrasons mesure une distance sans contact : un émetteur E envoie une brève salve
+d'ultrasons, qui se réfléchit sur l'objet visé et revient au récepteur R placé juste à côté. Un microcontrôleur
+mesure la durée Δt séparant l'émission de la réception, puis en déduit la distance. C'est le capteur utilisé en
+travaux pratiques pour relever la position d'un mobile au cours du temps.
+
+
+
+
+                          Figure 1 — Principe du télémètre : la salve suit l'axe (Ox) à l'aller comme au retour.
+
+Données
+▪ Fréquence des salves émises : f = 40 kHz.
+▪ Célérité du son dans l'air annoncée par le constructeur : v = 340 m·s -1.
+▪ La distance entre E et R est négligeable devant la distance à l'objet.
+▪ Incertitude-type sur la durée mesurée par le microcontrôleur : u(Δt) = 10 µs.
+▪ Incertitude-type sur la moyenne de n mesures : u = σ/√n, où σ est l'écart-type de la série.
+▪ Composition des incertitudes : u(x)/x = √[ (u(v)/v)2 + (u(Δt)/Δt)2 ].
+
+
+
+Étalonnage. On place l'objet à une distance connue x0 = 56,0 cm et on répète cinq fois la mesure de Δt. On
+en déduit cinq valeurs de la célérité du son : 349 ; 352 ; 348 ; 347 et 351 m·s-1, dont l'écart-type vaut σ = 2,07
+m·s-1.
+
+Extrait du programme du microcontrôleur (t_telemetre contient les durées Δt mesurées, en µs)
+  1   v = 340                    # célérité du son, en m/s
+  2   x = []
+  3   for i in range(len(t_telemetre)):
+  4       x.append(v * t_telemetre[i] * 1e-6 / 2)
+
+
+
+Q1. Un ultrason est-il une onde mécanique ? Justifier. Calculer sa longueur d'onde dans l'air.
+Q2. Établir que la distance x entre le télémètre et l'objet vaut x = v·Δt/2.
+Q3. Identifier la ligne du programme qui calcule cette distance et préciser l'unité du résultat obtenu.
+Q4. Proposer un protocole permettant de déterminer expérimentalement la célérité du son dans l'air à l'aide
+     de ce télémètre.
+Q5. Calculer la valeur moyenne de la célérité obtenue lors de l'étalonnage, ainsi que l'incertitude-type
+     associée. Commenter l'écart avec la valeur annoncée par le constructeur.
+Q6. Écrire la ligne du programme à modifier pour tenir compte de cet étalonnage.
+Q7. Le télémètre mesure Δt = 3438 µs. Déterminer la distance x correspondante et son incertitude-type u(x).
+Élagage Questions retirées du sujet d'origine : les questions 7 à 15 (deuxième loi de Newton, équations horaires, frottements et
+énergie mécanique d'une voiture sur un plan incliné) → chapitres 7 et 14. La question sur la longueur d'onde (Q1) a été ajoutée.
+
+
+
+
+                                        Terminale spécialité — Physique-Chimie            page 4
+M. Mallet                                     Ch.3 — Sons et effet Doppler
+
+
+EXERCICE 4 · Mesurer une vitesse avec deux téléphones                                                    10 points à l'origine · ≈ 30 min
+
+D'après Centres étrangers, 2026, épreuve de la spécialité sciences de l'ingénieur, exercice A « Étude de l'effet Doppler à l'aide de deux
+téléphones ».
+
+Deux téléphones suffisent pour observer l'effet Doppler. Le premier, T1, émet un son pur de fréquence
+constante ; il est fixé à l'extrémité d'une tige qui le fait tourner à vitesse constante autour d'un axe vertical. Le
+second, T2, immobile et placé loin du cercle, dans le plan de rotation, enregistre le son reçu et en affiche le
+spectre.
+La figure 1 donne une vue de dessus du dispositif. T1A et T1B sont les deux positions particulières où le
+vecteur vitesse de l'émetteur est dirigé selon la droite qui joint l'émetteur au récepteur.
+
+
+
+
+                                                Figure 1 — Vue de dessus du dispositif.
+
+Données
+▪ Fréquence émise par T1 : fE = 1000 Hz ; célérité du son dans l'air : c = 340 m·s-1.
+▪ Rayon du cercle décrit par l'émetteur : R = 21 cm.
+▪ Période de rotation mesurée : T = 0,77 s.
+▪ Fréquence reçue par T2 lorsque l'émetteur passe en T1B : fRB = 995 Hz.
+
+
+
+Q1. Lorsque l'émetteur passe en T1A, se rapproche-t-il ou s'éloigne-t-il du récepteur ? Le son perçu par T2
+     est-il alors plus aigu ou plus grave que le son émis ? Justifier.
+Q2. Parmi les quatre relations proposées ci-dessous pour la fréquence fRA reçue lorsque l'émetteur passe en
+     T1A, identifier la seule qui puisse convenir. On justifiera par deux arguments : l'homogénéité, puis le
+     sens de variation attendu.
+        (a) fRA = c / (c − v)          (b) fRA = [c / (c − v)] × fE
+        (c) fRA = [c / (c + v)] × fE      (d) fRA = [c / (c + 2v)] × fE
+Q3. Montrer que la vitesse de l'émetteur vaut v ≈ 1,7 m·s-1.
+Q4. Lorsque l'émetteur passe en T1B, la fréquence reçue vérifie fRB = [c / (c + v)] × fE. Déterminer la valeur de
+     v à partir de la fréquence mesurée, puis la comparer à celle de la question Q3. Conclure sur la validité
+     de la méthode.
+Élagage Aucune question du sujet d'origine n'a été retirée.
+
+
+
+
+                                        Terminale spécialité — Physique-Chimie            page 5
+M. Mallet                                   Ch.3 — Sons et effet Doppler
+
+
+EXERCICE 5 · Le radar pédagogique                                                                         6 points à l'origine · ≈ 30 min
+
+D'après Centres étrangers, 2025, sujet 1, exercice 2 « Radar pédagogique équipé d'un panneau solaire ».
+
+Les radars pédagogiques installés à l'entrée des villages affichent la vitesse des véhicules qui s'approchent.
+Celui étudié ici fonctionne avec des ultrasons : un émetteur envoie une onde de fréquence fE vers le véhicule,
+l'onde s'y réfléchit et revient au récepteur avec une fréquence différente. Pour l'étalonner, les techniciens le
+testent en laboratoire sur un chariot muni d'une plaque réfléchissante.
+
+Données
+▪ Température de l'air lors de l'essai : θ = 21,0 °C ; célérité du son correspondante : v = 344,25 m·s -1.
+▪ L'onde effectuant un aller-retour, le décalage Doppler s'écrit Δf = 2·fE·vchariot / v.
+▪ Décalage Doppler mesuré lorsque le chariot avance : Δf = 22,7 Hz.
+
+
+
+
+                               Figure 1 — Signal reçu par le récepteur lorsque le chariot est immobile.
+
+Q1. Décrire l'effet Doppler. Préciser, dans le cas du radar, comment varie la fréquence reçue selon que le
+     véhicule se rapproche ou s'éloigne.
+Q2. À l'aide de la figure 1, déterminer la période TR puis la fréquence fR du signal reçu. En déduire la valeur
+     de la fréquence fE émise par le radar, en justifiant.
+Q3. Déterminer la valeur de la vitesse du chariot. Commenter.
+Q4. Ce radar peut-il convenir pour contrôler un véhicule roulant à 50 km·h-1 ? On calculera le décalage
+     Doppler correspondant.
+Élagage Questions retirées du sujet d'origine : Q1 et Q2 (puissance et rendement du panneau photovoltaïque) → chapitre 11 ; Q4
+à Q6 (vitesses instantanées et vitesse moyenne obtenues par pointage vidéo) → chapitre 7. La question Q4 ci-dessus a été ajoutée
+pour transposer l'étalonnage au cas réel.
+
+
+
+
+                                      Terminale spécialité — Physique-Chimie           page 6
+M. Mallet                                    Ch.3 — Sons et effet Doppler
+
+
+EXERCICE 6 · La galaxie d'Andromède                                                                   10 points à l'origine · ≈ 40 min
+
+D'après Métropole, 2024, épreuve de la spécialité sciences de l'ingénieur, exercice A « Galaxie d'Andromède ».
+
+En 1913, l'astronome américain Vesto Slipher photographie le spectre de la galaxie d'Andromède et constate
+que ses raies d'absorption ne se trouvent pas exactement là où on les attend. Il en déduit, le premier, qu'une
+galaxie peut se déplacer par rapport à la Terre — et à une vitesse considérable. L'exercice reprend son
+raisonnement, en établissant d'abord la relation entre décalage de fréquence et vitesse.
+
+Données
+▪ Célérité de la lumière dans le vide : c = 3,00×108 m·s-1.
+▪ Longueur d'onde dans le vide de la raie Hα de l'hydrogène, mesurée au laboratoire : λ0 = 656,3 nm.
+▪ Vitesse radiale d'Andromède déduite des mesures de 1913 : v = 300 km·s -1, la galaxie se rapprochant de la Terre.
+▪ Approximation mathématique : pour x très petit devant 1, 1/(1 − x) ≈ 1 + x.
+
+
+
+Q1. Décrire l'effet Doppler.
+Q2. La source émet des fronts d'onde successifs séparés de la période TE et se rapproche du récepteur à la
+     vitesse v. Montrer que la longueur d'onde reçue vaut λR = λE − v·TE, puis en déduire que fR = fE / (1 −
+     v/c).
+Q3. Calculer v/c et justifier que l'approximation proposée dans les données est utilisable.
+Q4. En déduire que le décalage Doppler s'écrit Δf = fR − fE ≈ fE·v/c.
+Q5. Montrer que Δf ≈ v/λ0, puis calculer sa valeur pour la raie Hα.
+Q6. En déduire la longueur d'onde λR sous laquelle la raie Hα d'Andromède est observée depuis la Terre.
+     Comparer à λ0 et commenter.
+Q7. Que devient le signe du décalage lorsque la galaxie s'éloigne ? Expliquer le terme « décalage vers le
+     rouge » employé en astrophysique.
+Élagage Aucune question du sujet d'origine n'a été retirée.
+
+
+
+
+                                       Terminale spécialité — Physique-Chimie          page 7
+

@@ -1,0 +1,193 @@
+M. Mallet                                                                                  Ch.5 — Lunette astronomique
+CHAPITRE 5
+Lunette astronomique
+Thème 4 — Ondes et signaux · Former des images, décrire la lumière par un flux de photons
+
+                  Chapitre à avoir terminé pour le dimanche 8 novembre 2026
+
+
+ Manuel Hachette 2020            Chapitre 19 — Lunette astronomique (p. 387 à 404)
+ Durée prévue                    1 semaine (semaine du 02/11/2026)
+ Travaux pratiques               TP 07 — Lunette astronomique (modélisation ; grossissement)
+
+
+ Objectifs du chapitre (capacités exigibles)
+   • Modéliser une lentille mince convergente ; définir foyer image, distance focale et vergence.
+   • Décrire la formation de l'image d'un objet à l'infini dans le plan focal image.
+   • Décrire une lunette afocale (objectif + oculaire) et exprimer son grossissement G = f'obj/f'oc.
+   • Exploiter les données caractéristiques d'une lunette commerciale (diamètre de l'objectif, distances
+     focales).
+   • Capacité expérimentale : estimer une distance focale ; réaliser une maquette de lunette
+     astronomique.
+
+
+I. Lentille mince convergente et formation d'image
+Une lentille mince convergente fait converger un faisceau de lumière. Elle est caractérisée par son centre
+optique O et son axe optique. Le foyer image F' est le point de l'axe où convergent les rayons arrivant
+parallèlement à l'axe ; le foyer objet F lui est symétrique. La distance focale f' = OF' (en mètres) mesure le
+pouvoir de convergence : plus f' est petite, plus la lentille est convergente. On définit la vergence C = 1/f' (en
+dioptries, δ).
+Un objet très éloigné, comme une étoile ou un astre, envoie vers la lentille des rayons quasiment parallèles
+entre eux. Son image se forme alors dans le plan focal image, c'est-à-dire au niveau du foyer F'. Un objet à
+l'infini vu sous un certain diamètre angulaire donne une image de taille finie dans ce plan focal, d'autant plus
+grande que la distance focale est grande.
+
+
+
+
+  Figure 1 — Lentille convergente : les rayons issus d'un objet à l'infini convergent au foyer image F' (à la distance
+                                                      focale f ').
+
+Construire l'image d'un objet
+Pour construire graphiquement l'image d'un point objet, on utilise trois rayons particuliers : le rayon passant
+par le centre optique O n'est pas dévié ; le rayon incident parallèle à l'axe optique émerge en passant par le
+foyer image F' ; le rayon passant par le foyer objet F émerge parallèlement à l'axe. L'intersection des rayons
+émergents donne la position de l'image. Pour un objet réel situé au-delà du foyer, l'image obtenue est réelle
+et renversée ; pour un objet rejeté à l'infini, elle se forme exactement dans le plan focal image.
+
+
+                                   Terminale spécialité — Physique-Chimie     page 1
+M. Mallet                                                                                   Ch.5 — Lunette astronomique
+Rappel de 1re : valeurs algébriques et relation de conjugaison
+En optique, les positions sont repérées le long de l'axe optique, que l'on oriente dans le sens de
+propagation de la lumière (le plus souvent de la gauche vers la droite) ; l'axe vertical est orienté vers le
+haut. On travaille alors avec des valeurs algébriques, surmontées d'une barre : OA représente la distance
+de O à A, affectée d'un signe qui indique de quel côté de la lentille se trouve le point A.
+  • OA > 0 lorsque A est situé après O dans le sens de propagation (à droite de la lentille) ;
+  • OA < 0 lorsque A est situé avant O (à gauche de la lentille) : c'est le cas de tout objet réel ;
+  • de même, AB > 0 si B est au-dessus de l'axe, et A′B′ < 0 si l'image est renversée ;
+  • pour une lentille convergente, la distance focale est positive : f' = OF′ > 0, tandis que OF = −f' < 0.
+Attention à ne pas confondre distance et valeur algébrique : pour un objet placé à 30 cm devant la lentille, la
+distance OA vaut 30 cm mais OA = −30 cm. Ce sont les valeurs algébriques qu'il faut utiliser dans la relation
+de conjugaison de Descartes :
+                 1       1     1                                                             A′B′     OA′
+                OA′
+                      − OA = 𝑓 ′      et dans l'expression du grandissement γ : 𝛾 =           AB
+                                                                                                    = OA
+
+Le signe de chaque résultat a un sens physique : OA′ > 0 signifie que l'image est réelle (on peut la recueillir
+sur un écran placé après la lentille) ; γ < 0 signifie qu'elle est renversée, et |γ| > 1 qu'elle est plus grande
+que l'objet.
+
+
+
+
+ Figure 2 — Valeurs algébriques : l'axe est orienté dans le sens de la lumière. L'objet AB, avant la lentille, est repéré
+                             par OA < 0 ; son image A'B', après la lentille, par OA′ > 0.
+
+  Méthode — Utiliser la relation de conjugaison
+  Une lentille convergente de distance focale f' = 20 cm donne d'un objet AB placé 30 cm avant elle une
+  image A'B' dont on cherche la position et le sens.
+  1. Traduire l'énoncé en valeurs algébriques : OA = −30 cm (objet avant la lentille) et f' = +20 cm.
+  2. Isoler l'inconnue : 1/OA′ = 1/f' + 1/OA = 1/20 + 1/(−30) = 1/60, donc OA′ = +60 cm.
+  3. Interpréter : OA′ > 0, l'image est réelle, à 60 cm après la lentille. γ = OA′/OA = 60/(−30) = −2 : elle est
+  renversée et deux fois plus grande que l'objet (voir figure 2).
+  Erreur fréquente : prendre OA = +30 cm. On trouverait alors OA′ = +12 cm, un résultat faux.
+
+
+
+ Exercices — Manuel Hachette, chap. 19 « Lunette astronomique » (p. 387-404)
+ Formation d’image à travers une lentille mince convergente — Appliquer le cours : ex. 4, 5, 6 p. 396-397 |
+ S’entraîner : ex. 15 p. 398 | Vers le bac : ex. 25 p. 403
+
+
+
+                                    Terminale spécialité — Physique-Chimie     page 2
+M. Mallet                                                                                     Ch.5 — Lunette astronomique
+II. La lunette astronomique afocale
+Une lunette astronomique associe deux lentilles convergentes : l'objectif L₁, de grande distance focale,
+tourné vers l'objet observé, et l'oculaire L₂, de courte distance focale, placé côté œil. On la règle en système
+afocal : le foyer image de l'objectif coïncide avec le foyer objet de l'oculaire.
+Le fonctionnement se décompose en deux temps. L'objectif donne d'abord, dans son plan focal image, une
+image intermédiaire réelle de l'objet observé à l'infini. Cette image intermédiaire, située dans le plan focal
+objet de l'oculaire, sert alors d'objet à ce dernier, qui en renvoie une image définitive rejetée à l'infini. L'œil
+observe ainsi sans accommoder, donc sans fatigue.
+
+
+
+
+    Figure 3 — Lunette afocale : l'objet à l'infini (angle α) est vu à travers l'instrument sous un angle α' plus grand.
+L'objet est vu à l'œil nu sous un angle α et, à travers la lunette, sous un angle α' plus grand : c'est ce qui
+donne l'impression de rapprochement. Le grossissement G, rapport de ces deux angles, s'exprime à l'aide
+des distances focales :
+                                                           𝛼′   𝑓 ′𝑜𝑏𝑗
+                                                     𝐺 =      =
+                                                           𝛼    𝑓 ′𝑜𝑐
+
+  Exemple — Grossissement d'une lunette
+  Une lunette a un objectif de distance focale f'obj = 500 mm et un oculaire de f'oc = 20 mm. Son
+  grossissement vaut :
+  G = f'obj / f'oc = 500 / 20 = 25.
+  La Lune, vue à l'œil nu sous un angle de 0,5°, apparaît alors sous un angle de 25 × 0,5 = 12,5°.
+
+
+
+Pour obtenir un fort grossissement, on choisit un objectif de grande distance focale et un oculaire de courte
+distance focale. Changer d'oculaire permet de modifier le grossissement d'une même lunette.
+Pour observer confortablement, l'œil se place au niveau du cercle oculaire, petite zone lumineuse image de
+l'objectif à travers l'oculaire, où toute la lumière collectée est concentrée.
+
+Les caractéristiques d'une lunette du commerce
+Une lunette astronomique vendue dans le commerce est décrite par deux types de données : le diamètre
+de l'objectif et les distances focales de l'objectif et de l'oculaire.
+Sur le tube figure une inscription du type « 70/900 » : le premier nombre est le diamètre D de l'objectif, le
+second sa distance focale f'obj, tous deux exprimés en millimètres.
+L'oculaire, lui, n'est pas fixé à demeure : la lunette est livrée avec plusieurs oculaires interchangeables, et
+chacun porte gravée sa propre distance focale f' oc (par exemple 25 mm ou 10 mm).
+Chaque donnée joue un rôle précis. Le diamètre D fixe la quantité de lumière recueillie, proportionnelle à la
+surface de l'objectif, donc à D2 : doubler le diamètre multiplie par quatre la lumière captée. Un grand diamètre
+permet ainsi d'observer des astres peu lumineux et, comme il réduit la diffraction par la monture de l'objectif
+(chapitre 4), de distinguer des détails plus fins. Les distances focales, elles, fixent le grossissement G =
+f'obj/f'oc : pour une même lunette, il change avec l'oculaire choisi.
+                                      Terminale spécialité — Physique-Chimie    page 3
+M. Mallet                                                                                      Ch.5 — Lunette astronomique
+
+
+
+
+  Figure 4 — Lunette « 70/900 » : l'inscription donne le diamètre D et la distance focale f'obj de l'objectif ; la distance
+                                 focale de chaque oculaire est gravée sur celui-ci.
+
+  Exemple — Lire les caractéristiques d'une lunette « 70/900 »
+  L'objectif a un diamètre D = 70 mm et une distance focale f' obj = 900 mm.
+  Avec l'oculaire de 25 mm : G = 900/25 = 36 ; avec l'oculaire de 10 mm : G = 900/10 = 90.
+  Le grossissement n'est donc pas une caractéristique de la lunette seule : il dépend de l'oculaire utilisé.
+  Une lunette 90/900 aurait le même grossissement avec ces oculaires, mais recueillerait (90/70) 2 ≈ 1,7
+  fois plus de lumière.
+
+
+
+  Repère — Lunette ou télescope ?
+  La lunette astronomique utilise deux lentilles : c'est un instrument réfracteur. Le télescope, lui, remplace
+  l'objectif par un miroir concave : c'est un instrument réflecteur, qui évite certains défauts et permet
+  d'atteindre de très grands diamètres. Dans les deux cas, le principe afocal et la notion de grossissement
+  restent identiques.
+
+
+
+ Exercices — Manuel Hachette, chap. 19 « Lunette astronomique » (p. 387-404)
+ Schématiser la lunette afocale (objectif/oculaire, condition afocale) — Appliquer le cours : ex. 2, 3 p. 396 |
+ S’entraîner : ex. 16 p. 399 | Vers le bac : ex. 25 p. 403
+ Grossissement (G = f’₁/f’₂) et lunette commerciale — Appliquer le cours : ex. 11, 12, 13, 14 p. 398 |
+ S’entraîner : ex. 20 p. 400 | Vers le bac : ex. 24 p. 402-403
+
+
+Ce qu'il faut retenir
+  • Lentille convergente : foyer image F', distance focale f' = OF', vergence C = 1/f' (en δ).
+  • Valeurs algébriques : axe orienté dans le sens de la lumière ; OA < 0 pour un objet réel placé avant la
+    lentille ; 1/OA′ − 1/OA = 1/f' et γ = OA′/OA.
+  • Un objet à l'infini donne une image dans le plan focal image de la lentille.
+  • Lunette afocale : objectif (grande focale) + oculaire (courte focale) ; foyer image de l'objectif = foyer
+    objet de l'oculaire.
+  • Image finale rejetée à l'infini : observation sans accommodation.
+  • Grossissement : G = α'/α = f'obj / f'oc.
+  • Lunette du commerce « D/f'obj » (en mm) : diamètre et distance focale de l'objectif ; la distance focale
+    de chaque oculaire est gravée sur celui-ci.
+
+ QCM — Manuel Hachette (à faire en fin de chapitre)
+ Chap. 19 — Lunette astronomique — QCM p. 393
+ Corrigés du QCM p. 462.
+
+
+                                     Terminale spécialité — Physique-Chimie      page 4
+

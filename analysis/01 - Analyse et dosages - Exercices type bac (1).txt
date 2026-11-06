@@ -1,0 +1,410 @@
+M. Mallet                       Ch.1 — Analyse et dosages d'un système chimique
+
+CHAPITRE 1 — RÉVISION
+
+Six exercices type bac
+Analyse et dosages d'un système chimique — sujets du baccalauréat, sélectionnés et élagués pour ne garder que ce qui
+relève du chapitre 1.
+
+Comment utiliser ce livret
+Ces six exercices sont construits à partir de sujets du baccalauréat récents. Ensemble, ils balaient la totalité des
+capacités exigibles du chapitre : le tableau ci-dessous indique où chacune est travaillée. Les questions qui relevaient
+d'un chapitre non encore traité (acide-base, cinétique, oxydoréduction, synthèse organique) ont été retirées ; la
+mention correspondante figure à la fin de chaque exercice, pour retrouver le sujet complet le moment venu. Comptez
+environ 45 minutes par exercice, calculatrice autorisée, et rédigez comme le jour de l'épreuve : une phrase de
+méthode, le calcul littéral, puis l'application numérique avec l'unité.
+
+
+
+Ce que couvre chaque exercice
+                                Capacité exigible du programme                                              Exercices
+    Préparer une solution par dissolution ou par dilution en choisissant le matériel adapté                1·2·3·5·6
+   Déterminer une concentration par spectrophotométrie à l'aide d'une courbe d'étalonnage                       1
+                                       (loi de Beer-Lambert)
+               Déterminer une concentration par conductimétrie (loi de Kohlrausch)                               3
+  Exploiter l'équation d'état du gaz parfait pour déterminer une quantité de matière ; domaine                   5
+                                              de validité
+        Exploiter un spectre UV-visible pour identifier une espèce et prévoir sa couleur                      1·6
+             Exploiter un spectre infrarouge pour identifier un groupe caractéristique                         4
+                Mettre en œuvre le protocole d'un titrage et exploiter l'équivalence                       2·3·4·5·6
+                    Repérer l'équivalence par pH-métrie (tangentes, dérivée)                                2·4·5·6
+                   Repérer l'équivalence par conductimétrie (rupture de pente)                                 3
+                   Repérer l'équivalence par un indicateur coloré (colorimétrie)                               6
+    Capacité numérique : évolution des quantités de matière en fonction du volume versé                       2·3
+                                               (Python)
+
+
+
+Les six sujets d'origine
+▪ Exercice 1 — Encre et effaceur, Métropole, mai 2022, sujet 2, exercice B (5 points).
+▪ Exercice 2 — Traitement contre le varroa, Métropole, septembre 2024, sujet 2, exercice 2 (4 points).
+▪ Exercice 3 — Eau de Quinton, Métropole, 2025, sujet 2, exercice 2 (4 points).
+▪ Exercice 4 — Dissolution d'une coquille d'œuf, Asie, 2022, sujet 2, exercice C (5 points).
+▪ Exercice 5 — Ne jamais mélanger eau de Javel et acide, Asie, 2024, sujet 1, exercice 1 (9 points).
+▪ Exercice 6 — Un emballage intelligent au rayon poissonnerie, Métropole, 2025, sujet 1, exercice 1 (9 points).
+
+Les énoncés ont été reformulés à partir de ces sujets — contexte, données et travail demandé sont conservés — et les figures ont été
+redessinées. Les corrigés détaillés font l'objet d'un document séparé.
+
+
+
+
+                                      Terminale spécialité — Physique-Chimie          page 1
+M. Mallet                        Ch.1 — Analyse et dosages d'un système chimique
+
+EXERCICE 1 · Le bleu d'une cartouche d'encre                                                                 5 points · ≈ 50 min
+
+D'après Métropole, mai 2022, sujet 2, exercice B « Encre et effaceur ».
+
+L'encre bleue des stylos à plume doit sa couleur au bleu d'aniline, de formule brute C32H25N3O9S3Na2. Le
+fabricant annonce que ce colorant représente 3 à 5 % de la masse de l'encre. On se propose de vérifier cette
+indication par spectrophotométrie, sans détruire l'échantillon.
+Protocole. On vide entièrement une cartouche, soit un volume V0 = 0,60 mL d'encre, dans une fiole jaugée
+de 100,0 mL que l'on complète à l'eau distillée : on obtient la solution S 1. On prépare ensuite la solution S2
+par dilution au vingtième de S1, dans une fiole jaugée de 100,0 mL. Le spectre d'absorption de S2 est
+enregistré entre 380 et 780 nm, dans une cuve de largeur ℓ = 1,0 cm (figure 1).
+
+Données
+▪ Masse volumique de l'encre : ρ = 1,1 g·mL-1
+▪ Masse molaire du bleu d'aniline : M = 737,7 g·mol-1
+▪ Coefficient d'absorption molaire du bleu d'aniline à 580 nm : ε = 5,00×104 L·mol-1·cm-1
+▪ Largeur de la cuve : ℓ = 1,0 cm
+
+
+
+
+                                          Figure 1 — Spectre d'absorption de la solution S₂.
+
+
+
+
+                   Figure 2 — Cercle chromatique : deux couleurs diamétralement opposées sont complémentaires.
+
+Q1. À l'aide de la figure 1 et du cercle chromatique, justifier que la solution S2 est bleue.
+Q2. Rédiger le protocole de préparation de la solution S2 à partir de S1, en précisant la nature et le volume
+     de chaque pièce de verrerie utilisée.
+Q3. Déterminer la concentration c2 en bleu d'aniline de la solution S2. Justifier le choix de la longueur d'onde
+     de travail.
+
+                                        Terminale spécialité — Physique-Chimie         page 2
+M. Mallet                      Ch.1 — Analyse et dosages d'un système chimique
+Q4. En déduire que la quantité de matière de bleu d'aniline contenue dans une cartouche vaut n ≈ 3,0×10-5
+     mol.
+Q5. Calculer le pourcentage massique de bleu d'aniline dans l'encre. L'indication du fabricant est-elle vérifiée
+     ?
+Élagage Questions retirées du sujet d'origine : Q6 à Q9 (diagramme de prédominance du dioxyde de soufre, oxydoréduction,
+titrage des ions sulfite par le diiode) → chapitres 9 et 12.
+
+
+
+
+                                      Terminale spécialité — Physique-Chimie        page 3
+M. Mallet                        Ch.1 — Analyse et dosages d'un système chimique
+
+EXERCICE 2 · Un traitement contre le varroa                                                                     4 points · ≈ 45 min
+
+D'après Métropole, septembre 2024, sujet 2, exercice 2 « Traitement contre le varroa ».
+
+Varroa destructor est un acarien parasite des colonies d'abeilles. En hiver, l'apiculteur traite la ruche en
+déposant, entre les cadres, une solution sucrée d'acide oxalique dihydraté de formule C2H2O4, 2 H2O. Le
+dosage de cette solution est délicat : trop diluée, elle est inefficace ; trop concentrée, elle est mal tolérée par
+les abeilles. On vérifie la concentration d'une préparation commerciale S.
+         Masse d'acide oxalique dihydraté               30 g                35 g                   45 g         60 g
+                       par litre
+             Efficacité contre le varroa             médiocre             bonne               bonne           excellente
+             Tolérance par les abeilles             bien tolérée       correctement          mal tolérée   très mal tolérée
+                                                                          tolérée
+
+
+                            Recommandations d'emploi (d'après le Centre suisse de recherches apicoles).
+
+Protocole. La solution commerciale S est diluée dix fois : on obtient 100,0 mL de solution S1. On prélève Va =
+20,0 mL de S1 que l'on titre par une solution aqueuse d'hydroxyde de sodium de concentration cb = 1,0×10-1
+mol·L-1, en suivant le pH (figure 1). Un programme Python permet par ailleurs de simuler l'évolution des
+quantités de matière n1, n2 et n3 des trois formes de l'acide oxalique (figure 2).
+
+Données
+▪ Masse molaire de l'acide oxalique dihydraté : M = 126 g·mol -1
+▪ L'acide oxalique cède ses deux protons en deux transformations successives. Le bilan global, atteint à la seconde
+  équivalence, s'écrit : C2H2O4(aq) + 2 HO-(aq) → C2O42-(aq) + 2 H2O(ℓ)
+▪ Les trois formes de l'acide oxalique en solution sont C2H2O4, C2HO4- et C2O42-
+
+
+
+
+                         Figure 1 — Suivi pH-métrique du titrage de 20,0 mL de S₁ et courbe dérivée dpH/dV.
+
+
+
+
+                                       Terminale spécialité — Physique-Chimie             page 4
+M. Mallet                       Ch.1 — Analyse et dosages d'un système chimique
+
+
+
+
+            Figure 2 — Simulation de l'évolution des quantités de matière n ₁, n₂ et n₃ des trois formes de l'acide oxalique.
+
+Q1. L'acide oxalique possède deux groupes carboxyle. Donner sa formule développée.
+Q2. Décrire le protocole de préparation de 100,0 mL de solution S1 à partir de la solution commerciale S, en
+     précisant la verrerie utilisée.
+Q3. Schématiser et légender le montage permettant de réaliser ce titrage pH-métrique.
+Q4. Attribuer à chacune des courbes n1, n2 et n3 de la figure 2 l'espèce chimique correspondante. Justifier.
+Q5. Déterminer la concentration en masse d'acide oxalique dihydraté de la solution commerciale S. Conclure
+     sur l'efficacité du traitement et sur sa tolérance par les abeilles.
+Élagage Questions retirées du sujet d'origine : Q4 et Q6 (diagramme de prédominance, détermination du pK A) → chapitre 12.
+
+
+
+
+                                       Terminale spécialité — Physique-Chimie            page 5
+M. Mallet                       Ch.1 — Analyse et dosages d'un système chimique
+
+EXERCICE 3 · Les ions chlorure d'une eau de mer thérapeutique                                                     4 points · ≈ 45 min
+
+D'après Métropole, 2025, sujet 2, exercice 2 « Eau de Quinton ».
+
+Le biologiste René Quinton (1866-1925) a proposé d'utiliser de l'eau de mer filtrée, dite eau de Quinton,
+comme complément minéral. Vendue telle quelle, elle est hypertonique ; diluée, elle devient isotonique au
+plasma sanguin. L'objectif de l'exercice est de déterminer la teneur en ions chlorure d'une eau de Quinton
+commerciale et de la comparer à celle d'une eau de mer de référence.
+
+Données
+▪ Conductivités molaires ioniques à 25 °C (en S·m2·mol-1) : λ(Cl-) = 7,63×10-3 ; λ(NO3-) = 7,14×10-3 ; λ(Ag+) =
+  6,19×10-3 ; λ(Na+) = 5,01×10-3
+▪ Masse molaire du chlore : M(Cl) = 35,5 g·mol-1
+▪ Concentration en masse en ions chlorure d'une eau de mer bretonne de référence : 19,4 g·L -1
+▪ Concentration en ions chlorure du plasma sanguin : de 100 à 110 mmol·L -1. Une solution est dite isotonique si sa
+  concentration appartient à cet intervalle, hypertonique au-dessus, hypotonique en dessous.
+
+
+
+Protocole du titrage. On introduit V1 = 10,0 mL d'eau de Quinton commerciale dans un bécher, on ajoute
+environ 200 mL d'eau distillée afin d'immerger la cellule du conductimètre, puis on verse progressivement une
+solution aqueuse de nitrate d'argent de concentration c2 = 3,00×10-1 mol·L-1. Il se forme un précipité blanc de
+chlorure d'argent. La conductivité de la solution est relevée après chaque ajout (figure 2). Un programme
+Python simule en parallèle l'évolution des quantités de matière des quatre ions présents (figure 1).
+
+
+
+
+                      Figure 1 — Simulation des quantités de matière des ions A, B, C et D au cours du titrage.
+
+
+
+
+                                       Terminale spécialité — Physique-Chimie          page 6
+M. Mallet                        Ch.1 — Analyse et dosages d'un système chimique
+                   Figure 2 — Conductivité de la solution en fonction du volume de solution de nitrate d'argent versé.
+
+Q1. Proposer un protocole permettant de préparer 100,0 mL d'eau de Quinton isotonique, sachant qu'il faut
+     diluer cinq fois l'eau commerciale.
+Q2. Vérifier, à partir de la valeur de référence de l'eau de mer bretonne, que la solution ainsi préparée serait
+     bien isotonique.
+Q3. Écrire l'équation de la réaction support du titrage.
+Q4. Identifier les quatre courbes A, B, C et D de la figure 1 parmi les ions Na+, Cl-, Ag+ et NO3-. Justifier
+      chaque attribution.
+Q5. Établir l'expression du volume VE versé à l'équivalence en fonction de c1, V1 et c2. Écrire la ligne du
+     programme Python qui calcule cette grandeur, les variables étant nommées c1, V1 et c2.
+Q6. Expliquer l'allure de la courbe σ = f(V) de la figure 2, en s'appuyant sur la figure 1 et sur les conductivités
+     molaires ioniques.
+Q7. Déterminer la concentration en masse en ions chlorure de l'eau de Quinton commerciale.
+Q8. L'incertitude-type associée à ce résultat est estimée à u = 0,6 g·L-1. Le résultat est-il compatible avec la
+      valeur de référence de l'eau de mer bretonne ? On considérera qu'il y a accord lorsque le quotient |x −
+      xréf| / u est inférieur à 2.
+Élagage Toutes les questions du sujet d'origine relèvent du chapitre 1 : aucune n'a été retirée.
+
+
+
+
+                                        Terminale spécialité — Physique-Chimie           page 7
+M. Mallet                         Ch.1 — Analyse et dosages d'un système chimique
+
+EXERCICE 4 · Le vinaigre attaque la coquille d'un œuf                                                             5 points · ≈ 50 min
+
+D'après Asie, 2022, sujet 2, exercice C « Dissolution d'une coquille d'œuf ».
+
+Une coquille d'œuf plongée dans du vinaigre blanc se dissout en quelques heures. Avant d'étudier cette
+transformation, on contrôle la composition du vinaigre utilisé : son étiquette porte la mention « 8° ». Le
+vinaigre est une solution aqueuse d'acide éthanoïque CH3COOH.
+
+Données
+▪ Le degré d'un vinaigre est le nombre de grammes d'acide éthanoïque pur contenus dans 100 g de vinaigre : 1,00°
+  ↔ 1,00 g pour 100 g.
+▪ Masse volumique du vinaigre : ρ = 1010 g·L-1
+▪ Masse molaire de l'acide éthanoïque : M = 60,0 g·mol-1
+▪ Solution titrante : hydroxyde de sodium, cb = 5,0×10-1 mol·L-1
+▪ Prise d'essai de vinaigre : Va = 5,0 mL, complétée par de l'eau distillée
+
+
+
+               Liaison (groupe caractéristique)              Nombre d'onde (cm-1)               Allure de la bande
+                         O–H (alcool)                           3200 – 3400                        forte et large
+                   O–H (acide carboxylique)                     2600 – 3100                      forte et très large
+                            C–H                                 2850 – 3000                        moyenne, fine
+                   C=O (acide carboxylique)                     1700 – 1760                         forte et fine
+                            C–O                                 1000 – 1200                             forte
+
+
+                                               Table de nombres d'onde caractéristiques.
+
+
+
+
+                 Figure 1 — Suivi pH-métrique du titrage de 5,0 mL de vinaigre par la solution d'hydroxyde de sodium.
+
+Q1. Schématiser et légender le montage du titrage pH-métrique réalisé.
+Q2. Écrire l'équation de la réaction support du titrage entre l'acide éthanoïque et les ions hydroxyde.
+     Rappeler les trois propriétés que doit posséder une réaction de titrage.
+Q3. Déterminer graphiquement le volume VE versé à l'équivalence, en précisant la méthode utilisée.
+Q4. En déduire la concentration en acide éthanoïque du vinaigre.
+Q5. L'indication « 8° » portée sur l'étiquette est-elle justifiée ?
+On souhaite enfin confirmer que l'espèce titrée est bien l'acide éthanoïque. Deux spectres infrarouges sont
+enregistrés : l'un correspond à l'acide éthanoïque, l'autre à l'éthanol, un alcool présent dans certains vinaigres
+mal fermentés.
+
+
+
+
+                                        Terminale spécialité — Physique-Chimie         page 8
+M. Mallet                       Ch.1 — Analyse et dosages d'un système chimique
+
+
+
+
+                                                 Figure 2 — Spectre infrarouge A.
+
+
+
+
+                                                 Figure 3 — Spectre infrarouge B.
+
+Q6. Identifier, en justifiant à l'aide de la table, le spectre qui correspond à l'acide éthanoïque.
+Élagage Questions retirées du sujet d'origine : Q1 (diagramme de prédominance), Q8 à Q11 (réactions des ions carbonate et
+hydrogénocarbonate, caractère amphotère) → chapitres 2 et 12 ; ainsi que le schéma de Lewis de l'acide éthanoïque, sans lien
+avec les capacités du chapitre.
+
+
+
+
+                                      Terminale spécialité — Physique-Chimie          page 9
+M. Mallet                        Ch.1 — Analyse et dosages d'un système chimique
+
+EXERCICE 5 · Ne jamais mélanger l'eau de Javel et un détartrant                                                      5 points · ≈ 50 min
+
+D'après Asie, 2024, sujet 1, exercice 1 « Ne jamais mélanger eau de Javel et acide ».
+
+Les étiquettes des flacons d'eau de Javel sont formelles : il ne faut jamais les mélanger à un produit acide.
+Un tel mélange dégage en effet du dichlore Cl2, un gaz très toxique. On évalue d'abord le volume de gaz qui
+peut être libéré dans une salle de bain, puis on contrôle la concentration du détartrant mis en cause, une
+solution commerciale d'acide chlorhydrique.
+
+Données
+▪ Équation de la réaction produisant le dichlore : Cl-(aq) + HClO(aq) + H3O+(aq) → Cl2(g) + 2 H2O(ℓ)
+▪ Le mélange réalisé contient n(HClO) = 0,40 mol d'acide hypochloreux, qui est le réactif limitant ; la transformation
+  est totale.
+▪ Volume molaire d'un gaz sous une pression de 1,013×105 Pa à 20 °C : Vm = 24 L·mol-1
+▪ Constante des gaz parfaits : R = 8,314 Pa·m3·mol-1·K-1
+
+
+
+A. Le gaz dégagé
+Q1. Montrer que la quantité de matière de dichlore produite par la transformation vaut n(Cl2) = 0,40 mol.
+Q2. Retrouver la valeur du volume molaire Vm à l'aide de l'équation d'état du gaz parfait, puis en déduire le
+     volume V(Cl2) occupé par le dichlore formé. Rappeler le domaine de validité de ce modèle.
+B. Le contrôle du détartrant
+L'étiquette du détartrant indique une concentration en ions oxonium voisine de 7 mol·L-1. Pour la vérifier, on
+prépare 1,0 L d'une solution S par dilution d'un facteur 500 de la solution commerciale, puis on titre V S = 20,0
+mL de S par une solution aqueuse d'hydroxyde de sodium de concentration c b = 2,0×10-2 mol·L-1, en suivant
+le pH (figure 1).
+
+
+
+
+                     Figure 1 — Suivi pH-métrique du titrage de 20,0 mL de solution S et courbe dérivée dpH/dV.
+
+Q3. Calculer le volume de solution commerciale à prélever pour préparer 1,0 L de solution S.
+Q4. Proposer un protocole de préparation de la solution S, en précisant la nature et le volume de la verrerie
+     utilisée.
+Q5. Écrire l'équation de la réaction support du titrage, puis vérifier l'indication portée sur l'étiquette du
+     détartrant.
+Élagage Questions retirées du sujet d'origine : Q1 à Q5 (diagramme de prédominance, demi-équations d'oxydoréduction) et Q13 à
+Q16 (cinétique, temps de demi-réaction) → chapitres 2, 6, 9 et 12. La question sur le volume de gaz a été élargie à l'équation d'état
+du gaz parfait, au programme du chapitre.
+
+
+
+
+                                       Terminale spécialité — Physique-Chimie           page 10
+M. Mallet                        Ch.1 — Analyse et dosages d'un système chimique
+
+EXERCICE 6 · Une pastille témoin de fraîcheur                                                                   6 points · ≈ 55 min
+
+D'après Métropole, 2025, sujet 1, exercice 1 « Un emballage intelligent au rayon poissonnerie ».
+
+Certaines barquettes de poisson frais portent une pastille qui change de couleur lorsque le produit se
+dégrade. Cette pastille est imbibée d'un indicateur coloré acide-base, le bleu de bromophénol, noté BBP.
+On cherche à contrôler le produit obtenu au laboratoire puis à comprendre le fonctionnement de la pastille.
+A. Le produit synthétisé contient-il bien du BBP ?
+On enregistre le spectre d'absorption d'une solution du produit synthétisé brut et celui d'une solution de BBP
+de référence, de même concentration.
+
+
+
+
+                         Figure 1 — Spectres d'absorption du BBP de référence et du produit synthétisé brut.
+
+Q1. Justifier, à l'aide de la figure 1, que le produit brut contient bien du BBP. Que suggère l'écart observé
+     entre 400 et 500 nm ?
+Q2. Citer une autre méthode spectroscopique permettant de confirmer l'identification du produit, et préciser
+     ce qu'elle apporterait.
+B. Le titrage du produit purifié
+Le produit brut est purifié, puis dissous : on obtient une solution Sa, dont une prise d'essai est titrée par une
+solution aqueuse d'hydroxyde de sodium. Le titrage est suivi par pH-métrie (figure 2).
+
+
+
+
+                          Figure 2 — Suivi pH-métrique du titrage de la solution Sₐ et courbe dérivée dpH/dV.
+
+Q3. Définir l'équivalence d'un titrage.
+Q4. Déterminer le volume VE versé à l'équivalence, en explicitant la méthode utilisée.
+
+                                       Terminale spécialité — Physique-Chimie          page 11
+M. Mallet                       Ch.1 — Analyse et dosages d'un système chimique
+C. La couleur de la pastille
+En milieu acide, le BBP se trouve sous sa forme acide, dont le spectre d'absorption est donné figure 3. Sa
+forme basique, elle, donne une solution bleue.
+
+
+
+
+            Figure 3 — Spectre d'absorption d'une solution de BBP de pH = 2,0, contenant majoritairement la forme acide.
+
+
+
+
+                                                  Figure 4 — Cercle chromatique.
+
+Q5. Montrer que la solution contenant la forme acide du BBP est jaune. En déduire comment évolue l'aspect
+     de la pastille lorsque le poisson se dégrade et libère des espèces basiques.
+Q6. Pour enregistrer le spectre de la figure 3, il faut préparer 200,0 mL d'une solution d'acide chlorhydrique
+     de pH = 2,0. La solution commerciale disponible a un titre massique tm = 37 % et une densité d = 1,18.
+     On dispose de pipettes jaugées de volumes usuels compris entre 1,0 mL et 50,0 mL et d'une fiole
+     jaugée de 200,0 mL. Montrer qu'une seule dilution ne permet pas de préparer cette solution.
+
+Données de la question Q6
+▪ Masse molaire du chlorure d'hydrogène : M = 36,5 g·mol-1
+▪ Masse volumique de l'eau : ρeau = 1,0×103 g·L-1
+▪ Relation entre pH et concentration en ions oxonium : [H3O+] = 10-pH (en mol·L-1)
+
+
+
+Élagage Questions retirées du sujet d'origine : Q1, Q2 et Q5 à Q11 (étapes d'une synthèse, chromatographie, constante d'acidité
+et demi-équivalence), Q14 à Q17 (nomenclature des amines, cinétique) → chapitres 6, 12 et 17.
+
+
+
+
+                                      Terminale spécialité — Physique-Chimie         page 12
+

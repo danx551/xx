@@ -1,0 +1,1835 @@
+{
+  "sources": [
+    {
+      "id": "1-course",
+      "chapter": 1,
+      "kind": "course",
+      "name": "01 - Analyse et dosages - Cours (avec exercices) 1 (1).pdf",
+      "url": "/documents/1-course.pdf",
+      "pageCount": 9
+    },
+    {
+      "id": "1-bac",
+      "chapter": 1,
+      "kind": "bac",
+      "name": "01 - Analyse et dosages - Exercices type bac (1).pdf",
+      "url": "/documents/1-bac.pdf",
+      "pageCount": 12
+    },
+    {
+      "id": "2-course",
+      "chapter": 2,
+      "kind": "course",
+      "name": "02 - Transformations acide-base et pH - Cours (avec exercices) (1).pdf",
+      "url": "/documents/2-course.pdf",
+      "pageCount": 3
+    },
+    {
+      "id": "2-bac",
+      "chapter": 2,
+      "kind": "bac",
+      "name": "02 - Transformations acide-base et pH - Exercices type bac (1).pdf",
+      "url": "/documents/2-bac.pdf",
+      "pageCount": 8
+    },
+    {
+      "id": "3-course",
+      "chapter": 3,
+      "kind": "course",
+      "name": "03 - Sons et effet Doppler - Cours (avec exercices).pdf",
+      "url": "/documents/3-course.pdf",
+      "pageCount": 6
+    },
+    {
+      "id": "3-bac",
+      "chapter": 3,
+      "kind": "bac",
+      "name": "03 - Sons et effet Doppler - Exercices type bac (1).pdf",
+      "url": "/documents/3-bac.pdf",
+      "pageCount": 7
+    },
+    {
+      "id": "4-course",
+      "chapter": 4,
+      "kind": "course",
+      "name": "04 - Diffraction et interférences - Cours (avec exercices).pdf",
+      "url": "/documents/4-course.pdf",
+      "pageCount": 6
+    },
+    {
+      "id": "4-bac",
+      "chapter": 4,
+      "kind": "bac",
+      "name": "04 - Diffraction et interférences - Exercices type bac 1.pdf",
+      "url": "/documents/4-bac.pdf",
+      "pageCount": 11
+    },
+    {
+      "id": "5-course",
+      "chapter": 5,
+      "kind": "course",
+      "name": "05 - Lunette astronomique - Cours (avec exercices).pdf",
+      "url": "/documents/5-course.pdf",
+      "pageCount": 4
+    },
+    {
+      "id": "5-bac",
+      "chapter": 5,
+      "kind": "bac",
+      "name": "05 - Lunette astronomique - Exercices type bac.pdf",
+      "url": "/documents/5-bac.pdf",
+      "pageCount": 7
+    }
+  ],
+  "topics": [
+    {
+      "id": "concentration",
+      "title": "Concentration, dissolution et dilution",
+      "chapter": 1,
+      "sourcePages": "1, 6",
+      "exerciseIds": [
+        "concentration-1",
+        "concentration-2",
+        "concentration-3",
+        "concentration-4"
+      ],
+      "formulaIds": [
+        "c",
+        "dilution",
+        "massfraction"
+      ]
+    },
+    {
+      "id": "beer",
+      "title": "Étalonnage et loi de Beer-Lambert",
+      "chapter": 1,
+      "sourcePages": "2, 4",
+      "exerciseIds": [
+        "beer-1",
+        "beer-2",
+        "beer-3",
+        "beer-4"
+      ],
+      "formulaIds": [
+        "beer",
+        "calibration"
+      ]
+    },
+    {
+      "id": "conductivity",
+      "title": "Conductivité et ions en solution",
+      "chapter": 1,
+      "sourcePages": "2",
+      "exerciseIds": [
+        "conductivity-1",
+        "conductivity-2",
+        "conductivity-3",
+        "conductivity-4"
+      ],
+      "formulaIds": [
+        "kohlrausch",
+        "conductance"
+      ]
+    },
+    {
+      "id": "gas",
+      "title": "Gaz parfait et quantité de matière",
+      "chapter": 1,
+      "sourcePages": "3–4",
+      "exerciseIds": [
+        "gas-1",
+        "gas-2",
+        "gas-3",
+        "gas-4"
+      ],
+      "formulaIds": [
+        "gas"
+      ]
+    },
+    {
+      "id": "spectra",
+      "title": "Identifier une espèce : UV-visible et IR",
+      "chapter": 1,
+      "sourcePages": "4–6",
+      "exerciseIds": [
+        "spectra-1",
+        "spectra-2",
+        "spectra-3",
+        "spectra-4"
+      ],
+      "formulaIds": [
+        "ir"
+      ]
+    },
+    {
+      "id": "titration",
+      "title": "Titrage, équivalence et suivi graphique",
+      "chapter": 1,
+      "sourcePages": "6–9",
+      "exerciseIds": [
+        "titration-1",
+        "titration-2",
+        "titration-3",
+        "titration-4"
+      ],
+      "formulaIds": [
+        "equivalence"
+      ]
+    },
+    {
+      "id": "proton",
+      "title": "Couples de Brønsted et amphotères",
+      "chapter": 2,
+      "sourcePages": "1–2",
+      "exerciseIds": [
+        "proton-1",
+        "proton-2",
+        "proton-3",
+        "proton-4"
+      ],
+      "formulaIds": []
+    },
+    {
+      "id": "ph",
+      "title": "pH, logarithmes et produit ionique",
+      "chapter": 2,
+      "sourcePages": "2–3",
+      "exerciseIds": [
+        "ph-1",
+        "ph-2",
+        "ph-3",
+        "ph-4"
+      ],
+      "formulaIds": [
+        "ph",
+        "ke"
+      ]
+    },
+    {
+      "id": "carbonate",
+      "title": "Carbonates, réactif limitant et gaz",
+      "chapter": 2,
+      "sourcePages": "1–3",
+      "exerciseIds": [
+        "carbonate-1",
+        "carbonate-2",
+        "carbonate-3",
+        "carbonate-4"
+      ],
+      "formulaIds": [
+        "extent"
+      ]
+    },
+    {
+      "id": "wave",
+      "title": "Période, fréquence, longueur d’onde et écho",
+      "chapter": 3,
+      "sourcePages": "1–2",
+      "exerciseIds": [
+        "wave-1",
+        "wave-2",
+        "wave-3",
+        "wave-4"
+      ],
+      "formulaIds": [
+        "wave",
+        "echo"
+      ]
+    },
+    {
+      "id": "sound",
+      "title": "Intensité sonore et décibels",
+      "chapter": 3,
+      "sourcePages": "2–3",
+      "exerciseIds": [
+        "sound-1",
+        "sound-2",
+        "sound-3",
+        "sound-4"
+      ],
+      "formulaIds": [
+        "intensity",
+        "level"
+      ]
+    },
+    {
+      "id": "attenuation",
+      "title": "Atténuation géométrique et absorption",
+      "chapter": 3,
+      "sourcePages": "3–4",
+      "exerciseIds": [
+        "attenuation-1",
+        "attenuation-2",
+        "attenuation-3",
+        "attenuation-4"
+      ],
+      "formulaIds": [
+        "attenuation"
+      ]
+    },
+    {
+      "id": "doppler",
+      "title": "Effet Doppler acoustique et vitesse",
+      "chapter": 3,
+      "sourcePages": "5–6",
+      "exerciseIds": [
+        "doppler-1",
+        "doppler-2",
+        "doppler-3",
+        "doppler-4"
+      ],
+      "formulaIds": [
+        "doppler",
+        "twofreq",
+        "radar"
+      ]
+    },
+    {
+      "id": "redshift",
+      "title": "Décalage spectral en astrophysique",
+      "chapter": 3,
+      "sourcePages": "5",
+      "exerciseIds": [
+        "redshift-1",
+        "redshift-2",
+        "redshift-3",
+        "redshift-4"
+      ],
+      "formulaIds": [
+        "redshift"
+      ]
+    },
+    {
+      "id": "diffraction",
+      "title": "Diffraction par une fente ou un fil",
+      "chapter": 4,
+      "sourcePages": "1–3",
+      "exerciseIds": [
+        "diffraction-1",
+        "diffraction-2",
+        "diffraction-3",
+        "diffraction-4"
+      ],
+      "formulaIds": [
+        "diffexact",
+        "width"
+      ]
+    },
+    {
+      "id": "diffgraph",
+      "title": "Étalonnage par diffraction et incertitudes",
+      "chapter": 4,
+      "sourcePages": "2–3",
+      "exerciseIds": [
+        "diffgraph-1",
+        "diffgraph-2",
+        "diffgraph-3",
+        "diffgraph-4"
+      ],
+      "formulaIds": [
+        "slope"
+      ]
+    },
+    {
+      "id": "circular",
+      "title": "Ouverture circulaire et résolution",
+      "chapter": 4,
+      "sourcePages": "2",
+      "exerciseIds": [
+        "circular-1",
+        "circular-2",
+        "circular-3",
+        "circular-4"
+      ],
+      "formulaIds": [
+        "airy",
+        "flux"
+      ]
+    },
+    {
+      "id": "interference",
+      "title": "Cohérence, différence de marche et phase",
+      "chapter": 4,
+      "sourcePages": "3–4",
+      "exerciseIds": [
+        "interference-1",
+        "interference-2",
+        "interference-3",
+        "interference-4"
+      ],
+      "formulaIds": [
+        "phase",
+        "constructive"
+      ]
+    },
+    {
+      "id": "young",
+      "title": "Fentes d’Young et interfrange",
+      "chapter": 4,
+      "sourcePages": "4–6",
+      "exerciseIds": [
+        "young-1",
+        "young-2",
+        "young-3",
+        "young-4"
+      ],
+      "formulaIds": [
+        "young",
+        "ratio"
+      ]
+    },
+    {
+      "id": "thinfilm",
+      "title": "Lames minces et couleurs structurales",
+      "chapter": 4,
+      "sourcePages": "4",
+      "exerciseIds": [
+        "thinfilm-1",
+        "thinfilm-2",
+        "thinfilm-3",
+        "thinfilm-4"
+      ],
+      "formulaIds": [
+        "thinfilm"
+      ]
+    },
+    {
+      "id": "acousticdiff",
+      "title": "Diffraction acoustique et somme de signaux",
+      "chapter": 4,
+      "sourcePages": "1–4",
+      "exerciseIds": [
+        "acousticdiff-1",
+        "acousticdiff-2",
+        "acousticdiff-3",
+        "acousticdiff-4"
+      ],
+      "formulaIds": [
+        "sum"
+      ]
+    },
+    {
+      "id": "lens",
+      "title": "Lentille convergente et conjugaison",
+      "chapter": 5,
+      "sourcePages": "1–2",
+      "exerciseIds": [
+        "lens-1",
+        "lens-2",
+        "lens-3",
+        "lens-4"
+      ],
+      "formulaIds": [
+        "vergence",
+        "conjugation"
+      ]
+    },
+    {
+      "id": "afocal",
+      "title": "Lunette afocale et construction des rayons",
+      "chapter": 5,
+      "sourcePages": "3",
+      "exerciseIds": [
+        "afocal-1",
+        "afocal-2",
+        "afocal-3",
+        "afocal-4"
+      ],
+      "formulaIds": [
+        "afocal"
+      ]
+    },
+    {
+      "id": "magnification",
+      "title": "Grossissement et choix des oculaires",
+      "chapter": 5,
+      "sourcePages": "3–4",
+      "exerciseIds": [
+        "magnification-1",
+        "magnification-2",
+        "magnification-3",
+        "magnification-4"
+      ],
+      "formulaIds": [
+        "magnification"
+      ]
+    },
+    {
+      "id": "resolution",
+      "title": "Résolution de l’œil et dimension visible",
+      "chapter": 5,
+      "sourcePages": "1, 3–4",
+      "exerciseIds": [
+        "resolution-1",
+        "resolution-2",
+        "resolution-3",
+        "resolution-4"
+      ],
+      "formulaIds": [
+        "angular"
+      ]
+    },
+    {
+      "id": "uncertainty",
+      "title": "Incertitudes et compatibilité",
+      "chapter": 5,
+      "sourcePages": "3–4 (complément transversal des livrets)",
+      "exerciseIds": [
+        "uncertainty-1",
+        "uncertainty-2",
+        "uncertainty-3",
+        "uncertainty-4"
+      ],
+      "formulaIds": [
+        "uncertainty"
+      ]
+    }
+  ],
+  "bac": [
+    {
+      "id": "bac-1-1",
+      "chapter": 1,
+      "source": "1-bac",
+      "pages": [
+        2,
+        3
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "spectra",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "concentration",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "beer",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "concentration",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "concentration",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-1-2",
+      "chapter": 1,
+      "source": "1-bac",
+      "pages": [
+        4,
+        5
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "spectra",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "concentration",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "titration",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "titration",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "titration",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-1-3",
+      "chapter": 1,
+      "source": "1-bac",
+      "pages": [
+        6,
+        7
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "concentration",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "concentration",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "titration",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "titration",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "titration",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 6,
+          "topic": "conductivity",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 7,
+          "topic": "titration",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 8,
+          "topic": "uncertainty",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-1-4",
+      "chapter": 1,
+      "source": "1-bac",
+      "pages": [
+        8,
+        9
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "titration",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "titration",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "titration",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "titration",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "concentration",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 6,
+          "topic": "spectra",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-1-5",
+      "chapter": 1,
+      "source": "1-bac",
+      "pages": [
+        10,
+        10
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "gas",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "gas",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "concentration",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "concentration",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "titration",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-1-6",
+      "chapter": 1,
+      "source": "1-bac",
+      "pages": [
+        11,
+        12
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "spectra",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "spectra",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "titration",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "titration",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "spectra",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 6,
+          "topic": "concentration",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-2-1",
+      "chapter": 2,
+      "source": "2-bac",
+      "pages": [
+        2,
+        2
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "ph",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "proton",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "proton",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "concentration",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-2-2",
+      "chapter": 2,
+      "source": "2-bac",
+      "pages": [
+        3,
+        3
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "concentration",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "carbonate",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "proton",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "carbonate",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "carbonate",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-2-3",
+      "chapter": 2,
+      "source": "2-bac",
+      "pages": [
+        4,
+        4
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "proton",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "concentration",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "proton",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "proton",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "carbonate",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 6,
+          "topic": "gas",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-2-4",
+      "chapter": 2,
+      "source": "2-bac",
+      "pages": [
+        5,
+        5
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "proton",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "concentration",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "proton",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "ph",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "ph",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 6,
+          "topic": "proton",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 7,
+          "topic": "titration",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 8,
+          "topic": "concentration",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-2-5",
+      "chapter": 2,
+      "source": "2-bac",
+      "pages": [
+        6,
+        6
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "proton",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "proton",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "proton",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "ph",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "ph",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 6,
+          "topic": "concentration",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-2-6",
+      "chapter": 2,
+      "source": "2-bac",
+      "pages": [
+        7,
+        8
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "proton",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "concentration",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "ph",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "carbonate",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "gas",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 6,
+          "topic": "titration",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 7,
+          "topic": "titration",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-3-1",
+      "chapter": 3,
+      "source": "3-bac",
+      "pages": [
+        2,
+        2
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "sound",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "sound",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "sound",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "attenuation",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "sound",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 6,
+          "topic": "attenuation",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 7,
+          "topic": "attenuation",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-3-2",
+      "chapter": 3,
+      "source": "3-bac",
+      "pages": [
+        3,
+        3
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "sound",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "sound",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "sound",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "attenuation",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "attenuation",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 6,
+          "topic": "wave",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-3-3",
+      "chapter": 3,
+      "source": "3-bac",
+      "pages": [
+        4,
+        4
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "wave",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "wave",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "wave",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "wave",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "uncertainty",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 6,
+          "topic": "wave",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 7,
+          "topic": "uncertainty",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-3-4",
+      "chapter": 3,
+      "source": "3-bac",
+      "pages": [
+        5,
+        5
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "doppler",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "doppler",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "doppler",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "doppler",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-3-5",
+      "chapter": 3,
+      "source": "3-bac",
+      "pages": [
+        6,
+        6
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "doppler",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "wave",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "doppler",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "doppler",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-3-6",
+      "chapter": 3,
+      "source": "3-bac",
+      "pages": [
+        7,
+        7
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "redshift",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "doppler",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "redshift",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "redshift",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "redshift",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 6,
+          "topic": "redshift",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 7,
+          "topic": "redshift",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-4-1",
+      "chapter": 4,
+      "source": "4-bac",
+      "pages": [
+        2,
+        3
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "diffraction",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "diffraction",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "diffraction",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "diffgraph",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "diffgraph",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 6,
+          "topic": "diffgraph",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 7,
+          "topic": "uncertainty",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-4-2",
+      "chapter": 4,
+      "source": "4-bac",
+      "pages": [
+        4,
+        4
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "diffraction",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "diffraction",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "circular",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "circular",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "uncertainty",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 6,
+          "topic": "uncertainty",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-4-3",
+      "chapter": 4,
+      "source": "4-bac",
+      "pages": [
+        5,
+        5
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "interference",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "young",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "young",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "interference",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "young",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 6,
+          "topic": "young",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 7,
+          "topic": "young",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 8,
+          "topic": "uncertainty",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-4-4",
+      "chapter": 4,
+      "source": "4-bac",
+      "pages": [
+        6,
+        7
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "acousticdiff",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "acousticdiff",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "acousticdiff",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "young",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "interference",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 6,
+          "topic": "wave",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 7,
+          "topic": "acousticdiff",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-4-5",
+      "chapter": 4,
+      "source": "4-bac",
+      "pages": [
+        8,
+        9
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "interference",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "thinfilm",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "thinfilm",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "thinfilm",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "uncertainty",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 6,
+          "topic": "uncertainty",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 7,
+          "topic": "thinfilm",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 8,
+          "topic": "uncertainty",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 9,
+          "topic": "thinfilm",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-4-6",
+      "chapter": 4,
+      "source": "4-bac",
+      "pages": [
+        10,
+        11
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "diffgraph",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "diffraction",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "diffgraph",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "uncertainty",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "uncertainty",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 6,
+          "topic": "sound",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 7,
+          "topic": "attenuation",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-5-1",
+      "chapter": 5,
+      "source": "5-bac",
+      "pages": [
+        2,
+        2
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "lens",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "lens",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "lens",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "resolution",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "afocal",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 6,
+          "topic": "magnification",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 7,
+          "topic": "resolution",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-5-2",
+      "chapter": 5,
+      "source": "5-bac",
+      "pages": [
+        3,
+        3
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "resolution",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "resolution",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "afocal",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "afocal",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "afocal",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 6,
+          "topic": "afocal",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 7,
+          "topic": "magnification",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 8,
+          "topic": "magnification",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 9,
+          "topic": "lens",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-5-3",
+      "chapter": 5,
+      "source": "5-bac",
+      "pages": [
+        4,
+        4
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "afocal",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "magnification",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "resolution",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "resolution",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "resolution",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 6,
+          "topic": "circular",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 7,
+          "topic": "circular",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-5-4",
+      "chapter": 5,
+      "source": "5-bac",
+      "pages": [
+        5,
+        5
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "afocal",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "afocal",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "afocal",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "afocal",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "magnification",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 6,
+          "topic": "uncertainty",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 7,
+          "topic": "uncertainty",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-5-5",
+      "chapter": 5,
+      "source": "5-bac",
+      "pages": [
+        6,
+        6
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "afocal",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "resolution",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "resolution",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "magnification",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "doppler",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 6,
+          "topic": "doppler",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 7,
+          "topic": "doppler",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    },
+    {
+      "id": "bac-5-6",
+      "chapter": 5,
+      "source": "5-bac",
+      "pages": [
+        7,
+        7
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "topic": "afocal",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 2,
+          "topic": "magnification",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 3,
+          "topic": "magnification",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 4,
+          "topic": "magnification",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 5,
+          "topic": "resolution",
+          "status": "original-solution-written-not-official"
+        },
+        {
+          "number": 6,
+          "topic": "resolution",
+          "status": "original-solution-written-not-official"
+        }
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "id": "source-corrections",
+      "title": "Corrigés du professeur absents",
+      "detail": "Les cinq livrets annoncent un document séparé de corrigés. Aucun des dix PDF présents n’est ce document. Les solutions de l’application sont des rédactions originales et ne sont pas attribuées au professeur.",
+      "source": "Tous les livrets, p. 1"
+    },
+    {
+      "id": "rounding",
+      "title": "Interfrange : application numérique à rectifier",
+      "detail": "2,5×10⁻³ × 0,50×10⁻³ / 2,0 = 6,25×10⁻⁷ m, soit 625 nm avant arrondi. La valeur 633 nm affichée dans l’exemple ne découle pas exactement de ces données.",
+      "source": "Cours chapitre 4, p. 6"
+    },
+    {
+      "id": "diff-proof",
+      "title": "Première extinction : justification complétée",
+      "detail": "Deux rayons de bord déphasés de 2π ne s’annulent pas. À a sinθ = λ, on apparie les points des deux demi-fentes, séparés de a/2 : leurs contributions sont en opposition de phase. Cette justification est un complément pédagogique.",
+      "source": "Cours chapitre 4, p. 2"
+    },
+    {
+      "id": "sign",
+      "title": "Grossissement : convention de signe",
+      "detail": "Le cours utilise un grossissement positif. Pour une lunette de Kepler, les angles orientés donnent un rapport négatif : l’image est renversée. L’application suit le module G sauf indication contraire.",
+      "source": "Cours chapitre 5, p. 3"
+    },
+    {
+      "id": "scarab",
+      "title": "Simulation des scarabées : convention de lecture",
+      "detail": "L’affichage 75,41 ± 2,31 nm est cohérent à l’ordre de grandeur avec un tirage uniforme de 1,8 à 2,0 cm, dont l’incertitude théorique vaut 2,29 nm. Une lecture arrondie au dixième de cm avec une demi-largeur de 0,05 cm donnerait 1,15 nm. Le livret ne précise pas cette convention ; l’application l’explicite et ne corrige pas le PDF.",
+      "source": "Livret chapitre 4, p. 8–9"
+    },
+    {
+      "id": "notice",
+      "title": "Notice de la lunette amateur : cohérence limitée",
+      "detail": "Avec O₁O₂ = 56 cm et oculaires 6 et 12 mm, les focales déduites sont 554 et 548 mm ; le plus fort grossissement est environ 92,3, pas 100. Les données ne décrivent pas exactement une même focale pour les deux montages à longueur strictement fixe.",
+      "source": "Livret chapitre 5, p. 7"
+    },
+    {
+      "id": "color",
+      "title": "Couleur et maximum d’absorption",
+      "detail": "Un maximum à 660 nm ne permet pas à lui seul de conclure que le vert est absorbé. Le spectre complet du cours montre aussi une absorption du vert : c’est l’ensemble du spectre, et non le seul maximum, qui justifie la couleur transmise.",
+      "source": "Cours chapitre 1, p. 4"
+    },
+    {
+      "id": "missing-manual",
+      "title": "Exercices du manuel non fournis",
+      "detail": "Les cours renvoient à des numéros du manuel Hachette et à des corrigés p. 462. Ces pages ne sont pas jointes ; elles ne peuvent pas être analysées ni reproduites fidèlement. Les 30 exercices des livrets sont en revanche présents.",
+      "source": "Encadrés des cinq cours"
+    }
+  ]
+}

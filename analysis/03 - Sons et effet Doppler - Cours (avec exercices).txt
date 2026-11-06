@@ -1,0 +1,244 @@
+M. Mallet                                                                                Ch.3 — Sons et effet Doppler
+CHAPITRE 3
+Sons et effet Doppler
+Thème 4 — Ondes et signaux · Caractériser les phénomènes ondulatoires
+
+                   Chapitre à avoir terminé pour le dimanche 4 octobre 2026
+
+
+ Manuel Hachette 2020           Chapitre 17 — Sons et effet Doppler (p. 344 à 366)
+ Durée prévue                   1 semaine (semaine du 28/09/2026)
+ Travaux pratiques              TP 04 — Hamilton et Doppler (effet Doppler ; mesure de vitesse par
+                                microcontrôleur)
+
+
+ Objectifs du chapitre (capacités exigibles)
+   • Relier période, fréquence, longueur d'onde et célérité d'une onde périodique.
+   • Définir et exploiter le niveau d'intensité sonore : L = 10·log(I/I₀).
+   • Définir l'intensité sonore I = P/S et la relier à la puissance de la source et à la distance.
+   • Illustrer l'atténuation géométrique et l'atténuation par absorption.
+   • Décrire l'effet Doppler et relier le décalage de fréquence (ou de longueur d'onde) à une vitesse
+     relative.
+   • Capacité expérimentale : mesurer un niveau d'intensité sonore et étudier l'effet Doppler acoustique.
+
+
+I. Le son, une onde mécanique progressive
+Un son est une onde mécanique : il correspond à la propagation d'une perturbation (une variation de
+pression) de proche en proche dans un milieu matériel — air, eau, solide. Contrairement à la lumière, un son
+ne peut pas se propager dans le vide, car il a besoin d'un support matériel. Cette onde est progressive : elle
+transporte de l'énergie et de l'information, mais sans transport de matière — les molécules du milieu ne font
+qu'osciller autour de leur position.
+La célérité v d'une onde dépend du milieu de propagation : environ 340 m·s⁻¹ dans l'air, 1500 m·s⁻¹ dans
+l'eau, davantage encore dans les solides. Elle ne dépend pas, en première approximation, de la fréquence
+du son.
+Une onde périodique se répète identique à elle-même dans le temps (période T, en s) et dans l'espace
+(longueur d'onde λ, en m). Sa fréquence f = 1/T (en Hz) correspond au nombre d'oscillations par seconde.
+Ces grandeurs sont reliées par la célérité :
+                                                           𝑣
+                                             𝜆 = 𝑣 · 𝑇 =
+                                                           𝑓
+
+
+
+
+            Figure 1 — Onde périodique : la longueur d'onde λ est la période spatiale de la perturbation.
+
+                                  Terminale spécialité — Physique-Chimie    page 1
+M. Mallet                                                                             Ch.3 — Sons et effet Doppler
+
+
+
+  Exemple — Calculer une longueur d'onde
+  Un diapason émet un son de fréquence f = 440 Hz dans l'air (v = 340 m·s⁻¹). Sa longueur d'onde vaut :
+  λ = v / f = 340 / 440 ≈ 0,77 m.
+  Un son plus aigu (fréquence plus grande) a une longueur d'onde plus courte.
+
+
+
+II. Intensité sonore et niveau d'intensité sonore
+1. L'intensité sonore
+Une source sonore convertit une partie de l'énergie qu'elle reçoit en énergie acoustique, qu'elle rayonne dans
+toutes les directions : on lui associe une puissance sonore P, exprimée en watts (W). Mais ce qui parvient
+à l'oreille ne dépend pas seulement de cette puissance : répartie sur une grande surface, la même puissance
+donne une sensation bien plus faible. On définit donc l'intensité sonore I comme la puissance sonore reçue
+par unité de surface :
+                                                       𝑃
+                                                        𝐼 =
+                                                       𝑆
+où P est la puissance sonore traversant la surface (en W), S l'aire de cette surface (en m²) et I l'intensité
+sonore (en W·m⁻²). C'est la grandeur à laquelle répond la membrane d'un microphone ou le tympan.
+Lorsque la source est assimilable à un point et qu'elle émet de la même façon dans toutes les directions,
+l'énergie se répartit, à la distance d, sur une sphère d'aire S = 4πd² :
+                                                      𝑃
+                                                      𝐼 =
+                                                     4𝜋𝑑2
+L'intensité sonore est donc inversement proportionnelle au carré de la distance à la source : en
+s'éloignant deux fois plus, on reçoit une intensité quatre fois plus faible. Cette décroissance, purement
+géométrique, est étudiée dans la partie III.
+
+  Exemple — Intensité reçue à 5 mètres d'un haut-parleur
+  Un haut-parleur assimilé à une source ponctuelle rayonne une puissance sonore P = 0,20 W. À la distance
+  d = 5,0 m, cette puissance s'est répartie sur une sphère d'aire :
+  S = 4πd² = 4π × (5,0)² = 3,1×10² m²
+  soit une intensité I = P / S = 0,20 / 3,1×10² = 6,4×10⁻⁴ W·m⁻². Le paragraphe suivant montrera que cela
+  correspond à un niveau de 88 dB, celui d'une rue très bruyante.
+
+
+
+2. Le niveau d'intensité sonore
+L'oreille humaine perçoit des intensités s'étendant sur douze ordres de grandeur, et elle y répond de façon
+logarithmique : doubler l'intensité ne double pas la sensation. On définit donc le niveau d'intensité sonore
+L, exprimé en décibels (dB) :
+                                                                    𝐼
+                                                   𝐿 = 10 · 𝑙𝑜𝑔
+                                                                   𝐼0
+où I₀ = 1,0×10⁻¹² W·m⁻² est l'intensité de référence, correspondant au seuil d'audibilité. Multiplier l'intensité
+par 10 augmente le niveau de 10 dB ; la doubler l'augmente d'environ 3 dB. À titre de repère, une
+conversation correspond à environ 60 dB, un concert à 100 dB, et le seuil de douleur se situe vers 120 dB
+— au-delà, l'exposition devient dangereuse pour l'audition.
+
+
+
+                                    Terminale spécialité — Physique-Chimie   page 2
+M. Mallet                                                                                  Ch.3 — Sons et effet Doppler
+Deux valeurs encadrent le domaine audible. Le seuil d'audibilité est la plus faible intensité qu'une oreille
+humaine puisse détecter, à la fréquence de 1 kHz : c'est précisément I₀ = 1,0×10⁻¹² W·m⁻², soit L = 0 dB par
+construction. Le seuil de douleur est atteint pour I = 1,0 W·m⁻², soit L = 120 dB : la sensation devient
+douloureuse et la lésion auditive immédiate. Entre les deux, l'intensité est multipliée par mille milliards —
+d'où tout l'intérêt de l'échelle logarithmique, qui ramène cet immense intervalle à une graduation de 0 à 120.
+Le danger commence toutefois bien avant le seuil de douleur : au-delà de 85 dB, une exposition prolongée
+suffit à détériorer de façon irréversible les cellules ciliées de l'oreille interne. C'est cette valeur, et non 120
+dB, qui sert de référence à la réglementation sur le bruit au travail et sur le volume des baladeurs.
+
+
+
+
+      Figure 2 — Échelle des niveaux d'intensité sonore : 0 dB au seuil d'audibilité, 120 dB au seuil de douleur.
+
+  Exemple — Calculer un niveau d'intensité sonore
+  Une source produit en un point une intensité I = 1,0×10⁻⁶ W·m⁻². Le niveau d'intensité sonore vaut :
+  L = 10 · log(1,0×10⁻⁶ / 1,0×10⁻¹²) = 10 · log(10⁶) = 10 × 6 = 60 dB.
+
+
+
+ Exercices — Manuel Hachette, chap. 17 « Sons et effet Doppler » (p. 344-366)
+ Intensité sonore et niveau d'intensité sonore (I = P/S, L = 10·log(I/I₀)) — Appliquer le cours : ex. 3, 4, 5 p. 358
+ | S’entraîner : ex. 19 p. 360-361 | Vers le bac : ex. 29 p. 363-364
+
+
+III. L'atténuation d'un son
+Un son s'affaiblit à mesure qu'il s'éloigne de sa source. On quantifie cette perte par l'atténuation A, différence
+entre les niveaux d'intensité sonore mesurés en deux points :
+                                                                            𝐼1
+                                           𝐴 = 𝐿1 − 𝐿2 = 10 · 𝑙𝑜𝑔
+                                                                            𝐼2
+A s'exprime en décibels (dB) et elle est positive lorsque le son s'affaiblit. Deux phénomènes distincts y
+contribuent et s'additionnent : la dispersion géométrique de l'énergie et l'absorption par le milieu traversé.
+
+1. L'atténuation géométrique
+Elle ne met en jeu aucune propriété du milieu : elle traduit simplement le fait qu'une même puissance sonore
+se répartit sur une surface de plus en plus grande. En reportant I = P/(4πd²) dans l'expression de l'atténuation
+entre deux distances d₁ et d₂, la puissance P se simplifie :
+                                                       𝑑22           𝑑2
+                                        𝐴𝑔é𝑜 = 10 · 𝑙𝑜𝑔 2 = 20 · 𝑙𝑜𝑔
+                                                       𝑑1            𝑑1
+Doubler la distance divise l'intensité par 4 et fait donc perdre 20 · log 2 ≈ 6 dB, quelle que soit la source et
+quel que soit le milieu. Multiplier la distance par 10 fait perdre 20 dB.
+                                   Terminale spécialité — Physique-Chimie        page 3
+M. Mallet                                                                             Ch.3 — Sons et effet Doppler
+
+
+
+
+   Figure 3 — Atténuation géométrique : la même puissance traverse des surfaces de plus en plus grandes, donc
+                                            l'intensité décroît en 1/d².
+Cette atténuation est d'autant plus faible que l'onde est guidée : dans un tube, un couloir ou un porte-voix,
+l'énergie ne se disperse plus dans toutes les directions et le son porte beaucoup plus loin. En plein air, au
+contraire, elle est inévitable.
+
+2. L'atténuation par absorption
+Le milieu traversé, lui, prélève une partie de l'énergie de l'onde et la convertit en énergie thermique : c'est
+l'absorption. Elle dépend de trois facteurs :
+  • la nature du milieu : l'air absorbe peu, tandis que la laine de verre, la mousse alvéolée ou un double
+    vitrage absorbent beaucoup — c'est le principe de l'isolation phonique ;
+  • l'épaisseur traversée : pour un matériau donné, l'atténuation croît avec l'épaisseur, ce qui permet de
+    caractériser le matériau par une atténuation en décibels par mètre ;
+  • la fréquence du son : les sons aigus sont bien plus absorbés que les graves. C'est pourquoi, à
+    distance d'un concert ou derrière un mur, on n'entend plus que les basses.
+Les deux atténuations s'ajoutent en décibels : A = Agéo + Aabs. C'est un autre avantage de l'échelle
+logarithmique — là où les intensités se divisent, les niveaux se retranchent.
+
+  Exemple — Séparer les deux atténuations
+  Devant une scène en plein air, un sonomètre placé à d₁ = 2,0 m d'une enceinte indique L₁ = 104 dB ; à
+  d₂ = 20 m, il indique L₂ = 82 dB.
+  Atténuation totale : A = L₁ − L₂ = 104 − 82 = 22 dB.
+  Atténuation géométrique attendue : Agéo = 20 · log(d₂/d₁) = 20 · log(10) = 20 dB.
+  L'écart, Aabs = 22 − 20 = 2 dB, est dû à l'absorption du son par l'air sur les 18 mètres parcourus.
+
+
+
+ Exercices — Manuel Hachette, chap. 17 « Sons et effet Doppler » (p. 344-366)
+ Atténuation géométrique et atténuation par absorption — Appliquer le cours : ex. 6, 7 p. 358 | S’entraîner :
+ ex. 25 p. 362 | Vers le bac : ex. 29 p. 363-364
+
+
+
+
+                                 Terminale spécialité — Physique-Chimie   page 4
+M. Mallet                                                                                  Ch.3 — Sons et effet Doppler
+IV. L'effet Doppler
+Lorsqu'une source sonore et un observateur sont en mouvement relatif, la fréquence perçue diffère de la
+fréquence émise : c'est l'effet Doppler. Si la source se rapproche de l'observateur, les fronts d'onde se
+resserrent devant elle et la fréquence perçue augmente (le son paraît plus aigu). Si la source s'éloigne, les
+fronts se dilatent et la fréquence perçue diminue (son plus grave). C'est ce que l'on entend lorsqu'une sirène
+de véhicule passe puis s'éloigne.
+
+
+
+
+Figure 4 — Effet Doppler : le mouvement de la source resserre les fronts d'onde vers l'avant, les espace vers l'arrière.
+On quantifie ce phénomène par le décalage Doppler Δf, différence entre la fréquence reçue par
+l'observateur et la fréquence émise par la source :
+                                                   𝛥𝑓 = 𝑓𝑅 − 𝑓𝐸
+où fE est la fréquence émise et fR la fréquence reçue, toutes deux exprimées en hertz. Le signe de Δf
+renseigne sur le sens du mouvement : Δf > 0 lorsque la source et l'observateur se rapprochent — la
+fréquence reçue est plus grande, le son perçu plus aigu — et Δf < 0 lorsqu'ils s'éloignent. Si la distance entre
+les deux ne varie pas, Δf = 0.
+La mesure du décalage de fréquence permet de déterminer une vitesse : c'est le principe des radars routiers
+et de la mesure du débit sanguin par échographie Doppler. En astrophysique, on observe un décalage des
+longueurs d'onde de la lumière des galaxies vers le rouge (le redshift), signe qu'elles s'éloignent ; ce décalage
+est relié à la vitesse d'éloignement v par Δλ/λ = v/c, où c est la célérité de la lumière.
+
+ Exercices — Manuel Hachette, chap. 17 « Sons et effet Doppler » (p. 344-366)
+ Décrire et interpréter l’effet Doppler (qualitatif) — Appliquer le cours : ex. 8, 9, 10, 11 p. 358-359 |
+ S’entraîner : ex. 23 p. 362 | Vers le bac : ex. 28 p. 363
+ Établir et exploiter l’expression du décalage Doppler — Appliquer le cours : ex. 12, 13, 14, 15 p. 359 |
+ S’entraîner : ex. 24 p. 362 | Vers le bac : ex. 28 p. 363
+
+
+
+
+                                   Terminale spécialité — Physique-Chimie    page 5
+M. Mallet                                                                         Ch.3 — Sons et effet Doppler
+Ce qu'il faut retenir
+  • Un son est une onde mécanique progressive : il se propage dans un milieu matériel, pas dans le vide.
+  • La célérité dépend du milieu (≈ 340 m·s⁻¹ dans l'air) ; onde périodique : λ = v·T = v/f.
+  • Niveau d'intensité sonore : L = 10·log(I/I₀), I₀ = 1,0×10⁻¹² W·m⁻² ; +10 dB ⇔ intensité ×10.
+  • Intensité sonore : I = P/S (en W·m⁻²) ; source ponctuelle : I = P/(4πd²), donc I ∝ 1/d².
+  • Seuils : audibilité I₀ = 1,0×10⁻¹² W·m⁻² (0 dB) ; douleur 1,0 W·m⁻² (120 dB) ; risque dès 85 dB en
+    exposition prolongée.
+  • Atténuation : A = L₁ − L₂ (dB) = atténuation géométrique (20·log(d₂/d₁), soit −6 dB par doublement de
+    la distance) + atténuation par absorption du milieu.
+  • Effet Doppler : rapprochement → fréquence perçue plus grande ; éloignement → plus petite.
+  • Décalage Doppler : Δf = fR − fE (fR reçue, fE émise) ; Δf > 0 en rapprochement, Δf < 0 en éloignement.
+  • Applications : radar, échographie Doppler, décalage vers le rouge en astrophysique (Δλ/λ = v/c).
+
+ QCM — Manuel Hachette (à faire en fin de chapitre)
+ Chap. 17 — Sons et effet Doppler — QCM p. 355
+ Corrigés du QCM p. 462.
+
+
+
+
+                                Terminale spécialité — Physique-Chimie   page 6
+

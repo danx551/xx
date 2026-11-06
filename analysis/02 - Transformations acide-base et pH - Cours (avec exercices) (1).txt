@@ -1,0 +1,132 @@
+M. Mallet                                                                     Ch.2 — Transformations acide-base et pH
+CHAPITRE 2
+Transformations acide-base et pH
+Thème 1 — Constitution et transformations de la matière · Déterminer la composition d'un système par des méthodes
+physiques et chimiques
+
+                 Chapitre à avoir terminé pour le dimanche 27 septembre 2026
+
+
+ Manuel Hachette 2020           Chapitre 1 — Transformations acide-base (p. 10 à 28)
+ Durée prévue                   1 semaine (semaine du 21/09/2026)
+ Travaux pratiques              Pas de TP dédié — la mesure de pH est mise en œuvre au chapitre 1 (TP
+                                02)
+
+
+ Objectifs du chapitre (capacités exigibles)
+   • Identifier l'acide et la base d'un couple ; écrire une réaction acide-base comme un transfert d'ion
+     hydrogène H⁺.
+   • Identifier les couples acide-base de l'eau et reconnaître une espèce amphotère.
+   • Relier le pH et la concentration en ions oxonium : pH = −log([H₃O⁺]).
+   • Utiliser le produit ionique de l'eau Ke et reconnaître une solution acide, neutre ou basique.
+   • Capacité expérimentale : mesurer le pH d'une solution d'acide ou de base.
+
+
+I. Modéliser les transformations acide-base
+1. Acide et base selon Brønsted
+Selon la théorie de Brønsted, un acide est une espèce chimique capable de céder un ion hydrogène H⁺ (un
+proton) ; une base est une espèce capable de capter un ion hydrogène H⁺. Le chlorure d'hydrogène HCl et
+l'acide éthanoïque CH₃COOH sont des acides ; l'ammoniac NH₃ et l'ion hydroxyde HO⁻ sont des bases. Une
+transformation acide-base se modélise donc par un transfert d'ion hydrogène de l'acide vers la base.
+
+
+
+
+   Figure 1 — Une réaction acide-base est un transfert d'ion hydrogène H⁺ : l'acide AH le cède, la base B le capte.
+
+2. Couples acide-base et espèces amphotères
+À tout acide AH correspond sa base conjuguée A⁻, obtenue après perte de l'ion H⁺ ; réciproquement, à
+toute base correspond son acide conjugué. Acide et base conjugués constituent un couple acide-base noté
+AH / A⁻. Par exemple, le couple de l'acide éthanoïque est CH₃COOH / CH₃COO⁻.
+Une espèce qui peut à la fois céder et capter un ion H⁺ est dite amphotère. C'est le cas de l'ion
+hydrogénocarbonate HCO₃⁻, et surtout de l'eau, qui appartient à deux couples :
+                                      H₃O⁺ / H₂O          et       H₂O / HO⁻
+                                   Terminale spécialité — Physique-Chimie   page 1
+M. Mallet                                                                   Ch.2 — Transformations acide-base et pH
+3. La réaction acide-base
+Lorsqu'un acide d'un couple réagit avec la base d'un autre couple, l'ion H⁺ cédé par l'acide est capté par la
+base. L'équation générale s'écrit :
+                                         A₁H + A₂⁻ → A₁⁻ + A₂H
+L'acide A₁H cède un ion H⁺ : il devient sa base conjuguée A₁⁻. La base A₂⁻ capte cet ion H⁺ : elle devient
+son acide conjugué A₂H. Pour écrire une telle équation, on identifie les deux couples mis en jeu, puis on
+combine leurs demi-équations acide-base de façon à faire apparaître le transfert de l'ion H⁺.
+
+ Exercices — Manuel Hachette, chap. 1 « Transformations acide-base » (p. 10-28)
+ Acide/base (Brønsted), couples, espèce amphotère, schéma de Lewis — Appliquer le cours : ex. 4, 5 p. 22
+ | S’entraîner : ex. 14 p. 24 | Vers le bac : ex. 19, 20 p. 26-27
+ Établir l’équation d’une réaction acide-base — Appliquer le cours : ex. 6, 7 p. 22 | S’entraîner : ex. 10, 15 p.
+ 23-24 | Vers le bac : ex. 20 p. 27
+
+
+II. Le pH d'une solution aqueuse
+1. pH et concentration en ions oxonium
+Le pH d'une solution aqueuse traduit son acidité. Il est relié à la concentration en ions oxonium H₃O⁺
+(exprimée en mol·L⁻¹) par la relation :
+                                              𝑝𝐻 = −𝑙𝑜𝑔([𝐻₃𝑂⁺])
+Cette relation s'inverse pour retrouver la concentration en ions oxonium à partir du pH mesuré :
+                                           [𝐻₃𝑂⁺] = 10−𝑝𝐻 𝑚𝑜𝑙 · 𝐿⁻¹
+Le pH diminue quand la concentration en ions oxonium augmente : plus une solution est acide, plus son pH
+est faible. Une variation d'une unité de pH correspond à un facteur 10 sur la concentration en ions oxonium.
+
+  Méthode — Exploiter la relation entre pH et concentrations
+  Une solution a un pH de 3,0 à 25 °C. On détermine les concentrations en ions oxonium et hydroxyde.
+  • Ions oxonium : [H₃O⁺] = 10^(−pH) = 10^(−3,0) = 1,0×10⁻³ mol·L⁻¹.
+  • Ions hydroxyde, à l'aide du produit ionique : [HO⁻] = Ke / [H₃O⁺] = 1,0×10⁻¹⁴ / 1,0×10⁻³ = 1,0×10⁻¹¹
+  mol·L⁻¹.
+  Comme [H₃O⁺] > [HO⁻], la solution est bien acide.
+
+
+
+2. Autoprotolyse de l'eau et produit ionique
+L'eau réagit très faiblement sur elle-même : c'est l'autoprotolyse de l'eau, réaction acide-base entre ses deux
+couples, au cours de laquelle une molécule d'eau cède un ion H⁺ à une autre :
+                                    2 H₂O(ℓ) ⇌ H₃O⁺(aq) + HO⁻(aq)
+À l'équilibre, le produit des concentrations en ions oxonium et hydroxyde est une constante, le produit
+ionique de l'eau Ke :
+                                              𝐾𝑒 = [𝐻₃𝑂⁺] · [𝐻𝑂⁻]
+À 25 °C, Ke = 1,0×10⁻¹⁴, soit pKe = −log(Ke) = 14,0. On en déduit la relation pratique pH + pOH = 14,0 (avec
+pOH = −log[HO⁻]). Dans l'eau pure, [H₃O⁺] = [HO⁻] = 1,0×10⁻⁷ mol·L⁻¹, ce qui correspond à pH = 7,0.
+
+
+
+
+                                  Terminale spécialité — Physique-Chimie   page 2
+M. Mallet                                                                     Ch.2 — Transformations acide-base et pH
+3. Échelle de pH et mesure
+La comparaison des concentrations en ions oxonium et hydroxyde permet de classer les solutions aqueuses.
+À 25 °C :
+  • solution acide : [H₃O⁺] > [HO⁻], soit pH < 7 ;
+  • solution neutre : [H₃O⁺] = [HO⁻], soit pH = 7 ;
+  • solution basique : [H₃O⁺] < [HO⁻], soit pH > 7.
+
+
+
+
+    Figure 2 — Échelle de pH à 25 °C : le caractère acide ou basique d'une solution se lit sur l'échelle de 0 à 14.
+Diluer une solution acide fait tendre son pH vers 7 (l'acidité diminue) ; diluer une solution basique le fait aussi
+tendre vers 7. En pratique, le pH se mesure avec un pH-mètre préalablement étalonné à l'aide de solutions
+étalons, ou de façon approchée avec du papier pH ou un indicateur coloré.
+
+ Exercices — Manuel Hachette, chap. 1 « Transformations acide-base » (p. 10-28)
+ pH et concentration en ions oxonium (pH ⇄ [H₃O⁺], échelle de pH) — Appliquer le cours : ex. 8, 9 p. 23 |
+ S’entraîner : ex. 11, 12, 13 p. 23-24 | Vers le bac : ex. 19, 20 p. 26-27
+
+
+Ce qu'il faut retenir
+  • Acide = espèce qui cède H⁺ ; base = espèce qui capte H⁺ ; une réaction acide-base est un transfert
+    d'ion H⁺.
+  • À tout acide AH correspond sa base conjuguée A⁻ (couple AH/A⁻) ; l'eau est amphotère (H₃O⁺/H₂O et
+    H₂O/HO⁻).
+  • pH = −log([H₃O⁺]) et [H₃O⁺] = 10⁻ᵖᴴ mol·L⁻¹ ; une unité de pH ⇔ facteur 10 sur [H₃O⁺].
+  • Produit ionique : Ke = [H₃O⁺]·[HO⁻] = 1,0×10⁻¹⁴ à 25 °C (pKe = 14,0 ; pH + pOH = 14).
+  • À 25 °C : solution acide pH < 7, neutre pH = 7, basique pH > 7.
+
+ QCM — Manuel Hachette (à faire en fin de chapitre)
+ Chap. 1 — Transformations acide-base — QCM p. 19
+ Corrigés du QCM p. 462.
+
+
+
+
+                                   Terminale spécialité — Physique-Chimie    page 3
+

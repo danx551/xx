@@ -1,0 +1,341 @@
+M. Mallet                                                            Ch.1 — Analyse et dosages d'un système chimique
+CHAPITRE 1
+Analyse et dosages d'un système chimique
+Thème 1 — Constitution et transformations de la matière · Déterminer la composition d'un système par des méthodes
+physiques et chimiques
+
+                 Chapitre à avoir terminé pour le dimanche 20 septembre 2026
+
+
+ Manuel Hachette 2020           Chapitre 2 — Méthodes physiques d'analyse (p. 29 à 48) · Chapitre 3 —
+                                Méthodes chimiques d'analyse (p. 49 à 70)
+ Durée prévue                   2 semaines (semaines du 07/09 et du 14/09/2026)
+ Travaux pratiques              TP 01 — Effaceur (dosage par étalonnage spectrophotométrique)
+                                TP 02 — Nom de code (titrage pH-métrique)
+                                TP 03 — Chlorure de magnésium (titrage conductimétrique)
+
+
+ Objectifs du chapitre (capacités exigibles)
+   • Préparer une solution par dissolution ou par dilution en choisissant le matériel adapté.
+   • Déterminer une concentration par spectrophotométrie à l'aide d'une courbe d'étalonnage (loi de
+     Beer-Lambert).
+   • Déterminer une concentration par conductimétrie.
+   • Exploiter l'équation d'état du gaz parfait pour déterminer une quantité de matière ; citer le domaine
+     de validité de cette relation.
+   • Exploiter, à partir de données tabulées, un spectre d'absorption infrarouge ou UV-visible pour
+     identifier un groupe caractéristique ou une espèce chimique.
+   • Mettre en œuvre le protocole d'un titrage et exploiter l'équivalence pour déterminer une quantité de
+     matière.
+   • Repérer l'équivalence par pH-métrie, par conductimétrie ou par un indicateur coloré (colorimétrie).
+   • Capacité numérique : représenter en Python l'évolution des quantités de matière des espèces en
+     fonction du volume de solution titrante versé.
+
+
+I. Analyser sans transformer : les méthodes physiques
+Une méthode d'analyse est dite physique lorsqu'elle mesure une grandeur (absorbance, conductivité…) qui
+dépend de la concentration d'une espèce, sans la faire réagir ni la consommer. L'échantillon n'est pas modifié
+: la mesure est non destructive. On détermine alors la concentration inconnue en comparant la grandeur
+mesurée à celle d'échantillons de concentrations connues, réunis dans une gamme d'étalonnage.
+
+1. Rappels : quantité de matière, concentration et dilution
+La concentration en quantité de matière d'un soluté relie la quantité de matière n et le volume V de la solution
+:
+                                                          𝑛
+                                                    𝑐 =
+                                                          𝑉
+Diluer une solution, c'est en diminuer la concentration par ajout de solvant. La quantité de matière de soluté
+se conserve entre la solution mère (indice 1) et la solution fille (indice 2), ce qui donne la relation de dilution
+:
+                                                 𝑐1 · 𝑉1 = 𝑐2 · 𝑉2
+
+
+
+
+                                  Terminale spécialité — Physique-Chimie    page 1
+M. Mallet                                                            Ch.1 — Analyse et dosages d'un système chimique
+2. Spectrophotométrie UV-visible
+Une espèce colorée en solution absorbe la lumière dans certaines longueurs d'onde. Le spectrophotomètre
+mesure l'absorbance A à une longueur d'onde choisie, généralement celle du maximum d'absorption, pour
+une sensibilité maximale. L'absorbance est une grandeur sans unité.
+
+
+
+
+   Figure 1 — Principe de la spectrophotométrie : la solution absorbe une partie du faisceau ; le détecteur mesure
+                                                   l'absorbance A.
+Pour une solution suffisamment diluée, l'absorbance est proportionnelle à la concentration de l'espèce
+absorbante : c'est la loi de Beer-Lambert :
+                                                  𝐴 = 𝜀 · ℓ · 𝑐
+où ε est le coefficient d'absorption molaire (en L·mol⁻¹·cm⁻¹), ℓ la largeur de la cuve (en cm) et c la
+concentration (en mol·L⁻¹).
+En pratique, on trace une courbe d'étalonnage A = f(c) à partir de solutions étalons. La loi de Beer-Lambert
+prévoit une droite passant par l'origine ; on y reporte l'absorbance de la solution inconnue pour en déduire
+graphiquement sa concentration.
+
+
+
+
+Figure 2 — Courbe d'étalonnage : l'absorbance mesurée pour la solution inconnue donne sa concentration par lecture
+                                                  graphique.
+
+3. Conductimétrie
+Une solution contenant des ions conduit le courant. Le conductimètre mesure la conductance G, puis la
+conductivité σ de la solution, qui dépend de la nature et de la concentration de tous les ions présents :
+                                                  𝜎 = 𝛴 𝜆𝑖 · [𝑋𝑖 ]
+où λi est la conductivité molaire ionique de l'ion (tabulée) et [Xi] sa concentration. La conductivité et la
+conductance sont reliées par la constante de cellule :
+                                                          𝑆
+                                                    𝐺 = 𝜎 ·
+                                                          ℓ
+Comme pour la spectrophotométrie, une courbe d'étalonnage σ = f(c) permet de déterminer une
+concentration inconnue lorsqu'un seul soluté ionique varie.
+                                  Terminale spécialité — Physique-Chimie    page 2
+M. Mallet                                                            Ch.1 — Analyse et dosages d'un système chimique
+4. Déterminer une quantité de gaz
+Toutes les espèces à analyser ne sont pas dissoutes : de nombreuses transformations produisent ou
+consomment un gaz, et c'est alors sur le gaz que porte la mesure. Peser un gaz est délicat, alors que l'on
+sait mesurer commodément son volume, sa pression et sa température. Le modèle du gaz parfait relie ces
+trois grandeurs à la quantité de matière : il fournit ainsi une troisième méthode physique d'analyse, elle aussi
+non destructive.
+Dans ce modèle, les entités du gaz sont supposées ponctuelles et sans interaction entre elles. L'équation
+d'état s'écrit :
+                                               𝑃 · 𝑉 = 𝑛 · 𝑅 · 𝑇
+où P est la pression du gaz (en pascals), V le volume qu'il occupe (en m³), n sa quantité de matière (en
+mol), T sa température absolue (en kelvins) et R = 8,314 Pa·m³·mol⁻¹·K⁻¹ la constante des gaz parfaits.
+Ces unités sont imposées : il faut convertir avant tout calcul.
+1 L = 10⁻³ m³, 1 hPa = 10² Pa, 1 bar = 10⁵ Pa, et T(K) = θ(°C) + 273.
+Pour déterminer une quantité de matière, on isole n :
+                                                𝑃 · 𝑉
+                                                    𝑛 =
+                                                𝑅 · 𝑇
+On rencontre aussi le volume molaire Vm, volume occupé par une mole de gaz dans les conditions de
+l'expérience :
+                                              𝑉   𝑅 · 𝑇                     𝑉
+                                       𝑉𝑚 =     =            𝑑′𝑜ù    𝑛 =
+                                              𝑛     𝑃                      𝑉𝑚
+Vm ne dépend que de la pression et de la température, jamais de la nature du gaz : à 20 °C sous 1013 hPa,
+tous les gaz ont le même volume molaire, voisin de 24 L·mol⁻¹.
+Comme la loi de Beer-Lambert et la loi de Kohlrausch, ce modèle a un domaine de validité : il décrit
+correctement un gaz peu dense, c'est-à-dire sous pression modérée et à une température suffisamment
+éloignée de sa liquéfaction. À forte pression, le volume propre des entités et les interactions entre elles ne
+sont plus négligeables et l'équation d'état n'est plus vérifiée ; ces limites seront reprises au chapitre 14.
+En pratique, le gaz produit est recueilli dans une éprouvette graduée retournée sur une cuve à eau, ou dans
+une seringue graduée ; la pression est lue au baromètre et la température au thermomètre.
+
+
+
+
+            Figure 3 — Recueil d'un gaz : la mesure de V, P et T donne accès à la quantité de matière n.
+
+
+
+
+                                  Terminale spécialité — Physique-Chimie    page 3
+M. Mallet                                                             Ch.1 — Analyse et dosages d'un système chimique
+
+  Exemple — Doser l'hydrogénocarbonate d'un comprimé effervescent
+  Un comprimé effervescent plongé dans l'eau libère du dioxyde de carbone selon HCO3⁻ + H3O+ → CO2
+  + 2 H2O. On recueille V = 145 mL de gaz sous P = 1,00×10⁵ Pa, à θ = 22 °C soit T = 295 K.
+                                    𝑃 · 𝑉   1,00 × 10⁵ × 145 × 10⁻⁶
+                        𝑛(𝐶𝑂₂) =          =                         = 5,9 × 10⁻³ 𝑚𝑜𝑙
+                                    𝑅 · 𝑇         8,314 × 295
+  La réaction consomme autant d'ions hydrogénocarbonate qu'elle produit de dioxyde de carbone, d'où
+  n(HCO₃⁻) = 5,9×10⁻³ mol et une masse m = n · M = 5,9×10⁻³ × 84,0 ≈ 0,50 g d'hydrogénocarbonate de
+  sodium par comprimé.
+
+
+
+5. Spectroscopie UV-visible et infrarouge
+Les trois méthodes précédentes donnent une concentration ou une quantité de matière, mais toutes
+supposent que l'on sache déjà quelle espèce on analyse. La spectroscopie répond à la question qui précède
+: de quelle espèce s'agit-il ? On enregistre le spectre d'absorption de l'échantillon, puis on le compare à des
+données tabulées afin d'identifier un groupe caractéristique ou l'espèce elle-même. Là encore, l'échantillon
+n'est ni consommé ni modifié.
+a. Spectroscopie UV-visible
+Le spectrophotomètre balaie les longueurs d'onde depuis l'ultraviolet (à partir de 200 nm environ) jusqu'au
+visible (800 nm) et enregistre le spectre d'absorption A = f(λ). Ce spectre présente un ou plusieurs maximums
+; la longueur d'onde du maximum principal, notée λmax, est une signature de l'espèce, que l'on compare aux
+valeurs tabulées pour l'identifier.
+Le spectre renseigne aussi immédiatement sur la couleur. Une espèce qui n'absorbe que dans l'ultraviolet
+(λmax < 400 nm) est incolore en solution ; une espèce qui absorbe dans le visible est colorée, et la couleur
+perçue est la couleur complémentaire de la couleur absorbée. On retrouve ici les synthèses des couleurs
+vues en première : la lumière blanche est la superposition du bleu, du vert et du rouge (synthèse additive),
+et la solution se comporte comme un filtre qui en retire une partie (synthèse soustractive). Ainsi, une solution
+dont λmax vaut 660 nm absorbe le vert et le rouge : seul le bleu est transmis, et la solution apparaît bleue —
+le bleu et le jaune, somme du vert et du rouge, sont bien deux couleurs complémentaires.
+C'est ce même spectre qui permet de choisir la longueur d'onde de travail d'un dosage par étalonnage (partie
+2) : on se place à λmax, là où la sensibilité de la mesure est maximale.
+
+
+
+
+Figure 4 — Spectre d'absorption UV-visible : le vert et le rouge sont absorbés, seul le bleu est transmis — λmax signe
+                                        l'espèce et la solution paraît bleue.
+
+
+                                   Terminale spécialité — Physique-Chimie    page 4
+M. Mallet                                                                      Ch.1 — Analyse et dosages d'un système chimique
+b. Spectroscopie infrarouge
+Un rayonnement infrarouge n'est pas assez énergétique pour modifier le cortège électronique d'une
+molécule, mais il l'est assez pour faire vibrer ses liaisons, par élongation (la longueur de la liaison varie) ou
+par déformation (l'angle entre deux liaisons varie). Chaque liaison n'absorbe que les radiations dont l'énergie
+correspond à ses propres vibrations : le spectre infrarouge est donc caractéristique des liaisons présentes
+dans la molécule, et non de la molécule prise globalement.
+En infrarouge, on repère les radiations par leur nombre d'onde σ = 1/λ, exprimé en cm⁻¹, et l'on porte en
+ordonnée la transmittance T (en %), c'est-à-dire la proportion de lumière transmise par l'échantillon. Une
+absorption se traduit donc par un creux dirigé vers le bas, appelé bande d'absorption. Par convention, l'axe
+des abscisses est orienté de 4000 cm⁻¹ à gauche vers 500 cm⁻¹ à droite.
+Une bande se décrit par trois caractères, qu'il faut confronter aux tables : son nombre d'onde, son intensité
+(forte, moyenne ou faible, selon la profondeur du creux) et sa largeur (fine ou large).
+ Liaison (groupe caractéristique)                       Nombre d'onde (cm⁻¹)                 Allure de la bande
+ O–H alcool                                             3200 – 3400                          forte et large
+ O–H acide carboxylique                                 2500 – 3200                          forte et très large
+ N–H amine                                              3100 – 3500                          moyenne
+ C–H aldéhyde                                           2700 – 2900                          deux bandes fines, moyennes
+ C=O aldéhyde, cétone, ester                            1700 – 1740                          forte et fine
+ C=O acide carboxylique                                 1680 – 1710                          forte et fine
+ C=C alcène                                             1625 – 1685                          moyenne
+Valeurs indicatives : c'est toujours la table fournie avec le sujet ou le spectre qui fait foi.
+Au-dessus de 1500 cm⁻¹ se trouvent les bandes des groupes caractéristiques : c'est la zone exploitable. En
+dessous de 1500 cm⁻¹, les bandes sont nombreuses et enchevêtrées ; cette région, appelée empreinte
+digitale, est propre à chaque molécule mais ne s'interprète pas bande par bande — elle sert seulement à
+comparer un spectre à celui d'un échantillon de référence.
+
+
+
+
+                                        Terminale spécialité — Physique-Chimie         page 5
+M. Mallet                                                            Ch.1 — Analyse et dosages d'un système chimique
+
+
+
+
+Figure 5 — Spectres infrarouges du propan-1-ol et du propanal : la bande large O–H et la bande fine C=O distinguent
+                                               les deux molécules.
+  Méthode — Exploiter un spectre infrarouge
+  1. Repérer les bandes situées au-dessus de 1500 cm⁻¹ et relever, pour chacune, son nombre d'onde, son
+  intensité et sa largeur.
+  2. Confronter ces trois caractères aux valeurs tabulées. Attention aux bandes voisines, que seule la
+  largeur permet de départager : la bande O–H d'un alcool (vers 3300 cm⁻¹) est large, celle d'un acide
+  carboxylique s'étale de 2500 à 3200 cm⁻¹.
+  3. Conclure sur les groupes caractéristiques présents, puis trancher entre les molécules proposées. C'est
+  souvent l'absence d'une bande attendue qui décide : un aldéhyde et une cétone présentent tous deux la
+  bande C=O vers 1700 cm⁻¹, mais seul l'aldéhyde montre en plus les deux bandes fines de la liaison C–
+  H vers 2700-2900 cm⁻¹.
+
+
+
+ Exercices — Manuel Hachette, chap. 2 « Méthodes physiques d’analyse » (p. 29-48)
+ Spectrophotométrie UV-visible (loi de Beer-Lambert) — Appliquer le cours : ex. 4 p. 40 | S’entraîner : ex.
+ 16 p. 43 | Vers le bac : ex. 23 p. 46-47
+ Conductimétrie (loi de Kohlrausch) — Appliquer le cours : ex. 5, 6, 7 p. 40 | S’entraîner : ex. 21 p. 45 |
+ Vers le bac : ex. 23 p. 46-47
+ Déterminer une quantité de gaz (équation d’état du gaz parfait) — Appliquer le cours : ex. 8 p. 40, ex. 9 p. 41
+ | S’entraîner : ex. 19 p. 44 | Vers le bac : ex. 24 p. 47
+ Spectroscopie UV-visible et IR (identifier un groupe ou une espèce) — Appliquer le cours : ex. 10, 11, 12, 13
+ p. 41 | S’entraîner : ex. 16 p. 43 | Vers le bac : ex. 23 p. 46-47
+
+
+II. Analyser en faisant réagir : le titrage
+Titrer une espèce, c'est déterminer sa quantité de matière en la faisant réagir totalement avec une espèce
+de concentration connue, le réactif titrant, ajouté progressivement. C'est une méthode chimique : l'espèce
+titrée est consommée par la réaction.
+                                  Terminale spécialité — Physique-Chimie    page 6
+M. Mallet                                                                 Ch.1 — Analyse et dosages d'un système chimique
+1. La réaction de titrage
+La réaction support d'un titrage doit être unique, totale et rapide. Ces trois conditions garantissent que
+l'avancement est directement lié au volume de titrant versé et que le repérage de l'équivalence est net.
+
+2. L'équivalence
+L'équivalence est l'instant du titrage où le réactif titrant et le réactif titré ont été introduits dans les proportions
+stœchiométriques de la réaction. Avant l'équivalence, le titrant est le réactif limitant ; après, c'est le titré. Pour
+une réaction a A + b B → produits (A titré, B titrant), la relation à l'équivalence s'écrit :
+                                              𝑛𝐴       𝑛𝐵,𝑣𝑒𝑟𝑠é à 𝑙′é𝑞𝑢𝑖𝑣.
+                                                  =
+                                               𝑎              𝑏
+Dans le cas fréquent d'une réaction de proportions 1 pour 1 (a = b = 1), cette relation se simplifie et permet
+de calculer directement la concentration cherchée à partir du volume à l'équivalence :
+                                                   𝑐𝐴 · 𝑉𝐴 = 𝑐𝐵 · 𝑉𝐵,é𝑞
+
+3. Repérer l'équivalence
+Selon les espèces en jeu, on suit une grandeur différente au cours de l'ajout de titrant. Trois techniques sont
+au programme.
+Titrage pH-métrique. Pour un titrage acide-base, on suit le pH. La courbe pH = f(V) présente un saut de pH
+marqué à l'équivalence, repéré par la méthode des tangentes ou par le maximum de la dérivée dpH/dV.
+
+
+
+
+            Figure 6 — Titrage pH-métrique : l'équivalence correspond au saut de pH (méthode des tangentes).
+Titrage conductimétrique. On suit la conductivité σ = f(V). L'équivalence correspond à la rupture de pente,
+obtenue en prolongeant les deux portions de droite jusqu'à leur intersection.
+
+
+
+
+                                     Terminale spécialité — Physique-Chimie      page 7
+M. Mallet                                                             Ch.1 — Analyse et dosages d'un système chimique
+
+
+
+
+               Figure 7 — Titrage conductimétrique : l'équivalence est repérée par la rupture de pente.
+Titrage colorimétrique. Un indicateur coloré change de teinte au voisinage de l'équivalence ; sa zone de
+virage doit encadrer le pH à l'équivalence. Rappel : pH = −log([H₃O⁺]), soit inversement :
+                                                  [𝐻₃𝑂⁺] = 10−𝑝𝐻
+
+ Exercices — Manuel Hachette, chap. 3 « Méthodes chimiques d’analyse » (p. 49-70)
+ La réaction de titrage (préparer une solution, réaction support) — Appliquer le cours : ex. 3, 4, 5, 6 p. 62 |
+ S’entraîner : ex. 17 p. 65 | Vers le bac : ex. 24 p. 68
+ L’équivalence (relation à l’équivalence, composition du système) — Appliquer le cours : ex. 13, 14 p. 64 |
+ S’entraîner : ex. 20 p. 66 | Vers le bac : ex. 25 p. 68-69
+ Repérer l’équivalence (pH-métrie, conductimétrie, montage, tangentes/dérivée) — Appliquer le cours : ex.
+ 7, 9, 11, 12, 15 p. 63-64 | S’entraîner : ex. 18, 22, 23 p. 65-67 | Vers le bac : ex. 24, 25 p. 68-69
+
+
+III. Choisir et distinguer les méthodes
+On distingue le dosage par étalonnage (méthode physique : on compare une grandeur à une gamme
+d'étalons, l'échantillon n'est pas détruit) du dosage par titrage (méthode chimique : l'espèce est consommée
+par une réaction). Le titrage est très précis mais destructif ; l'étalonnage est rapide et non destructif, mais
+suppose une propriété mesurable et une gamme d'étalons.
+
+ Critère                                Dosage par étalonnage                   Dosage par titrage
+ Principe                               Mesure d'une grandeur physique          Réaction chimique totale
+ Échantillon                            Non consommé (non destructif)           Consommé (destructif)
+ Outils                                 Spectrophotomètre, conductimètre        Burette, pH-mètre, indicateur
+ Repérage                               Courbe d'étalonnage                     Équivalence
+
+ Exercices — Synthèse : choisir et distinguer les méthodes
+ Méthode physique (analyse sans transformer) — Vers le bac : ex. 23 p. 46-47 (étalonnage spectrophoto. +
+ conductimétrie + spectres)
+ Méthode chimique (analyse en faisant réagir) — Vers le bac : ex. 24 p. 68 (titrage conductimétrique complet)
+
+
+
+
+                                   Terminale spécialité — Physique-Chimie    page 8
+M. Mallet                                                         Ch.1 — Analyse et dosages d'un système chimique
+Ce qu'il faut retenir
+  • Méthode physique = mesure sans transformer (absorbance, conductivité) → dosage par étalonnage à
+    l'aide d'une courbe d'étalonnage.
+  • Beer-Lambert : A = ε·ℓ·c ; la courbe A = f(c) est une droite passant par l'origine.
+  • Conductimétrie : σ dépend de tous les ions (σ = Σ λᵢ·[Xᵢ]).
+  • Gaz parfait : P·V = n·R·T (P en Pa, V en m³, T en K) → n = P·V/(R·T) ; modèle valable pour un gaz peu
+    dense.
+  • Spectroscopie : λmax en UV-visible identifie l'espèce et donne sa couleur ; en IR, les bandes au-
+    dessus de 1500 cm⁻¹ identifient les groupes caractéristiques.
+  • Méthode chimique = titrage : réaction unique, totale et rapide ; l'équivalence traduit les proportions
+    stœchiométriques.
+  • Repérage de l'équivalence : saut de pH (pH-métrie), rupture de pente (conductimétrie) ou changement
+    de couleur (colorimétrie).
+
+ QCM — Manuel Hachette (à faire en fin de chapitre)
+ Chap. 2 — Méthodes physiques d’analyse — QCM p. 37
+ Chap. 3 — Méthodes chimiques d’analyse — QCM p. 59
+ Corrigés des QCM p. 462.
+
+
+
+
+                               Terminale spécialité — Physique-Chimie    page 9
+

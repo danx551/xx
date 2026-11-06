@@ -1,0 +1,32 @@
+{
+  "name": "orbite-revisions",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test --test-isolation=none tests/*.test.js",
+    "prepare:sources": "python scripts/prepare_sources.py",
+    "test:e2e": "playwright test",
+    "predev": "npm run prepare:sources",
+    "prebuild": "npm run prepare:sources",
+    "format": "prettier --write src scripts/*.mjs tests vite.config.js playwright.config.js package.json README.md PROGRESSION.md",
+    "format:check": "prettier --check src scripts/*.mjs tests vite.config.js playwright.config.js package.json README.md PROGRESSION.md"
+  },
+  "dependencies": {
+    "katex": "^0.16.25",
+    "lucide-react": "^0.468.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "prettier": "3.6.2",
+    "vite": "^7.2.2"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

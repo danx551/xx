@@ -1,0 +1,257 @@
+M. Mallet                                                                               Ch.4 — Diffraction et interférences
+CHAPITRE 4
+Diffraction et interférences
+Thème 4 — Ondes et signaux · Caractériser les phénomènes ondulatoires
+
+                   Chapitre à avoir terminé pour le dimanche 18 octobre 2026
+
+
+ Manuel Hachette 2020            Chapitre 18 — Diffraction et interférences (p. 367 à 386)
+ Durée prévue                    2 semaines (semaines du 05/10 et du 12/10/2026)
+ Travaux pratiques               TP 05 — Photographie numérique (diffraction par une ouverture ; Python)
+                                 TP 06 — Filtre à miel en nylon (diffraction et interférences ; mesure d'une
+                                 maille)
+
+ Objectifs du chapitre (capacités exigibles)
+   • Caractériser le phénomène de diffraction et en citer des conséquences concrètes.
+   • Exploiter la relation donnant l'angle caractéristique de diffraction : sin θ = λ/a, et θ = λ/a lorsque le
+     rapport λ/a est petit.
+   • Caractériser le phénomène d'interférences de deux ondes et en citer des conséquences.
+   • Établir les conditions d'interférences constructives et destructives de deux ondes issues de deux
+     sources ponctuelles en phase dans un milieu homogène, et prévoir les lieux d'interférences.
+   • Établir ou exploiter l'expression de l'interfrange : i = λ·D/b.
+   • Capacité expérimentale : mettre en œuvre des dispositifs de diffraction et d'interférences.
+   • Capacité numérique : représenter en Python la somme de deux signaux sinusoïdaux synchrones.
+
+
+I. La diffraction
+1. Le phénomène de diffraction
+La diffraction est l'étalement d'une onde lorsqu'elle rencontre une ouverture ou un obstacle dont la
+dimension est du même ordre de grandeur que sa longueur d'onde. Après avoir traversé une petite ouverture,
+l'onde ne se propage plus en ligne droite : elle se répartit dans un large domaine angulaire. Le phénomène
+concerne toutes les ondes — mécaniques comme lumineuses — et constitue une preuve du caractère
+ondulatoire de la lumière.
+La diffraction n'est nettement visible que si l'ouverture est suffisamment petite : de l'ordre de la longueur
+d'onde pour une onde mécanique (une vague de 10 cm derrière une ouverture de quelques centimètres), de
+quelques dizaines de longueurs d'onde au plus pour la lumière — d'où la nécessité de fentes de quelques
+centièmes de millimètre.
+Pour une fente de largeur a, la lumière s'étale de part et d'autre de la direction incidente en formant une
+figure de diffraction : une tache centrale brillante, plus large que la fente, encadrée de taches secondaires
+moins lumineuses.
+
+
+
+
+     Figure 1 — Diffraction par une fente de largeur a : l'onde s'étale de part et d'autre de la direction incidente.
+                                    Terminale spécialité — Physique-Chimie     page 1
+M. Mallet                                                                           Ch.4 — Diffraction et interférences
+2. L'angle caractéristique de diffraction
+On appelle écart angulaire (ou angle caractéristique de diffraction) l'angle θ entre le milieu de la tache
+centrale et la première extinction. Pour le relier à λ et à a, on compare les deux rayons issus des deux bords
+de la fente et partant dans la direction θ : l'un parcourt un trajet plus long que l'autre, et cette différence de
+marche vaut a · sin θ. La première extinction est obtenue lorsqu'elle vaut exactement une longueur d'onde,
+ce qui donne la relation générale :
+                                                         𝜆
+                                                    𝑠𝑖𝑛 𝜃 =
+                                                         𝑎
+où λ et a sont exprimées dans la même unité (le mètre) ; sin θ est un nombre sans unité.
+
+
+
+
+   Figure 2 — Les deux bords de la fente émettent avec une différence de marche a · sin θ ; la première extinction
+                                           correspond à a · sin θ = λ.
+En pratique, au lycée, l'ouverture reste très grande devant la longueur d'onde : le rapport λ/a est petit et
+l'angle θ aussi. Or, pour un angle exprimé en radians et inférieur à 0,2 rad environ, sin θ et θ diffèrent de
+moins de 1 %. On peut donc confondre les deux et écrire la relation sous la forme qui sera utilisée dans tout
+le chapitre :
+                                                           𝜆
+                                                      𝜃 =
+                                                           𝑎
+avec θ en radians. Plus la fente est étroite (a petit), plus la diffraction est marquée (θ grand) : un obstacle
+très fin étale beaucoup la lumière. À l'inverse, pour une ouverture très grande devant λ, θ devient négligeable
+et la lumière semble se propager en ligne droite.
+Sur un écran placé à la distance D de la fente, la demi-largeur de la tache centrale vaut D · tan θ, soit D · θ
+dans l'approximation des petits angles. La tache centrale a donc pour largeur totale :
+                                                        2 · 𝜆 · 𝐷
+                                           𝐿 = 2 · 𝐷 · 𝜃 =
+                                                            𝑎
+Mesurer L permet ainsi de remonter à λ (si a est connue) ou à a (si λ est connue) : c'est le principe de la
+mesure du diamètre d'un cheveu au laser.
+Cas d'une ouverture circulaire. Pour un trou circulaire de diamètre d, le calcul complet introduit un facteur
+numérique et l'angle caractéristique devient θ = 1,22 × λ/d. Cette valeur est toujours fournie dans les énoncés
+; elle limite le pouvoir de résolution des instruments d'optique (télescopes, objectifs photographiques).
+
+
+
+
+                                  Terminale spécialité — Physique-Chimie   page 2
+M. Mallet                                                                            Ch.4 — Diffraction et interférences
+
+  Exemple — Exploiter la diffraction
+  Un laser de longueur d'onde λ = 633 nm éclaire une fente de largeur a = 0,10 mm.
+  sin θ = λ / a = (633×10⁻⁹) / (0,10×10⁻³) = 6,3×10⁻³, d'où θ = 6,3×10⁻³ rad.
+  L'angle est si petit que sin θ et θ sont égaux à cinq chiffres significatifs près : l'approximation est
+  pleinement justifiée.
+  Sur un écran situé à D = 2,0 m, la tache centrale a pour largeur L = 2·λ·D/a = 2 × 6,3×10⁻³ × 2,0 = 2,5×10⁻²
+  m, soit 2,5 cm — 250 fois la largeur de la fente.
+
+
+
+ Exercices — Manuel Hachette, chap. 18 « Diffraction et interférences » (p. 367-386)
+ Caractériser et illustrer la diffraction — Appliquer le cours : ex. 3, 4, 5, 6 p. 378 | S’entraîner : ex. 21 p. 381
+ | Vers le bac : ex. 29 p. 384-385
+ Exploiter l’angle caractéristique (sin θ = λ/a, θ ≈ λ/a) — Appliquer le cours : ex. 7, 8 p. 378 | S’entraîner : ex.
+ 21 p. 381 | Vers le bac : ex. 29 p. 384-385
+
+
+II. Les interférences
+1. La superposition de deux ondes cohérentes
+Lorsque deux ondes de même fréquence et cohérentes — c'est-à-dire dont le déphasage reste constant
+au cours du temps — se superposent, leurs élongations s'ajoutent en chaque point : c'est le phénomène
+d'interférences. Selon les points de l'espace, les deux ondes arrivent en phase et se renforcent
+(interférences constructives, amplitude maximale) ou en opposition de phase et s'annulent (interférences
+destructives, amplitude nulle).
+Ces deux conditions ne dépendent pas de l'instant considéré mais du point d'observation : la figure
+d'interférences est stable dans le temps. On l'observe aussi bien à la surface de l'eau d'une cuve à ondes,
+avec deux vibreurs synchrones, qu'avec des ondes sonores ou lumineuses.
+
+2. La différence de marche
+Considérons deux sources ponctuelles S₁ et S₂ en phase, dans un milieu homogène, et un point M où les
+deux ondes se superposent. Chacune a parcouru une distance différente : d₁ = S₁M et d₂ = S₂M. C'est l'écart
+entre ces deux trajets, appelé différence de marche, qui fixe le résultat de la superposition :
+                                          𝛿 = 𝑑2 − 𝑑1 = 𝑆₂𝑀 − 𝑆₁𝑀
+
+
+
+
+ Figure 3 — La différence de marche δ = d₂ − d₁ en un point M : c'est la longueur du trajet supplémentaire parcouru
+                                              par l'onde issue de S₂.
+                                   Terminale spécialité — Physique-Chimie   page 3
+M. Mallet                                                                          Ch.4 — Diffraction et interférences
+Si δ est un multiple entier de la longueur d'onde, l'onde venue de S₂ a pris un retard d'un nombre entier de
+périodes : les deux ondes arrivent en phase et les interférences sont constructives :
+                                         𝛿 = 𝑘 · 𝜆        𝑎𝑣𝑒𝑐 𝑘 𝑒𝑛𝑡𝑖𝑒𝑟
+Si δ vaut un nombre demi-entier de longueurs d'onde, une crête arrive en même temps qu'un creux : les
+ondes arrivent en opposition de phase et les interférences sont destructives :
+                                             1
+                                     𝛿 = (𝑘 + ) · 𝜆           𝑎𝑣𝑒𝑐 𝑘 𝑒𝑛𝑡𝑖𝑒𝑟
+                                             2
+
+
+
+
+  Figure 4 — Somme de deux ondes de même amplitude : en phase (δ = k·λ) l'amplitude double, en opposition de
+                                    phase (δ = (k + ½)·λ) elle s'annule.
+En particulier, tout point situé à égale distance des deux sources vérifie δ = 0 : les interférences y sont
+toujours constructives. C'est le cas de la médiatrice de [S₁S₂], qui porte la frange centrale brillante.
+
+ Exercices — Manuel Hachette, chap. 18 « Diffraction et interférences » (p. 367-386)
+ Caractériser le phénomène d’interférences — Appliquer le cours : ex. 9, 10 p. 378-379 | S’entraîner : ex. 26
+ p. 383 | Vers le bac : ex. 30 p. 385
+ Établir les conditions constructives / destructives (δ = d₂ − d₁) — Appliquer le cours : ex. 11, 12 p. 379 |
+ S’entraîner : ex. 26 p. 383 | Vers le bac : ex. 30 p. 385
+
+3. Les interférences de deux ondes lumineuses monochromatiques
+Pour observer une figure d'interférences stable avec de la lumière, il ne suffit pas de placer deux lampes
+côte à côte : il faut éclairer deux fentes très fines avec une seule source monochromatique. Les deux
+fentes se comportent alors comme deux sources secondaires ponctuelles, de même fréquence et en phase.
+C'est le dispositif des fentes d'Young.
+a. La différence de chemin optique
+Dans un milieu transparent d'indice n, la lumière se propage moins vite que dans le vide. Parcourir une
+distance d dans ce milieu prend donc le même temps que parcourir n·d dans le vide : c'est cette longueur
+équivalente que l'on appelle le chemin optique. On définit ainsi la différence de chemin optique entre les
+deux ondes qui se superposent en un point P de l'écran :
+                                        𝛥𝐿 = 𝑛 · (𝑑2 − 𝑑1 ) = 𝑛 · 𝛿
+De la même façon, une onde de longueur d'onde λ₀ dans le vide a pour longueur d'onde λ = λ₀ / n dans le
+milieu d'indice n. Dans l'air, n = 1,00 : la différence de chemin optique se confond avec la différence de
+marche (ΔL = δ) et λ = λ₀.
+
+
+                                 Terminale spécialité — Physique-Chimie   page 4
+M. Mallet                                                                           Ch.4 — Diffraction et interférences
+
+Les conditions établies au paragraphe précédent s'écrivent alors, avec k entier :
+                                   𝛥𝐿 = 𝑘 · 𝜆0    → 𝑓𝑟𝑎𝑛𝑔𝑒𝑠 𝑏𝑟𝑖𝑙𝑙𝑎𝑛𝑡𝑒𝑠
+                                           1
+                                 𝛥𝐿 = (𝑘 + ) · 𝜆0   → 𝑓𝑟𝑎𝑛𝑔𝑒𝑠 𝑠𝑜𝑚𝑏𝑟𝑒𝑠
+                                           2
+b. L'interfrange
+Repérons un point P de l'écran par son abscisse x comptée depuis le point O situé face au milieu des deux
+fentes. Les fentes sont distantes de b et l'écran est à la distance D, très grande devant b. La géométrie du
+dispositif donne alors :
+
+
+
+
+Figure 5 — Fentes d'Young : la différence de chemin optique au point P d'abscisse x vaut ΔL = n·x·b/D lorsque D est
+                                               très grande devant b.
+                                                   𝑛 · 𝑥 · 𝑏
+                                                 𝛥𝐿 =
+                                                       𝐷
+Les franges brillantes correspondent à ΔL = k·λ₀. En reportant, on obtient la position de la k-ième frange
+brillante :
+                                                       𝑘 · 𝜆0 · 𝐷
+                                                 𝑥𝑘 =
+                                                         𝑛 · 𝑏
+L'interfrange i est la distance qui sépare les centres de deux franges brillantes (ou de deux franges sombres)
+consécutives. Il se déduit immédiatement de l'expression précédente :
+                                                                  𝜆0 · 𝐷
+                                           𝑖 = 𝑥𝑘+1 − 𝑥𝑘 =
+                                                                   𝑛 · 𝑏
+Le même calcul mené à partir de la condition d'interférences destructives conduit exactement au même
+résultat : les franges brillantes et les franges sombres sont régulièrement espacées, d'où l'aspect strié de
+la figure. Dans l'air (n = 1,00), l'expression se simplifie en la relation à retenir :
+                                                     𝜆 · 𝐷
+                                                    𝑖 =
+                                                       𝑏
+L'interfrange est d'autant plus grand que les fentes sont proches et l'écran éloigné : c'est ce qui rend les
+franges observables à l'œil nu alors que λ vaut quelques centaines de nanomètres.
+
+
+
+
+                                  Terminale spécialité — Physique-Chimie   page 5
+M. Mallet                                                                           Ch.4 — Diffraction et interférences
+
+
+
+
+Figure 6 — Franges d'interférences obtenues avec des fentes d'Young : l'interfrange i sépare deux franges brillantes
+                                                 consécutives.
+
+  Exemple — Déterminer une longueur d'onde
+  Avec des fentes distantes de b = 0,50 mm et un écran à D = 2,0 m, dans l'air, on mesure un interfrange i
+  = 2,5 mm. De i = λ·D/b on tire :
+  λ = i · b / D = (2,5×10⁻³ × 0,50×10⁻³) / 2,0 = 6,3×10⁻⁷ m = 633 nm (lumière rouge).
+  En pratique on mesure la largeur de 10 interfranges pour diviser par 10 l'incertitude de lecture.
+
+
+
+ Exercices — Manuel Hachette, chap. 18 « Diffraction et interférences » (p. 367-386)
+ Conditions sur la différence de chemin optique — Appliquer le cours : ex. 13 p. 379 | S’entraîner : ex. 26 p.
+ 383 | Vers le bac : ex. 30 p. 385
+ Position des franges et interfrange (i = λ·D/b) — Appliquer le cours : ex. 14, 15, 16 p. 379 | S’entraîner : ex.
+ 26 p. 383 | Vers le bac : ex. 30 p. 385
+
+
+Ce qu'il faut retenir
+  • Diffraction : étalement d'une onde par une ouverture ou un obstacle de taille voisine de λ.
+  • Angle caractéristique : sin θ = λ/a, et θ = λ/a (en rad) lorsque λ/a est petit ; largeur de la tache centrale
+    sur l'écran : L = 2·λ·D/a.
+  • Plus l'ouverture est petite, plus la diffraction est marquée.
+  • Interférences : superposition de deux ondes cohérentes ; différence de marche δ = d₂ − d₁.
+  • Constructives si δ = k·λ (ondes en phase) ; destructives si δ = (k + ½)·λ (opposition de phase).
+  • Lumière monochromatique : différence de chemin optique ΔL = n·(d₂ − d₁) ; franges brillantes si ΔL =
+    k·λ₀, sombres si ΔL = (k + ½)·λ₀.
+  • Fentes d'Young : ΔL = n·x·b/D, d'où l'interfrange i = λ₀·D/(n·b), soit i = λ·D/b dans l'air.
+
+ QCM — Manuel Hachette (à faire en fin de chapitre)
+ Chap. 18 — Diffraction et interférences — QCM p. 376
+ Corrigés du QCM p. 462.
+
+
+
+
+                                  Terminale spécialité — Physique-Chimie   page 6
+

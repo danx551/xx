@@ -1,0 +1,374 @@
+M. Mallet                                   Ch.5 — Lunette astronomique
+
+CHAPITRE 5 — RÉVISION
+
+Six exercices type bac
+Lunette astronomique — sujets du baccalauréat, sélectionnés et élagués pour ne garder que ce qui relève des chapitres
+1 à 5.
+
+Comment utiliser ce livret
+Ces six exercices sont construits à partir de sujets du baccalauréat récents. Ensemble, ils balaient la totalité des
+capacités exigibles du chapitre : le tableau ci-dessous indique où chacune est travaillée. Le premier part de l'œil —
+une simple lentille convergente — pour arriver à la longue-vue ; le deuxième fait construire la maquette complète,
+lentille par lentille ; les quatre suivants exploitent de vraies lunettes : celle d'une élève, celle de Huygens, celle d'un
+guetteur d'avions et celle d'un astronome amateur. Deux réflexes à prendre pour tout le chapitre : vérifier que toutes
+les longueurs sont dans la même unité avant de calculer un rapport (une focale en millimètres divisée par une focale
+en centimètres donne un grossissement faux d'un facteur 10), et se rappeler que le grossissement n'est pas une
+caractéristique de la lunette seule — il change avec l'oculaire que l'on visse.
+
+
+
+Ce que couvre chaque exercice
+                               Capacité exigible du programme                                               Exercices
+   Modéliser une lentille mince convergente ; définir le foyer image, la distance focale et la                1·2
+                                            vergence
+   Décrire la formation de l'image d'un objet à l'infini dans le plan focal image d'une lentille            1·2·4·6
+                                          convergente
+         Décrire le principe d'une lunette afocale (objectif et oculaire) et exprimer son                1·2·3·4·5·6
+                                   grossissement G = f'obj/f'oc
+   Exploiter les données caractéristiques d'une lunette commerciale : diamètre de l'objectif,                 3·5·6
+                         distances focales de l'objectif et des oculaires
+       Capacité expérimentale — estimer la distance focale d'une lentille convergente                           2·6
+   Capacité expérimentale — réaliser une maquette de lunette astronomique et choisir les                         2
+                                             lentilles
+       Rappel de 1re — valeurs algébriques, relation de conjugaison et grandissement                          1·2
+  Rappel du chapitre 3 — effet Doppler : fréquences perçues à l'approche et à l'éloignement                    5
+            Rappel du chapitre 4 — diffraction : ce qui limite la finesse d'une image                          3
+     Transversal — pouvoir de résolution de l'œil : condition pour distinguer deux points                  1·2·3·5·6
+                 Transversal — incertitude-type, propagation et écart normalisé                                4
+
+
+
+Les six sujets d'origine
+▪ Exercice 1 — Observation ornithologique d'une oie cendrée, Métropole, septembre 2023, sujet 1, exercice 1 (11
+  points).
+▪ Exercice 2 — Observation distante, Asie, 2024, sujet 1, exercice 2 (6 points).
+▪ Exercice 3 — Une jeune astronome, Polynésie, 2024, sujet 1, exercice 3 (6 points).
+▪ Exercice 4 — L'astroscope, Métropole, 2026, sujet de secours 2, exercice 2 (5 points).
+▪ Exercice 5 — Observation d'un avion en vol, Métropole, 2024, sujet 1, exercice 2 (5 points).
+▪ Exercice 6 — Une lunette d'amateur pour voir des étoiles doubles, Asie, 2021, sujet 2, exercice C (5 points).
+
+Les énoncés ont été reformulés à partir de ces sujets — contexte, données et travail demandé sont conservés — et les figures ont été
+redessinées. Les corrigés détaillés font l'objet d'un document séparé.
+
+
+
+
+                                      Terminale spécialité — Physique-Chimie          page 1
+M. Mallet                                      Ch.5 — Lunette astronomique
+
+
+EXERCICE 1 · De l'œil à la longue-vue : observer une oie cendrée D'après un exercice de 11 points ·
+≈1h
+D'après Métropole, septembre 2023, sujet 1, exercice 1 « Observation ornithologique d'une oie cendrée ».
+
+Dans un parc ornithologique, un observateur repère une oie cendrée posée à 280 m de l'affût. Que son œil
+seul lui permet-il de voir, et qu'apporte sa longue-vue ?
+Partie A — L'œil, modélisé par une lentille convergente
+On modélise l'œil par une lentille convergente de centre optique O et un écran, la rétine, placé 17 mm
+derrière O (figure 1). L'axe est orienté dans le sens de la lumière : on travaille en valeurs algébriques.
+
+
+
+
+                               Figure 1 — Modèle de l'œil : une lentille convergente et un écran, la rétine.
+
+Données
+▪ Lentille modélisant l'œil au repos : f' = 17 mm ; rétine à 17 mm de O, assimilée à un disque de rayon 6 mm centré
+  sur l'axe optique.
+▪ Oie : taille AB = 0,80 m, longueur du bec 7 cm, distance 280 m.
+▪ Pouvoir de résolution de l'œil : αm = 3,0×10-4 rad — deux points ne sont vus distinctement que si l'angle sous lequel
+  on les voit dépasse αm. Pour un angle petit devant 1 rad (exprimé en radians) : tan α ≈ α.
+▪ Valeurs algébriques : 1/OA' − 1/OA = 1/f' et γ = A'B'/AB = OA'/OA.
+
+
+
+Q1. Calculer la vergence C de la lentille qui modélise l'œil au repos, et préciser son unité.
+Q2. À l'aide de la relation de conjugaison, vérifier que l'image de l'oie se forme bien sur la rétine, c'est-à-dire
+     que OA' = 17 mm.
+Q3. Calculer le grandissement γ, puis la taille de l'image A'B' de l'oie sur la rétine. L'image de l'oie tient-elle
+     entièrement sur la rétine ?
+Q4. Déterminer la plus petite dimension visible à 280 m. L'observateur distingue-t-il l'oie ? Son bec ?
+Partie B — La longue-vue afocale
+Pour voir le bec, l'observateur utilise une longue-vue afocale : objectif L₁ de focale f'₁ = 450 mm, oculaire L₂
+de focale f'₂ = 30 mm (figure 2). L'oie est assez loin pour être considérée à l'infini.
+
+
+
+
+             Figure 2 — La longue-vue afocale : l'objet est vu sous l'angle α à l'œil nu, sous l'angle α' à travers l'instrument.
+
+Q5. Justifier que A₁B₁ se forme dans le plan focal image de l'objectif, et pourquoi F'₁ et F₂ doivent être
+     confondus.
+Q6. À l'aide de la figure 2, exprimer α puis α' en fonction de A₁B₁ et des focales ; en déduire G, puis le
+     calculer.
+Q7. L'observateur distingue-t-il le bec de l'oie à travers la longue-vue ?
+Élagage La partie 3 du sujet d'origine (interférences avec une plume, 7 questions) a été retirée : elle relève du chapitre 4. Q1 a été
+ajoutée.
+
+
+
+                                         Terminale spécialité — Physique-Chimie             page 2
+M. Mallet                                    Ch.5 — Lunette astronomique
+
+
+EXERCICE 2 · Voir les pales d'une éolienne à 195 km                                                                    6 points · ≈ 1 h
+
+D'après Asie, 2024, sujet 1, exercice 2 « Observation distante ».
+
+Par temps très clair, on aperçoit depuis le massif du Mercantour la crête de l'Arcaja, au nord de la Corse :
+195 km de mer séparent les deux points. Une éolienne y est installée — peut-on en distinguer les pales, à
+l'œil nu puis avec une lunette construite au laboratoire ?
+
+
+
+
+                                Figure 1 — Une pale, de longueur L, vue à la distance D sous l'angle θ.
+
+Données
+▪ Distance d'observation : D = 195 km ; longueur d'une pale : L = 44 m.
+▪ Pouvoir de résolution de l'œil : ε = 3,0×10-4 rad. Pour un angle petit devant 1 rad (exprimé en radians) : tan θ ≈ θ.
+▪ Lentilles convergentes disponibles au laboratoire : 5,0 · 10,0 · 12,5 · 20,0 · 30,0 cm.
+▪ Critère de confort : l'observation est confortable si l'angle θ' sous lequel on voit la pale à travers la lunette vaut au
+  moins 4ε.
+
+
+
+Q1. Montrer que l'angle θ sous lequel une pale est vue à l'œil nu vaut environ 2,3×10-4 rad.
+Q2. L'observateur distingue-t-il une pale à l'œil nu ?
+On construit alors une maquette de lunette astronomique en montant deux des lentilles disponibles dans
+deux tubes qui coulissent l'un dans l'autre. La figure 2 en donne le schéma de principe, à compléter.
+
+
+
+
+                                     Figure 2 — Schéma de principe de la maquette (à compléter).
+
+Q3. Indiquer, en justifiant, laquelle des deux lentilles est l'objectif et laquelle l'oculaire.
+Q4. Où doit se trouver le foyer objet F₂ de l'oculaire pour que la lunette soit afocale ? Justifier, puis placer F₂
+     et F'₂.
+Q5. En déduire l'expression de la distance d = O₁O₂ entre les deux lentilles, en fonction de f'₁ et f'₂.
+Q6. Tracer la marche de deux rayons issus d'un point B situé à l'infini, hors de l'axe. Faire apparaître A₁B₁,
+     puis les angles θ et θ'.
+Q7. Démontrer que le grossissement G = θ'/θ s'écrit G = f'₁/f'₂.
+Q8. Choisir les deux lentilles de la maquette permettant une observation confortable des pales, et donner la
+     longueur de l'instrument obtenu. La démarche est évaluée, même si elle n'aboutit pas.
+Q9. Pour vérifier la distance focale de l'objectif choisi, on forme sur un écran l'image d'un lampadaire situé à
+     50 m. Expliquer pourquoi la distance lentille–écran est une bonne estimation de f'₁, et évaluer l'écart
+     commis.
+Élagage Aucune question du sujet d'origine n'a été retirée. Q9 a été ajoutée (capacité expérimentale : estimer une distance focale).
+
+
+
+
+                                        Terminale spécialité — Physique-Chimie          page 3
+M. Mallet                                     Ch.5 — Lunette astronomique
+
+
+EXERCICE 3 · Choisir sa première lunette astronomique                                                                    6 points · ≈ 1 h
+
+D'après Polynésie, 2024, sujet 1, exercice 3 « Une jeune astronome ».
+
+Une élève de terminale veut s'offrir une lunette astronomique « premier prix ». Avant de l'acheter, elle
+vérifie deux choses : que les grossissements annoncés sont exacts, et que l'instrument lui montrera la
+grande tache rouge de Jupiter, même au plus faible grossissement.
+
+Ce que dit la notice
+▪ Objectif : diamètre Dobj = 50 mm, distance focale f'₁ = 60,0 cm.
+▪ Deux oculaires interchangeables : f'₂ = 20 mm et f'₂ = 4 mm.
+▪ Grossissements annoncés : ×30 et ×150. Masse nette : 1 kg.
+
+
+
+Données astronomiques et optiques
+▪ Distances au Soleil : Terre DTS = 1,5×108 km, Jupiter DJS = 7,8×108 km (orbites circulaires et coplanaires).
+▪ Diamètre de la grande tache rouge : dtache = 1,5×104 km. Pouvoir de résolution de l'œil : 2,9×10-4 rad. Petits angles
+  : tan θ ≈ θ.
+▪ Lumière visible : λ = 550 nm ; diffraction par une ouverture circulaire de diamètre D : θdiff = 1,22 λ/D.
+
+
+
+
+  Figure 1 — À gauche, les positions d'opposition et de conjonction de Jupiter. À droite, l'angle θ sous lequel on voit la grande tache
+                                                               rouge.
+
+Q1. Qu'appelle-t-on une lunette afocale ? Quel est l'intérêt de ce réglage pour l'observateur ?
+Q2. Rappeler la définition du grossissement G et son expression en fonction de f'₁ et f'₂, puis vérifier les
+     valeurs annoncées.
+Q3. À l'aide de la figure 1, indiquer dans quelle situation — opposition ou conjonction — Jupiter est la plus
+     facile à observer depuis la Terre. Calculer la distance Terre–Jupiter correspondante.
+Q4. Calculer le diamètre apparent θ de la grande tache rouge vue à l'œil nu depuis la Terre.
+Q5. Calculer le diamètre apparent θ' de la tache à travers la lunette, au plus faible grossissement. L'élève
+     pourra-t-elle la voir ?
+Q6. Citer un phénomène optique susceptible de limiter la finesse de l'image obtenue, et expliquer en une
+     phrase son origine.
+Q7. Un modèle voisin, de même focale mais dont l'objectif mesure 70 mm de diamètre, est vendu plus cher.
+     Comparer la lumière recueillie par les deux instruments, puis leur sensibilité au phénomène de Q6.
+Élagage Les questions de construction graphique du sujet d'origine ont été retirées : elles sont travaillées aux exercices 2 et 4. Q7
+a été ajoutée pour exploiter le diamètre de l'objectif et faire le lien avec le chapitre 4.
+
+
+
+
+                                        Terminale spécialité — Physique-Chimie           page 4
+M. Mallet                                     Ch.5 — Lunette astronomique
+
+
+EXERCICE 4 · L'astroscope de Huygens                                                                                    5 points · ≈ 55 min
+
+D'après Métropole, 2026, sujet de secours 2, exercice 2 « L'astroscope ».
+
+Au XVIIe siècle, les astronomes construisent des lunettes de plus en plus longues, et de plus en plus difficiles
+à manœuvrer. En 1683, Christiaan Huygens imagine une lunette sans tube, l'astroscope : l'objectif est
+hissé au sommet d'un mât, l'oculaire reste dans la main, et un fil tendu maintient l'alignement (figure 1).
+Huygens s'en sert pour l'une des premières mesures précises du diamètre apparent de Jupiter — c'est elle
+que l'on contrôle ici.
+
+
+
+
+            Figure 1 — L'astroscope : les deux lentilles La et Lb sont alignées par un fil tendu faisant 45° avec l'horizontale.
+
+Données
+▪ Distances focales : objectif f'₁ = 34 m ; oculaire f'₂ = 7,0 cm.
+▪ Le fil, de longueur égale à f'₁, fait un angle de 45° avec l'horizontale ; l'œil de l'observateur est à 1,5 m du sol. On
+  prendra sin 45° = 0,707.
+▪ Angle sous lequel Huygens voit Jupiter dans l'astroscope : θ' = 9,4×10-2 rad, avec u(θ') = 2×10-3 rad ; u(G) = 40.
+▪ Propagation : u(θ) = θ × √[ (u(θ')/θ')² + (u(G)/G)² ].
+▪ Valeur de référence : θref = 2,2×10-4 rad ; deux valeurs sont compatibles si l'écart normalisé |θ − θref|/u(θ) est
+  inférieur à 2.
+
+
+
+Q1. Sur la figure 1, identifier laquelle des deux lentilles, La ou Lb, joue le rôle d'objectif et laquelle celui
+     d'oculaire. Justifier.
+Q2. Montrer que la hauteur du mât doit valoir environ 25 m.
+La figure 2 donne le schéma optique de l'astroscope, sans échelle : L₁ désigne l'objectif et L₂ l'oculaire.
+
+
+
+
+                                       Figure 2 — Schéma optique de l'astroscope (à compléter).
+
+Q3. Jacques Cassini écrit qu'avec un tel instrument « la difficulté est de réunir le foyer de l'oculaire à celui de
+     l'objectif ». Traduire cette condition, puis placer F₂ sur la figure 2.
+Q4. Tracer la marche de deux rayons issus d'un point B situé à l'infini, hors de l'axe. Faire apparaître A₁B₁,
+     puis les angles θ et θ'.
+Q5. Établir l'expression du grossissement G = θ'/θ en fonction de f'₁ et f'₂, puis calculer G.
+Q6. En déduire l'angle θ sous lequel Huygens voyait Jupiter à l'œil nu, puis calculer son incertitude-type u(θ).
+Q7. La mesure de Huygens est-elle compatible avec la valeur de référence ?
+Élagage Aucune question du sujet d'origine n'a été retirée ; le calcul du grossissement et celui de l'angle ont simplement été
+regroupés en Q5 et Q6.
+
+
+
+
+                                        Terminale spécialité — Physique-Chimie             page 5
+M. Mallet                                     Ch.5 — Lunette astronomique
+
+
+EXERCICE 5 · Un avion en vol : de la lunette au son du moteur                                                                 5 points · ≈ 55 min
+
+D'après Métropole, 2024, sujet 1, exercice 2 « Observation d'un avion en vol ».
+
+Un passionné d'aviation observe les avions de ligne qui passent au-dessus de chez lui. Jusqu'où sa lunette
+astronomique lui permet-elle de voir les détails d'un A312 en vol de croisière ? Plus tard, il enregistre le son
+du moteur d'un avion à l'atterrissage pour en estimer la vitesse.
+
+
+
+
+                    Figure 1 — À gauche, l'avion vu à la verticale de l'observateur. À droite, un hublot, de largeur ℓ.
+
+Données
+▪ Avion : longueur L = 44,5 m, altitude de croisière h = 10,4 km, vitesse de croisière 863 km·h -1 ; largeur d'un hublot :
+  ℓ = 23 cm.
+▪ Grossissement de la lunette, selon l'oculaire : compris entre 16 et 48.
+▪ Pouvoir de résolution de l'œil : 3,0×10-4 rad ; petits angles : tan α ≈ α.
+▪ Vitesse du son dans l'air ce jour-là : c = 345 m·s-1.
+
+
+
+Partie A — Ce que montre la lunette
+Q1. Qu'est-ce qu'une lunette afocale ? De quelles lentilles est-elle constituée, et laquelle a la plus grande
+     focale ?
+Q2. L'avion passe à la verticale de l'observateur. Calculer l'angle α sous lequel celui-ci le voit à l'œil nu.
+      Distingue-t-il l'avant de la queue de l'appareil ?
+Q3. Calculer l'angle sous lequel il voit un hublot à l'œil nu.
+Q4. Rappeler l'expression de G en fonction de α et α', en déduire le grossissement minimal permettant de
+     distinguer les deux bords d'un hublot, puis conclure.
+Partie B — Le son du moteur (rappel du chapitre 3)
+À l'atterrissage d'un autre appareil, l'observateur enregistre le son du moteur : il perçoit f A = 2,2 kHz tant que
+l'avion s'approche, puis fE = 1,5 kHz une fois qu'il s'éloigne. La fréquence émise f₀ est inconnue.
+Q5. Nommer le phénomène physique à l'origine de cette variation de fréquence.
+Q6. Parmi les quatre propositions ci-dessous, choisir le couple d'expressions correct, et expliquer pourquoi
+     les trois autres doivent être écartées.
+                                         À l'approche                                                 À l'éloignement
+         A                                fA = c / (c − v)                                               fE = c / (c + v)
+         B                             fA = f₀ × c / (c − v)                                          fE = f₀ × c / (c + v)
+         C                             fA = f₀ × (c − v) / c                                          fE = f₀ × (c + v) / c
+         D                            fA = 2 f₀ × c / (c − v)                                         fE = f₀ × c / (c + v)
+
+
+                                           v : vitesse de l'avion ; c : vitesse du son dans l'air.
+
+Q7. En déduire la vitesse v de l'avion à l'atterrissage, en km·h-1, puis commenter sa valeur.
+Élagage Les questions de construction graphique du sujet d'origine ont été retirées : elles sont travaillées aux exercices 2 et 4. Le
+calcul de l'angle sous lequel on voit un hublot a été isolé en Q3.
+
+
+
+
+                                        Terminale spécialité — Physique-Chimie               page 6
+M. Mallet                                    Ch.5 — Lunette astronomique
+
+
+EXERCICE 6 · Une lunette d'amateur et un couple d'étoiles                                                            5 points · ≈ 50 min
+
+D'après Asie, 2021, sujet 2, exercice C « Une lunette d'amateur pour voir des étoiles doubles ».
+
+Un astronome amateur achète une lunette vendue dans le commerce. La notice est avare de détails : elle ne
+donne même pas la distance focale de l'objectif. On se propose de la retrouver à partir des seules
+indications disponibles, puis d'utiliser l'instrument pour encadrer l'angle qui sépare les deux étoiles d'un
+couple.
+
+Ce que dit la notice
+▪ Lunette astronomique afocale, livrée avec deux oculaires interchangeables de distances focales 6 mm et 12 mm.
+▪ « Grossissement jusqu'à 100 × ».
+▪ Longueur totale de l'instrument : 56 cm.
+▪ La distance focale de l'objectif n'est pas précisée.
+
+
+
+
+                   Figure 1 — La lunette : la longueur totale annoncée est la distance O ₁O₂ entre les deux lentilles.
+
+Données
+▪ Deux points ne sont vus distinctement que si l'angle sous lequel on les voit dépasse 3,0×10-4 rad.
+▪ Pour un angle petit devant 1 rad : tan α ≈ α.
+
+
+
+Q1. Justifier que la distance O₁O₂ entre les deux lentilles vaut f'₁ + f'₂, puis en déduire une estimation de la
+     distance focale f'₁ de l'objectif, pour chacun des deux oculaires.
+Q2. Exprimer le grossissement en fonction de f'₁ et f'₂, puis calculer les deux grossissements que permet
+     cette lunette.
+Q3. Expliquer pourquoi le constructeur choisit f'₂ ≪ f'₁.
+Q4. L'indication « grossissement jusqu'à 100 × » portée sur la notice est-elle justifiée ?
+L'amateur pointe ensuite un couple d'étoiles doubles. Selon l'oculaire qu'il visse, il obtient l'une ou l'autre
+des deux images de la figure 2.
+
+
+
+
+                                Figure 2 — Le même couple d'étoiles, observé avec les deux oculaires.
+
+Q5. Attribuer chaque observation à l'oculaire utilisé, en justifiant.
+Q6. En déduire un encadrement de l'angle α sous lequel les deux étoiles sont vues à l'œil nu.
+Élagage Les questions de construction graphique du sujet d'origine (construire l'image intermédiaire A₁B₁, tracer la marche d'un
+rayon à travers l'oculaire, placer α') ont été retirées : elles sont travaillées aux exercices 2 et 4.
+
+
+
+                                        Terminale spécialité — Physique-Chimie           page 7
+

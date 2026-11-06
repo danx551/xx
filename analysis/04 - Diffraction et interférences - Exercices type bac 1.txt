@@ -1,0 +1,448 @@
+M. Mallet                                Ch.4 — Diffraction et interférences
+
+CHAPITRE 4 — RÉVISION
+
+Six exercices type bac
+Diffraction et interférences — sujets du baccalauréat, sélectionnés et élagués pour ne garder que ce qui relève des
+chapitres 1 à 4.
+
+Comment utiliser ce livret
+Ces six exercices sont construits à partir de sujets du baccalauréat récents. Ensemble, ils balaient la totalité des
+capacités exigibles du chapitre : le tableau ci-dessous indique où chacune est travaillée. Les deux premiers portent
+sur la diffraction — par un fil, puis par une ouverture circulaire ; les trois suivants sur les interférences — lumineuses,
+sonores, puis en lames minces ; le dernier combine les deux et remobilise le chapitre 3. Les questions relevant d'un
+chapitre non encore traité (mécanique, fluides, effet photoélectrique) ont été retirées, et la mention correspondante
+figure à la fin de chaque exercice. Un réflexe à prendre pour tout le chapitre : avant d'appliquer une relation, vérifier
+que λ et la dimension de l'ouverture sont dans la même unité, et se demander si l'angle est assez petit pour
+confondre sin θ et θ — ce qui est vrai en optique, mais faux pour les sons.
+
+
+
+Ce que couvre chaque exercice
+                                 Capacité exigible du programme                                             Exercices
+      Caractériser le phénomène de diffraction et en citer des conséquences concrètes                       1·2·4·6
+      Exploiter la relation sin θ = λ/a, et θ = λ/a lorsque λ/a est petit ; cas d'une ouverture             1·2·4·6
+                                       circulaire (θ = 1,22·λ/a)
+   Caractériser le phénomène d'interférences de deux ondes et en citer des conséquences                       3·4·5
+  Établir les conditions d'interférences constructives et destructives de deux ondes issues de                3·4·5
+                       sources en phase, et prévoir les lieux d'interférences
+                     Établir ou exploiter l'expression de l'interfrange i = λ·D/b                             3·4
+   Capacité expérimentale : mettre en œuvre des dispositifs de diffraction et d'interférences               1·3·4·6
+     Capacité numérique : représenter en Python la somme de deux signaux sinusoïdaux                           4
+                                              synchrones
+     Rappel du chapitre 3 — λ = v/f ; niveau d'intensité sonore et atténuation géométrique                    4·6
+  Transversal — incertitude-type et compatibilité d'une mesure avec une valeur de référence                1·2·3·5·6
+
+
+
+Les six sujets d'origine
+▪ Exercice 1 — Contrôle de la largeur d'un fil de suture, Métropole, septembre 2022, sujet 1, exercice C (5 points).
+▪ Exercice 2 — Étude d'un analyseur d'hématologie, Polynésie, 2023, épreuve de la spécialité sciences de l'ingénieur,
+  exercice B (10 points).
+▪ Exercice 3 — L'expérience des trous d'Young, Asie, 2022, sujet 1, exercice C (5 points).
+▪ Exercice 4 — Acoustique d'une salle de spectacle, Centres étrangers, 2024, épreuve de la spécialité sciences de
+  l'ingénieur, exercice A (10 points).
+▪ Exercice 5 — La couleur des scarabées, Métropole, septembre 2025, sujet 2, exercice 2 (5 points).
+▪ Exercice 6 — Une brosse à dents, Polynésie, septembre 2024, sujet 2, exercice 2 (6 points).
+
+Les énoncés ont été reformulés à partir de ces sujets — contexte, données et travail demandé sont conservés — et les figures ont été
+redessinées. Les corrigés détaillés font l'objet d'un document séparé.
+
+
+
+
+                                      Terminale spécialité — Physique-Chimie          page 1
+M. Mallet                                  Ch.4 — Diffraction et interférences
+
+
+EXERCICE 1 · Contrôler le diamètre d'un fil de suture                                                              5 points · ≈ 50 min
+
+D'après Métropole, septembre 2022, sujet 1, exercice C « Contrôle de la largeur d'un fil de suture ».
+
+Un fil de suture rapproche les bords d'une plaie le temps de la cicatrisation. Son diamètre est un paramètre
+critique : trop fin, il cède ; trop épais, il marque la peau. Les fabricants le contrôlent en continu par diffraction
+d'un faisceau laser — une méthode qui ne touche pas le fil et ne le déforme donc pas. On reproduit ce
+contrôle sur un fil de suture en polyamide acheté en pharmacie, dont l'étiquette porte la mention « 5/0 ».
+
+
+
+
+                              Figure 1 — Montage : le laser éclaire le fil, l'écran est placé à la distance D.
+
+Données
+▪ Longueur d'onde du laser : λ = 532 nm.
+▪ Pour un angle θ petit devant 1 rad (θ exprimé en radians) : tan θ ≈ θ.
+▪ Incertitude-type sur la mesure de la largeur de la tache centrale : u(L) = 1,0×10-3 m ; propagation : u(a) = a ×
+  u(L)/L.
+
+
+
+   Désignation USP                  0                    2/0                    3/0                     4/0              5/0
+  Diamètre du fil (mm)        0,350 à 0,399         0,300 à 0,349          0,200 à 0,299           0,150 à 0,199    0,100 à 0,149
+
+
+                                                  Nomenclature USP des fils de suture.
+
+Q1. Indiquer, sans calcul, comment évolue l'angle caractéristique de diffraction θ lorsque le diamètre a du fil
+      augmente.
+Q2. À l'aide de la figure 1, exprimer θ en fonction de L et D.
+Q3. En déduire l'expression de la largeur L de la tache centrale en fonction de λ, D et a.
+On remplace le fil de suture par sept fils calibrés de diamètres a connus et on mesure à chaque fois la largeur
+L de la tache centrale (figure 2).
+
+
+
+
+                           Figure 2 — Largeur de la tache centrale en fonction de l'inverse du diamètre du fil.
+
+Q4. Les résultats de la figure 2 sont-ils cohérents avec l'expression établie à la question Q3 ?
+Q5. Montrer que la relation L = k × 1/a, avec k = 1,6×10-6 m2, rend compte de ces mesures. En déduire la
+     distance D utilisée.
+
+                                        Terminale spécialité — Physique-Chimie             page 2
+M. Mallet                                  Ch.4 — Diffraction et interférences
+On place enfin le fil de suture dans le montage. La figure 3 reproduit la figure de diffraction obtenue sur
+l'écran de l'appareil de contrôle.
+
+
+
+
+                                Figure 3 — Figure de diffraction du fil de suture, avec sa barre d'échelle.
+
+Q6. À partir de la figure 3, déterminer le diamètre a du fil de suture.
+Q7. Calculer l'incertitude-type u(a), puis conclure quant à l'indication « 5/0 » portée sur l'étiquette.
+Élagage Aucune question du sujet d'origine n'a été retirée. La détermination de la distance D (fin de Q5) a été ajoutée : elle
+exploite la pente mesurée et la longueur d'onde donnée.
+
+
+
+
+                                        Terminale spécialité — Physique-Chimie            page 3
+M. Mallet                                  Ch.4 — Diffraction et interférences
+
+
+EXERCICE 2 · Un analyseur d'hématologie                                                                     10 points à l'origine · ≈ 35 min
+
+D'après Polynésie, 2023, épreuve de la spécialité sciences de l'ingénieur, exercice B « Étude d'un analyseur d'hématologie ».
+
+Un analyseur d'hématologie compte les cellules du sang et mesure leur taille. Les globules blancs, ou
+leucocytes, se répartissent en cinq familles que leur diamètre suffit souvent à distinguer. L'appareil éclaire
+chaque cellule par un faisceau laser et analyse la figure de diffraction obtenue. D'après le théorème de
+Babinet, un objet opaque et une ouverture de même forme donnent la même figure de diffraction : une
+cellule de diamètre a diffracte donc comme un trou circulaire de diamètre a.
+
+
+
+
+              Figure 1 — La cellule, assimilée à un trou circulaire de diamètre a, diffracte le faisceau laser sur le capteur.
+
+Données
+▪ Diffraction par une ouverture circulaire de diamètre a, pour un angle petit : θ = 1,22 × λ/a.
+▪ Longueur d'onde du laser : λ = (635 ± 1) nm.
+▪ Diamètre de la tache centrale sur le capteur : L = (45 ± 1) mm.
+▪ Distance cellule-capteur : D = (350 ± 1) mm.
+▪ Propagation : u(a)/a = √[ (u(D)/D)2 + (u(λ)/λ)2 + (u(L)/L)2 ].
+▪ Critère d'accord avec une valeur de référence : |x − xréf| / u(x) ≤ 2.
+
+
+
+Type de leucocyte         lymphocyte            granulocyte                granulocyte                granulocyte                monocyte
+                                                 basophile                 neutrophile                éosinophile
+ Diamètre moyen                 8                   10                         12                         13                        18
+      (µm)
+
+
+                                     Tableau 1 — Diamètre moyen des cinq familles de leucocytes.
+
+Q1. Rappeler à quelle condition le phénomène de diffraction est nettement observable, et vérifier que c'est
+     bien le cas ici.
+Q2. À l'aide de la figure 1 et de l'approximation des petits angles, exprimer θ en fonction de L et D.
+Q3. En déduire que le diamètre de la cellule s'écrit a = 2,44 × D × λ / L.
+Q4. Calculer a, avec quatre chiffres significatifs.
+Q5. Calculer l'incertitude-type u(a) et écrire le résultat de la mesure. Quelle grandeur limite la précision ?
+Q6. Émettre une hypothèse sur la nature de la cellule analysée, puis la valider.
+Élagage Aucune question du sujet d'origine n'a été retirée. La question Q1, sur la condition d'observation de la diffraction, a été
+ajoutée pour ouvrir l'exercice.
+
+
+
+
+                                        Terminale spécialité — Physique-Chimie             page 4
+M. Mallet                                  Ch.4 — Diffraction et interférences
+
+
+EXERCICE 3 · L'expérience des trous d'Young                                                                           5 points · ≈ 50 min
+
+D'après Asie, 2022, sujet 1, exercice C « L'expérience des trous d'Young ».
+
+En 1801, Thomas Young éclaire avec une source unique deux trous très fins percés dans un écran opaque,
+et observe plus loin une alternance de zones claires et sombres. De la lumière ajoutée à de la lumière peut
+donc donner de l'obscurité : c'est la preuve de son caractère ondulatoire. On reprend ici son dispositif pour
+identifier le laser utilisé parmi ceux du laboratoire.
+
+
+
+
+             Figure 1 — Les deux trous S₁ et S₂, distants de b, et le point M d'abscisse x sur l'écran placé à la distance D.
+
+Données
+▪ Célérité de la lumière dans l'air : cair = 3,0×108 m·s-1, pratiquement égale à celle du vide.
+▪ Distance entre les deux trous : b = (2,0 ± 0,1)×10-4 m.
+▪ Distance trous-écran : D = (1,190 ± 0,005) m.
+▪ Incertitude-type sur l'interfrange : u(i) = 0,1 mm.
+▪ Propagation : u(λ)/λ = √[ (u(b)/b)2 + (u(i)/i)2 + (u(D)/D)2 ].
+▪ Lasers disponibles : bleu 473 nm ; vert 532 nm ; rouge A 632 nm ; rouge B 650 nm ; rouge C 694 nm.
+
+
+
+Q1. Les deux trous se comportent comme deux sources ponctuelles en phase. Justifier que, dans l'air, la
+     différence de chemin optique entre les deux ondes qui se superposent en M se confond avec la
+     différence de marche δ = S2M − S1M.
+Q2. À l'aide de la figure 1 et du théorème de Pythagore, exprimer (S1M)2 et (S2M)2 en fonction de D, x et b.
+Q3. En déduire que (S2M)2 − (S1M)2 = 2·x·b, puis, sachant que S1M + S2M ≈ 2D, établir que δ = x·b/D.
+Q4. Écrire la condition d'interférences constructives, et en déduire l'abscisse xk du centre de la k-ième frange
+     brillante.
+Q5. En déduire l'expression de l'interfrange i.
+
+
+
+
+                                          Figure 2 — Intensité lumineuse relevée sur l'écran.
+
+Q6. Déterminer l'interfrange à partir de la figure 2, en expliquant comment obtenir la meilleure précision
+     possible.
+Q7. En déduire la longueur d'onde du laser utilisé.
+Q8. Calculer u(λ), puis identifier le ou les lasers compatibles avec cette mesure.
+Élagage Aucune question du sujet d'origine n'a été retirée.
+
+                                        Terminale spécialité — Physique-Chimie            page 5
+M. Mallet                                 Ch.4 — Diffraction et interférences
+
+
+EXERCICE 4 · L'acoustique d'une salle de spectacle                                                      10 points à l'origine · ≈ 50 min
+
+D'après Centres étrangers, 2024, épreuve de la spécialité sciences de l'ingénieur, exercice A « Acoustique d'une salle de spectacle ».
+
+La porte d'une salle de concert est restée entrouverte. Juste devant l'ouverture, on entend l'orchestre dans
+son intégralité ; en se décalant sur le côté, on ne perçoit plus guère que les sons graves. La diffraction
+explique cette sélection. On étudie ensuite au laboratoire les interférences de deux émetteurs d'ultrasons,
+modèle réduit des réflexions multiples qui se superposent dans une salle.
+A. La porte entrouverte
+Données
+▪ Domaine audible : 20 Hz < f < 20 kHz.
+▪ Célérité du son dans l'air à 20 °C : v = 343 m·s-1.
+▪ Largeur de l'ouverture de la porte : a = 1,0 m.
+▪ Deux notes jouées par l'orchestre : f1 = 440 Hz et f2 = 4·f1 = 1760 Hz.
+▪ Diffraction par une ouverture de largeur a : sin θ = λ/a.
+
+
+
+Q1. Montrer que l'angle caractéristique de diffraction s'écrit θ = arcsin( v / (f·a) ).
+Q2. Calculer les angles θ1 et θ2 correspondant aux deux notes.
+Q3. Réaliser un schéma cohérent faisant apparaître les deux angles derrière l'ouverture, puis commenter
+     l'affirmation : « sur le côté, on n'entend que les basses ». Pourquoi ne peut-on pas, ici, remplacer sin θ
+     par θ ?
+B. Les interférences de deux émetteurs d'ultrasons
+Deux émetteurs E1 et E2, alimentés par le même générateur, émettent des signaux sinusoïdaux synchrones
+de même fréquence. Un récepteur R se déplace le long de l'axe (Ox) et l'on relève les positions où son
+amplitude est maximale.
+
+
+
+
+                        Figure 1 — Dispositif : deux émetteurs distants de e, récepteur mobile à la distance D.
+
+Données
+▪ Écartement des émetteurs : e = 15 cm ; distance émetteurs-axe : D = 50 cm.
+▪ Différence de marche en un point d'abscisse x (admise) : E 2R − E1R = e·x/D.
+
+
+
+
+                                  Figure 2 — Positions des maxima d'amplitude relevées sur la règle.
+
+
+                                        Terminale spécialité — Physique-Chimie          page 6
+M. Mallet                                 Ch.4 — Diffraction et interférences
+Q4. Déterminer les quatre interfranges i1 à i4 de la figure 2, puis leur valeur moyenne.
+Q5. Établir la condition d'interférences constructives et en déduire les abscisses des maxima. Vérifier que le
+     relevé de la figure 2 y est conforme.
+Q6. En déduire la fréquence des signaux émis. S'agit-il bien d'ultrasons ?
+On veut enfin visualiser, à l'aide d'un programme, la superposition des deux signaux reçus en un point donné.
+
+Programme à compléter
+ 1   import numpy as np
+ 2   import matplotlib.pyplot as plt
+ 3
+ 4   f = ...                   # frequence des deux signaux, en Hz
+ 5   t = np.linspace(0, 1e-4, 2000)
+ 6   phi = 0                   # dephasage entre les deux signaux, en rad
+ 7
+ 8   s1 = np.sin(2 * np.pi * f * t)
+ 9   s2 = ...
+10   s = ...
+11
+12   plt.plot(t, s1, t, s2, t, s)
+13   plt.show()
+
+
+
+Q7. Recopier et compléter les lignes 4, 9 et 10 du programme. Quelle valeur faut-il ensuite donner à phi
+     (ligne 6) pour simuler des interférences destructives ? Que vaut alors le signal s ?
+Élagage Aucune question du sujet d'origine n'a été retirée. La question Q7, sur le programme Python, a été ajoutée : elle met en
+œuvre la capacité numérique du chapitre (représenter la somme de deux signaux sinusoïdaux synchrones).
+
+
+
+
+                                       Terminale spécialité — Physique-Chimie          page 7
+M. Mallet                                 Ch.4 — Diffraction et interférences
+
+
+EXERCICE 5 · La couleur des scarabées                                                                                    5 points · ≈ 50 min
+
+D'après Métropole, septembre 2025, sujet 2, exercice 2 « La couleur des scarabées ».
+
+La carapace de certains scarabées n'est pas colorée par un pigment : sa couleur vient d'un empilement de
+couches transparentes très minces, alternativement de fort et de faible indice optique. La lumière se
+réfléchit partiellement sur chaque interface et les ondes réfléchies interfèrent ; selon l'épaisseur des couches,
+une longueur d'onde se trouve renforcée, et c'est elle que l'on voit. On ne considère ici que les deux
+premières réflexions — les rayons 1 et 2 — et toutes les couches sont supposées de même épaisseur e.
+
+
+
+
+                   Figure 1 — Les rayons 1 et 2, réfléchis sur les deux premières interfaces, interfèrent à la sortie.
+
+Données
+▪ Indice optique des couches de fort indice : n = 1,7.
+▪ Différence de chemin optique entre les rayons 1 et 2 : δ = 2·n·e − λ/2, avec k entier positif ou nul.
+▪ Couleur perçue selon la longueur d'onde renforcée : 470 nm bleu ; 530 nm vert ; 590 nm jaune ; 750 nm rouge.
+▪ Sur les photographies au microscope électronique, la barre d'échelle représente 1 µm et la règle est graduée en
+  centimètres.
+▪ Critère d'accord avec une valeur de référence : |x − xréf| / u(x) ≤ 2.
+
+
+
+Q1. Rappeler la condition d'interférences constructives entre deux ondes issues d'une même source et ayant
+     suivi des chemins optiques différents.
+Q2. En déduire que les épaisseurs qui renforcent une longueur d'onde λ vérifient e = (k + ½)·λ / (2n).
+Q3. Calculer l'épaisseur correspondant à k = 0 pour λ = 530 nm, et préciser la couleur alors perçue.
+
+
+
+
+                            Figure 2 — Coupe au microscope électronique d'une zone verte du scarabée.
+
+Q4. À partir de la figure 2, déterminer l'épaisseur moyenne e d'une couche. Expliquer pourquoi la mesure
+     porte sur neuf couches et non sur une seule.
+Q5. Citer une source d'incertitude de cette mesure.
+La distance d est lue sur une règle graduée en centimètres, donc à 0,1 cm près. Un programme simule 5000
+lectures possibles pour estimer l'incertitude sur e.
+
+                                       Terminale spécialité — Physique-Chimie            page 8
+M. Mallet                                Ch.4 — Diffraction et interférences
+
+Programme de simulation
+ 1   import numpy.random as rd
+ 2
+ 3   Nsim = 5000                     # nombre de tirages
+ 4   echelle = 2.8                   # longueur de la barre de 1 um, en cm
+ 5   Ncouches = 9                    # nombre de couches sur la distance d
+ 6
+ 7   # tirage aleatoire de la distance d mesuree sur la photo, en cm
+ 8   d_mes = rd.uniform(..., ..., Nsim)
+ 9
+10   # epaisseur d'une couche, en nanometres
+11   e = d_mes * 1000 / (Ncouches * echelle)
+12
+13   print('valeur moyenne :', e.mean())
+14   print('ecart-type     :', e.std())
+
+
+
+Résultat affiché par le programme
+▪ valeur moyenne : 75.41
+▪ ecart-type : 2.31
+
+
+
+Q6. Recopier et compléter la ligne 8 du programme.
+Q7. Justifier la présence du facteur 1000 à la ligne 11.
+Q8. Écrire le résultat de la mesure de e avec son incertitude-type, puis discuter sa compatibilité avec la
+     valeur obtenue à la question Q3.
+Q9. Sur une autre zone du même scarabée, la distance couvrant neuf couches mesure 2,8 cm sur une
+     photographie prise à la même échelle. Estimer la longueur d'onde renforcée et en déduire la couleur de
+     cette zone.
+Élagage Aucune question du sujet d'origine n'a été retirée. La photographie de la seconde zone a été remplacée par la donnée de
+sa mesure (Q9), et les valeurs numériques de la simulation ont été recalculées pour être cohérentes avec la figure 2.
+
+
+
+
+                                      Terminale spécialité — Physique-Chimie         page 9
+M. Mallet                                 Ch.4 — Diffraction et interférences
+
+
+EXERCICE 6 · Choisir sa brosse à dents                                                                           6 points · ≈ 55 min
+
+D'après Polynésie, septembre 2024, sujet 2, exercice 2 « Une brosse à dents ».
+
+Les brosses à dents manuelles sont classées selon le diamètre de leurs brins : ultra-souple, souple, médium,
+dure. L'Union française pour la santé bucco-dentaire déconseille les deux dernières, qui abîment l'émail et
+fragilisent les gencives. On contrôle par diffraction le diamètre annoncé d'un brin « ultra-souple », puis on
+s'intéresse au bruit d'une brosse électrique.
+A. Étalonner le dispositif
+Le montage est celui de l'exercice 1 : un laser éclaire un fil de diamètre a, un écran placé à la distance D
+reçoit la figure de diffraction, dont on mesure la largeur L de la tache centrale. On dispose de deux fils
+calibrés, a1 = 150 µm et a2 = 300 µm, utilisés dans les expériences A et B.
+
+
+
+
+            Figure 1 — Intensité lumineuse relevée sur l'écran dans les deux expériences : L_A = 1,32 cm et L_B = 0,65 cm.
+
+Q1. Établir que la largeur de la tache centrale s'écrit L = k × (1/a), et donner l'expression de k.
+Q2. Attribuer à chacune des expériences A et B le fil utilisé. Justifier de deux façons.
+B. Le brin de brosse à dents
+Données
+▪ Constante du dispositif, déterminée par étalonnage : k = (1,96 ± 0,03)×10-6 m2.
+▪ Largeur de la tache centrale obtenue avec le brin : L = 1,89 cm, avec u(L) = 1,0 mm.
+▪ Propagation : u(a) = a × √[ (u(k)/k)2 + (u(L)/L)2 ].
+▪ Diamètre annoncé pour un brin « ultra-souple » : 100 µm.
+
+
+
+Q3. Montrer que le diamètre mesuré vaut a ≈ 1,04×10-4 m.
+Q4. Calculer l'incertitude-type u(a).
+Q5. La brosse mérite-t-elle la mention « ultra-souple » ?
+C. Le bruit d'une brosse électrique
+Données
+▪ À la distance d1 = 10 cm de la brosse en fonctionnement, le sonomètre indique L1 = 65 dB.
+▪ Niveau d'intensité sonore : L = 10·log(I/I0), avec I0 = 1,0×10-12 W·m-2.
+▪ Intensité sonore à la distance d d'une source ponctuelle : I = P / (4πd2).
+▪ Puissance sonore de la brosse, supposée constante : P = 4,0×10-7 W.
+
+
+
+
+                                       Terminale spécialité — Physique-Chimie         page 10
+M. Mallet                                  Ch.4 — Diffraction et interférences
+
+
+
+
+                             Figure 2 — Plan de la salle de douche ; l'utilisateur se tient au lavabo (croix).
+
+Q6. Calculer l'intensité sonore I1 à 10 cm de la brosse, puis vérifier qu'elle est cohérente avec la puissance
+     sonore annoncée.
+Q7. Une personne n'est plus incommodée dès que le niveau d'intensité sonore a diminué de 25 dB par
+     rapport à L1. À quelle distance de la brosse doit-elle se tenir ? À l'aide du plan, dire si elle peut rester
+     dans la salle de douche sans être gênée.
+Élagage Aucune question du sujet d'origine n'a été retirée ; la vérification de cohérence demandée en Q6 a été ajoutée.
+
+
+
+
+                                       Terminale spécialité — Physique-Chimie             page 11
+

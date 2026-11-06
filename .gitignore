@@ -1,0 +1,7 @@
+node_modules/
+dist/
+public/documents/
+public/pages/
+test-results/
+playwright-report/
+*.log

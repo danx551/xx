@@ -1,0 +1,353 @@
+M. Mallet                            Ch.2 — Transformations acide-base et pH
+
+CHAPITRE 2 — RÉVISION
+
+Six exercices type bac
+Transformations acide-base et pH — sujets du baccalauréat, sélectionnés et élagués pour ne garder que ce qui relève
+des chapitres 1 et 2.
+
+Comment utiliser ce livret
+Ces six exercices sont construits à partir de sujets du baccalauréat récents. Ensemble, ils balaient la totalité des
+capacités exigibles du chapitre : le tableau ci-dessous indique où chacune est travaillée. Le chapitre 2 étant court, les
+exercices mobilisent aussi, volontairement, les acquis du chapitre 1 — préparation d'une solution, titrage, gaz parfait ;
+seules les questions relevant d'un chapitre non encore traité (force des acides et des bases, cinétique,
+oxydoréduction, synthèse organique) ont été retirées, et la mention correspondante figure à la fin de chaque exercice.
+Rédigez comme le jour de l'épreuve : une phrase de méthode, le calcul littéral, puis l'application numérique avec
+l'unité — et, pour ce chapitre en particulier, écrivez toujours les couples avant d'écrire une équation de réaction acide-
+base.
+
+
+
+Ce que couvre chaque exercice
+                                  Capacité exigible du programme                                           Exercices
+  Identifier l'acide et la base d'un couple ; écrire une réaction acide-base comme un transfert          1·2·3·4·5·6
+                                         d'ion hydrogène H+
+         Identifier les couples acide-base de l'eau et reconnaître une espèce amphotère                      3·4·5
+                Relier le pH et la concentration en ions oxonium : pH = −log([H 3O+])                       1·4·5·6
+   Utiliser le produit ionique de l'eau Ke et reconnaître une solution acide, neutre ou basique               4·5
+   Mesurer le pH d'une solution d'acide ou de base (pH-mètre, papier pH, indicateur coloré)                   1·4
+                Rappel du chapitre 1 — concentration, dilution et choix de la verrerie                      2·3·4·6
+           Rappel du chapitre 1 — titrage : réaction support, équivalence, exploitation                       4·6
+                        Rappel du chapitre 1 — équation d'état du gaz parfait                                 3·6
+
+
+
+Les six sujets d'origine
+▪ Exercice 1 — Capture géologique du dioxyde de carbone, sujet zéro, sujet 1, exercice 1 (4 points).
+▪ Exercice 2 — Nettoyage d'une paroi de douche, Amérique du Nord, 2023, sujet 1, exercice 3 (4 points).
+▪ Exercice 3 — Étude d'un produit ménager « fait maison », Polynésie, 2025, sujet 2, exercice 2 (5 points).
+▪ Exercice 4 — La lessive de cendre, Amérique du Nord, 2026, sujet 2, exercice 3 (4 points).
+▪ Exercice 5 — Acidité des sols, Asie, 2026, sujet 1, exercice 1 (9 points).
+▪ Exercice 6 — Les pluies acides, Métropole, septembre 2025, sujet 2, exercice 1 (9 points).
+
+Les énoncés ont été reformulés à partir de ces sujets — contexte, données et travail demandé sont conservés — et les figures ont été
+redessinées. Les corrigés détaillés font l'objet d'un document séparé.
+
+
+
+
+                                      Terminale spécialité — Physique-Chimie          page 1
+M. Mallet                              Ch.2 — Transformations acide-base et pH
+
+
+EXERCICE 1 · Mettre en évidence l'acidité du dioxyde de carbone                                           4 points à l'origine · ≈ 25 min
+
+D'après le sujet zéro, sujet 1, exercice 1 « Capture géologique du dioxyde de carbone ».
+
+Le procédé CarbFix, mis au point en Islande, consiste à dissoudre du dioxyde de carbone dans de l'eau, puis
+à injecter cette solution à 400 ou 500 m de profondeur dans des roches basaltiques, où le carbone finit par
+être piégé sous forme de carbonates solides. Avant d'étudier le procédé, une expérience très simple permet
+de comprendre pourquoi le dioxyde de carbone dissous rend l'eau acide.
+Expérience. On verse quelques gouttes de bleu de bromothymol (BBT) dans un bécher d'eau distillée, puis
+on y souffle de l'air expiré à l'aide d'une paille.
+
+
+
+
+                        Figure 1 — Barbotage d'air expiré dans une solution contenant du bleu de bromothymol.
+
+Données
+▪ Teintes du bleu de bromothymol : jaune pour pH < 6,0 ; vert pour 6,0 < pH < 7,6 ; bleu pour pH > 7,6.
+▪ L'air expiré est beaucoup plus riche en dioxyde de carbone que l'air inspiré.
+▪ Le dioxyde de carbone dissous réagit avec l'eau selon CO2(aq) + H2O(ℓ) → H2CO3(aq), où H2CO3 est appelé acide
+  carbonique.
+▪ À l'injection, les débits massiques valent : 1,80×103 g·s-1 pour l'eau et 70 g·s-1 pour le dioxyde de carbone.
+▪ M(CO2) = 44 g·mol-1 ; masse volumique de l'eau ρ = 1,00×103 g·L-1.
+
+
+
+Q1. Décrire l'évolution du pH de la solution au cours du barbotage, et préciser ce que cette expérience met
+     en évidence.
+Q2. Justifier que l'acide carbonique H2CO3 est un acide au sens de Brønsted. Écrire la demi-équation acide-
+     base correspondante et donner la formule de sa base conjuguée.
+Q3. Écrire l'équation de la réaction entre l'acide carbonique et l'eau. Préciser le rôle joué par l'eau et
+     expliquer, à l'aide de cette équation, l'observation de la question Q1.
+Q4. Montrer que la concentration en dioxyde de carbone de la solution injectée dans le sous-sol vaut cS =
+     0,88 mol·L-1.
+Élagage Questions retirées du sujet d'origine : Q4 à Q7 (tableau d'avancement à l'état d'équilibre, constante d'acidité, calcul du pH
+par résolution d'une équation du second degré, évolution du pH et du carbone dissous sur 300 jours) → chapitres 6 et 12.
+
+
+
+
+                                        Terminale spécialité — Physique-Chimie             page 2
+M. Mallet                              Ch.2 — Transformations acide-base et pH
+
+
+EXERCICE 2 · Le vinaigre vient-il à bout du calcaire ?                                                                4 points · ≈ 40 min
+
+D'après Amérique du Nord, 2023, sujet 1, exercice 3 « Nettoyage d'une paroi de douche ».
+
+Une paroi de douche finit toujours par se couvrir d'un voile blanchâtre de calcaire, c'est-à-dire de carbonate
+de calcium CaCO3. Un conseil de grand-mère très répandu consiste à le dissoudre avec du vinaigre blanc.
+On cherche à savoir si le verre de vinaigre habituellement utilisé suffit réellement à nettoyer toute la paroi.
+
+Données
+▪ Vinaigre blanc utilisé : 12 g d'acide éthanoïque pour 100 g de solution ; masse volumique ρ = 1,010 g·mL-1 ;
+  volume employé V = 30 mL.
+▪ Paroi de douche : 110 cm × 200 cm, recouverte d'une couche de calcaire d'épaisseur e = 5 µm.
+▪ M(CH3COOH) = 60,0 g·mol-1 ; M(CaCO3) = 100,1 g·mol-1 ; masse volumique du calcaire ρ(CaCO3) = 2,65×103
+  kg·m-3.
+▪ Couples acide-base : CH3COOH(aq)/CH3COO-(aq) ; H2CO3(aq)/HCO3-(aq) ; HCO3-(aq)/CO32-(aq).
+▪ L'acide carbonique formé se décompose aussitôt : H2CO3(aq) → CO2(g) + H2O(ℓ).
+
+
+
+Q1. Montrer que la concentration en acide éthanoïque du vinaigre blanc vaut environ 2,0 mol·L-1.
+Q2. Déterminer la quantité de matière de carbonate de calcium déposée sur la paroi.
+Q3. Le calcaire réagit par ses ions carbonate. Identifier les couples acide-base mis en jeu lorsque l'acide
+     éthanoïque réagit avec l'ion carbonate, puis écrire l'équation de la réaction acide-base correspondante.
+Q4. En déduire l'équation de la réaction de dissolution du calcaire par le vinaigre, sachant que le solide se
+     dissocie selon CaCO3(s) → Ca2+(aq) + CO32-(aq).
+Q5. Les 30 mL de vinaigre suffisent-ils à éliminer tout le calcaire de la paroi ? Si non, quel volume faudrait-il
+     utiliser ?
+Élagage Aucune question du sujet d'origine n'a été retirée ; la question sur l'équation de la réaction a été détaillée en deux étapes
+(Q3 et Q4) pour faire apparaître explicitement le transfert d'ion hydrogène.
+
+
+
+
+                                        Terminale spécialité — Physique-Chimie            page 3
+M. Mallet                             Ch.2 — Transformations acide-base et pH
+
+
+EXERCICE 3 · Un nettoyant ménager « fait maison »                                                                  5 points · ≈ 45 min
+
+D'après Polynésie, 2025, sujet 2, exercice 2 « Étude d'un produit ménager fait maison ».
+
+De nombreuses recettes de produits ménagers « faits maison » reposent sur le mélange de vinaigre blanc
+et de bicarbonate de soude — c'est-à-dire d'hydrogénocarbonate de sodium NaHCO3. Le mélange produit
+une mousse abondante, souvent présentée comme la preuve de son efficacité. On étudie ici la transformation
+chimique qui en est responsable.
+
+Données
+▪ Vinaigre blanc : titre massique en acide éthanoïque tm = 8,0 % ; masse volumique ρ = 1,01 g·mL-1 ; M(CH3COOH)
+  = 60 g·mol-1.
+▪ On verse V = 100 mL de vinaigre blanc sur une quantité n = 0,20 mol d'ions hydrogénocarbonate.
+▪ Couples acide-base : CH3COOH(aq)/CH3COO-(aq) ; H2CO3(aq)/HCO3-(aq) ; HCO3-(aq)/CO32-(aq) ; H3O+(aq)/H2O(ℓ)
+  ; H2O(ℓ)/HO-(aq).
+▪ L'acide carbonique se décompose : H2CO3(aq) → CO2(g) + H2O(ℓ).
+▪ Conditions de l'expérience : P = 1020 hPa et θ = 25 °C ; R = 8,314 Pa·m3·mol-1·K-1.
+
+
+
+Q1. L'acide éthanoïque a pour formule brute C2H4O2. Donner sa formule semi-développée et nommer son
+      groupe caractéristique.
+Q2. Montrer qu'un litre de vinaigre blanc contient environ 1,3 mol d'acide éthanoïque.
+Q3. Écrire l'équation de la réaction entre l'acide éthanoïque et l'eau. Préciser le rôle joué par l'eau et le
+     couple auquel elle appartient dans cette réaction.
+Q4. Montrer que l'ion hydrogénocarbonate est une espèce amphotère.
+Q5. Écrire l'équation de la réaction acide-base entre l'acide éthanoïque et l'ion hydrogénocarbonate, puis
+     l'équation de la transformation globale. Expliquer la formation de la mousse.
+Q6. Déterminer le volume de dioxyde de carbone dégagé lorsque l'on verse les 100 mL de vinaigre sur le
+     bicarbonate de soude.
+Élagage Questions retirées du sujet d'origine : Q4 à Q6 (expression de la constante d'acidité, lecture du pK A et attribution des
+courbes sur un diagramme de distribution) → chapitre 12. La question Q4 ci-dessus, sur le caractère amphotère, a été ajoutée : elle
+est nécessaire pour écrire correctement l'équation de la question Q5 et relève du chapitre 2.
+
+
+
+
+                                       Terminale spécialité — Physique-Chimie              page 4
+M. Mallet                             Ch.2 — Transformations acide-base et pH
+
+
+EXERCICE 4 · La lessive de cendre                                                                                   4 points · ≈ 50 min
+
+D'après Amérique du Nord, 2026, sujet 2, exercice 3 « La lessive de cendre ».
+
+La lessive de cendre s'obtient en faisant tremper des cendres de bois dans de l'eau. Les cendres
+contiennent du carbonate de potassium K2CO3 : ce sont les ions carbonate qui rendent la solution basique et
+lui permettent de décrocher les corps gras. On étudie d'abord une solution modèle préparée au laboratoire,
+puis on titre une véritable lessive de cendre.
+A. Une solution modèle de carbonate de potassium
+On dissout m = 3,0 g de carbonate de potassium dans V = 100 mL d'eau distillée : on obtient la solution S. Un
+pH-mètre étalonné donne pH(S) = 11,8 à 25 °C.
+
+Données
+▪ M(K2CO3) = 138,0 g·mol-1 ; produit ionique de l'eau à 25 °C : Ke = 1,0×10-14.
+▪ Dissolution du solide : K2CO3(s) → 2 K+(aq) + CO32-(aq).
+▪ Couples acide-base : H2CO3(aq)/HCO3-(aq) ; HCO3-(aq)/CO32-(aq) ; H3O+(aq)/H2O(ℓ) ; H2O(ℓ)/HO-(aq).
+
+
+
+Q1. Définir une base au sens de Brønsted.
+Q2. Déterminer la concentration en ions carbonate apportés dans la solution S.
+Q3. Écrire l'équation de la réaction entre l'ion carbonate et l'eau. Préciser le rôle joué par l'eau et le couple
+     correspondant.
+Q4. Déterminer la concentration en ions hydroxyde de la solution S, puis vérifier que cette solution est bien
+     basique.
+Q5. Comparer la concentration en ions hydroxyde à la concentration en ions carbonate apportés. Que peut-
+     on en conclure sur la réaction de la question Q3 ?
+B. Titrage d'une lessive de cendre
+Une lessive de cendre S0 est diluée dix fois. On titre V1 = 10,0 mL de la solution diluée par une solution
+aqueuse d'acide chlorhydrique de concentration ca = 5,00×10-3 mol·L-1, en suivant le pH (figure 1). Le titrage
+se déroule en deux étapes successives.
+
+
+
+
+            Figure 1 — Suivi pH-métrique du titrage de la lessive de cendre diluée et valeur absolue de la courbe dérivée.
+
+Q6. Écrire les équations des deux réactions successives, puis en déduire l'équation bilan du titrage complet.
+Q7. Déterminer la concentration en ions carbonate de la lessive de cendre S0.
+Q8. Pour une machine de 5 kg de linge et une eau dure, il faut apporter entre 6,0×10-3 mol et 1,0×10-2 mol
+     d'ions carbonate. En déduire un encadrement du volume de lessive de cendre à verser, et comparer
+     aux 50 à 150 mL préconisés pour une lessive du commerce.
+Élagage Aucune question n'a été retirée : tout relève des chapitres 1 et 2. Le mot « base faible », attendu en Q5, viendra au
+chapitre 12.
+
+
+                                        Terminale spécialité — Physique-Chimie          page 5
+M. Mallet                              Ch.2 — Transformations acide-base et pH
+
+
+EXERCICE 5 · L'acidité des sols et le chaulage                                                           9 points à l'origine · ≈ 45 min
+
+D'après Asie, 2026, sujet 1, exercice 1 « Acidité des sols ».
+
+Un sol trop acide bloque l'assimilation des éléments nutritifs par les plantes et fait chuter les rendements.
+Cette acidité provient pour une part des acides organiques de l'humus — les acides fulviques — et pour une
+autre du dioxyde de carbone dissous dans l'eau du sol. Pour la corriger, l'agriculteur pratique le chaulage : il
+épand de la chaux éteinte, c'est-à-dire de l'hydroxyde de calcium Ca(OH)2.
+A. D'où vient l'acidité d'un sol ?
+Données
+▪ La molécule d'acide fulvique porte trois types de groupes caractéristiques : des groupes hydroxyle –OH, des
+  groupes carbonyle >C=O et des groupes carboxyle –COOH.
+▪ Espèces issues du dioxyde de carbone dissous : H2CO3, HCO3- et CO32-, appartenant aux couples H2CO3/HCO3- et
+  HCO3-/CO32-.
+
+
+
+Q1. Parmi les trois groupes caractéristiques de l'acide fulvique, indiquer celui qui est responsable du
+     caractère acide de la molécule. Écrire la demi-équation acide-base correspondante, en notant R le
+     reste de la molécule.
+Q2. Montrer que l'ion hydrogénocarbonate est une espèce amphotère. Citer une autre espèce amphotère,
+     omniprésente dans les solutions aqueuses.
+B. Corriger l'acidité : le chaulage
+Pour étudier l'action de la chaux éteinte, on prépare une solution S en dissolvant m = 0,250 g d'hydroxyde de
+calcium dans V = 200 mL d'eau distillée.
+
+Données
+▪ M(Ca(OH)2) = 74,0 g·mol-1 ; produit ionique de l'eau à 25 °C : Ke = 1,00×10-14.
+▪ La masse de terre à traiter se calcule par msol = 1,4 × S × e, avec msol en tonnes, S la surface en m2 et e la
+  profondeur travaillée en m.
+▪ 1,00 ha = 1,00×104 m2.
+
+
+
+Q3. Écrire l'équation de la dissolution de l'hydroxyde de calcium dans l'eau.
+Q4. Montrer que la concentration en ions hydroxyde de la solution S vaut [HO-] = 3,38×10-2 mol·L-1.
+Q5. En déduire le pH de la solution S. Cette solution est-elle acide, neutre ou basique ? Justifier de deux
+     façons.
+La figure 1 donne le pH d'une terre de bruyère en fonction de la quantité d'ions calcium apportée par le
+chaulage, pour 100 g de sol.
+
+
+
+
+                        Figure 1 — pH d'une terre de bruyère en fonction de la quantité d'ions calcium apportée.
+
+Q6. Déterminer la masse d'hydroxyde de calcium à épandre sur une parcelle de 1,00 ha, travaillée sur une
+     profondeur de 10,0 cm, pour amener son pH à 6,50.
+Élagage Questions retirées du sujet d'origine : Q1, Q3 et Q5 à Q8 (lecture d'une formule topologique, diagramme de distribution,
+constante d'acidité, espèce prédominante) → chapitre 12.
+
+                                         Terminale spécialité — Physique-Chimie         page 6
+M. Mallet                             Ch.2 — Transformations acide-base et pH
+
+
+EXERCICE 6 · Les pluies acides                                                                       9 points à l'origine · ≈ 55 min
+
+D'après Métropole, septembre 2025, sujet 2, exercice 1 « Les pluies acides ».
+
+Même à l'abri de toute pollution, l'eau de pluie n'est pas neutre : son pH avoisine 5,6 à 25 °C, en raison du
+dioxyde de carbone atmosphérique qui s'y dissout. Les rejets industriels de dioxyde de soufre et d'oxydes
+d'azote l'acidifient bien davantage, et ces pluies acides rongent les monuments construits en pierre calcaire.
+On étudie ici l'attaque du calcaire par une pluie acide, puis le contrôle de la teneur en dioxyde de soufre de
+l'air.
+A. Pourquoi l'eau de pluie est-elle naturellement acide ?
+Données
+▪ Le dioxyde de carbone atmosphérique se dissout dans l'eau de pluie et y réagit selon CO2(aq) + H2O(ℓ) →
+  H2CO3(aq).
+▪ Couple acide-base : H2CO3(aq)/HCO3-(aq).
+
+
+
+Q1. Écrire l'équation de la réaction entre l'acide carbonique et l'eau, puis justifier que la dissolution du
+     dioxyde de carbone rend l'eau de pluie acide.
+B. L'attaque du calcaire par une pluie acide
+Pour simuler une pluie acide, on prépare V = 2,00 L d'une solution S d'acide nitrique par dilution d'un facteur
+400 d'une solution commerciale de concentration c0 = 15,2 mol·L-1. Le pH-mètre indique pH(S) = 1,42.
+On verse ensuite 50 mL d'une solution d'acide nitrique de concentration en ions oxonium 1,0×10 -1 mol·L-1 sur
+m = 2,0 g de carbonate de calcium, dans un réacteur fermé dont le volume gazeux vaut V gaz = 280 mL,
+maintenu à T = 295 K. La pression du dioxyde de carbone formé est enregistrée au cours du temps (figure 1).
+
+Données
+▪ Équation de la réaction : CaCO3(s) + 2 H3O+(aq) → Ca2+(aq) + CO2(g) + 3 H2O(ℓ).
+▪ L'acide nitrique est un acide fort : en solution aqueuse, il cède la totalité de ses ions H + à l'eau.
+▪ M(CaCO3) = 100,1 g·mol-1 ; R = 8,31 J·K-1·mol-1.
+
+
+
+Q2. Calculer le volume de solution commerciale à prélever pour préparer la solution S, et préciser la verrerie
+     à utiliser.
+Q3. Vérifier que la valeur du pH mesurée pour la solution S est cohérente avec le caractère fort de l'acide
+     nitrique.
+Q4. Montrer que la quantité maximale de dioxyde de carbone que la transformation peut produire vaut
+     2,5×10-3 mol.
+
+
+
+
+                           Figure 1 — Pression du dioxyde de carbone dans le réacteur au cours du temps.
+
+Q5. Déterminer, à l'aide de la figure 1, la quantité de dioxyde de carbone réellement formée. Conclure quant
+     au caractère total de la transformation.
+                                       Terminale spécialité — Physique-Chimie        page 7
+M. Mallet                             Ch.2 — Transformations acide-base et pH
+C. Contrôler la teneur en dioxyde de soufre de l'air
+On fait barboter Vair = 18,5 m3 d'air dans une solution de peroxyde d'hydrogène : le dioxyde de soufre dissous
+y est entièrement transformé selon l'équation H2O2(aq) + SO2(aq) + 2 H2O(ℓ) → 2 H3O+(aq) + SO42-(aq). La
+solution obtenue est ensuite titrée par une solution aqueuse d'hydroxyde de sodium de concentration c b =
+1,0×10-2 mol·L-1 ; le volume versé à l'équivalence vaut VE = 4,0 mL.
+
+Données
+▪ M(SO2) = 64,1 g·mol-1.
+▪ Normes de qualité de l'air pour le dioxyde de soufre : objectif de qualité 50 µg·m-3, valeur limite 125 µg·m-3.
+
+
+
+Q6. Établir la relation entre la quantité de dioxyde de soufre initialement présente dans l'air prélevé et la
+     quantité d'ions oxonium formés.
+Q7. Écrire l'équation de la réaction support du titrage, puis déterminer la concentration en masse en dioxyde
+     de soufre de l'air prélevé. Conclure vis-à-vis des normes de qualité de l'air.
+Élagage Questions retirées du sujet d'origine : Q2 à Q4 (vérification du pK A sur un diagramme de distribution, expression de la
+constante d'acidité, calcul du pH de l'eau de pluie non polluée) → chapitre 12 ; Q9 et Q10 (temps de demi-réaction, facteurs
+cinétiques de la dégradation des monuments) → chapitre 6.
+
+
+
+
+                                        Terminale spécialité — Physique-Chimie          page 8
+

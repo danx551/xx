@@ -1,0 +1,6 @@
+node_modules/
+dist/
+public/
+src/data/sources.json
+analysis/
+COUVERTURE.md

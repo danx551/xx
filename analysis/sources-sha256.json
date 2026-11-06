@@ -1,0 +1,52 @@
+[
+  {
+    "file": "01 - Analyse et dosages - Cours (avec exercices) 1 (1).pdf",
+    "bytes": 626557,
+    "sha256": "3f539829e949bbed214c72abd5777c5572a2a800471b22268ee05536c474680f"
+  },
+  {
+    "file": "01 - Analyse et dosages - Exercices type bac (1).pdf",
+    "bytes": 970364,
+    "sha256": "13ce571d62edc9f885df34ae3823d87c3c84e8efe227585db416e3be44e1ac77"
+  },
+  {
+    "file": "02 - Transformations acide-base et pH - Cours (avec exercices) (1).pdf",
+    "bytes": 232136,
+    "sha256": "53df87b12710bcba19f66ba596639e998071cbdb2139dc146ab4a16388b8af4f"
+  },
+  {
+    "file": "02 - Transformations acide-base et pH - Exercices type bac (1).pdf",
+    "bytes": 374895,
+    "sha256": "fec4945f2fd216a9db1739b7c2403da06a413681325f53ff5d276d65668c7f74"
+  },
+  {
+    "file": "03 - Sons et effet Doppler - Cours (avec exercices).pdf",
+    "bytes": 362546,
+    "sha256": "bda47fa43606938e403b61a1f60b644bf4c7c782fc8b328711c8726785bf789a"
+  },
+  {
+    "file": "03 - Sons et effet Doppler - Exercices type bac (1).pdf",
+    "bytes": 417477,
+    "sha256": "4e23bcfb698269e5857d08545e37cd608b431f74afb951c29060cb5871ed2bdc"
+  },
+  {
+    "file": "04 - Diffraction et interférences - Cours (avec exercices).pdf",
+    "bytes": 473252,
+    "sha256": "a61b223d0a2886ca849f65a902bdff97c0455c6e170aac8db1c453cddfbeac1c"
+  },
+  {
+    "file": "04 - Diffraction et interférences - Exercices type bac 1.pdf",
+    "bytes": 662272,
+    "sha256": "cda65b81b436ccd5f60b10f7ba0e892649bdb980c229aff0acb1ff37d200ac3f"
+  },
+  {
+    "file": "05 - Lunette astronomique - Cours (avec exercices).pdf",
+    "bytes": 351692,
+    "sha256": "d6fb9059f6cd62c03a21d771ac96ce527d7fb5d09d9343e6f42cd56bb0a08156"
+  },
+  {
+    "file": "05 - Lunette astronomique - Exercices type bac.pdf",
+    "bytes": 453530,
+    "sha256": "db852a6d755dea0726ba75fea6093535d252f3533013886f2931b9be3190a053"
+  }
+]
